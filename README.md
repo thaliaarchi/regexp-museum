@@ -1,6 +1,7 @@
 # Regular expression history
 
 - [AS3 `RegExp` syntax incompatibilities in Ruffle](actionscript.md)
+- [Grammar for Rust `regex`](rust_regex.bnf)
 - [Regular expression engine history](history.md)
 - [Regular expression implementations](engines.md)
 
