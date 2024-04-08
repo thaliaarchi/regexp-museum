@@ -4,6 +4,7 @@
 - [Grammar for Rust `regex`](rust_regex.bnf)
 - [Regular expression engine history](history.md)
 - [Regular expression implementations](engines.md)
+- [Thompson regular expressions](thompson.md)
 
 ## License
 
