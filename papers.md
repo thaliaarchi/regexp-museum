@@ -2,6 +2,10 @@
 
 ## 2024
 
+- 2024-04-22:
+  [*The UNIX-HATERS Handbook*](https://simson.net/ref/ugh.pdf)
+  (Simson Garfinkel, Daniel Weise, and Steven Strassmann, 1994)
+  [[HN](https://news.ycombinator.com/item?id=40110729)]
 - [2024-04-07](thompson.md):
   [“Regular Expression Search Algorithm”](https://dl.acm.org/doi/10.1145/363347.363387)
   (Ken Thompson, 1968)
