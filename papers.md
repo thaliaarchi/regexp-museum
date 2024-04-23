@@ -10,6 +10,9 @@
   [*The UNIX-HATERS Handbook*](https://simson.net/ref/ugh.pdf)
   (Simson Garfinkel, Daniel Weise, and Steven Strassmann, 1994)
   [[HN](https://news.ycombinator.com/item?id=40110729)]
+- 2024-04-21:
+  [“A Regular Expression Matcher”](https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html)
+  (Rob Pike and Brian Kernighan, 2007)
 - [2024-04-07](thompson.md):
   [“Regular Expression Search Algorithm”](https://dl.acm.org/doi/10.1145/363347.363387)
   (Ken Thompson, 1968)
