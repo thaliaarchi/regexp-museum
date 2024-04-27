@@ -5,6 +5,7 @@
 - [Regular expression engine history](history.md)
 - [Regular expression implementations](engines.md)
 - [S-Lang SLregexp and SLsearch](slang.md)
+- [Text editors](text_editors.md)
 - [Thompson regular expressions](thompson.md)
 
 ## License
