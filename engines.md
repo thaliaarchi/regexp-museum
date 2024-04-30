@@ -12,6 +12,8 @@
   Background in [“Regular Expression Matching with a Trigram Index—or—How Google
   Code Search Worked”](https://swtch.com/~rsc/regexp/regexp4.html) by Russ Cox (2012)
 
+- [DECUS grep](./greps.md#decus-grep)
+
 - ECMAScript `RegExp`
 
   - JavaScript `RegExp` [[list](https://test262.fyi/)]
@@ -77,6 +79,8 @@
   [17][java-17], [18][java-18], [19][java-19], [20][java-20], [21][java-21]]
 
   - Scala.js
+
+- [Jerry Coffin's JGREP](./greps.md#jerry-coffins-jgrep)
 
 - McIlroy's `regex` [[src](https://github.com/arnoldrobbins/mcilroy-regex)]
 
