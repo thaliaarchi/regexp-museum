@@ -2,6 +2,9 @@
 
 ## 2024
 
+- 2024-05-03:
+  [RFC 9485 “I-Regexp: An Interoperable Regular Expression Format”](https://www.rfc-editor.org/rfc/rfc9485.html)
+  (Carsten Bormann and Tim Bray, 2023)
 - 2024-04-23:
   [“Having it both ways: Larry Wall, Perl and the technology and culture of the
   early web”](https://www.tandfonline.com/doi/full/10.1080/24701475.2018.1495810)
