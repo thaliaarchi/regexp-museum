@@ -1,11 +1,9 @@
 # Regular Expression Museum
 
-- [ActionScript 3 `RegExp`](actionscript.md)
-- [Grammar for Rust `regex`](rust_regex.bnf)
 - [grep implementations](greps.md)
+- [Programming languages](langs/index.md)
 - [Regular expression engine history](history.md)
 - [Regular expression implementations](engines.md)
-- [S-Lang SLregexp and SLsearch](slang.md)
 - [Text editors](text_editors.md)
 - [Thompson regular expressions](thompson.md)
 

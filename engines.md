@@ -1,5 +1,16 @@
 # Regular expression implementations
 
+- [ActionScript 3 `RegExp`](langs/actionscript.md)
+- [D](langs/d.md)
+- [Java `java.util.regex`](langs/java.md)
+- [JavaScript `RegExp`](langs/javascript.md)
+- [Perl](langs/perl.md)
+- [Ruby](langs/ruby.md)
+- [Rust `regex`](langs/rust.md)
+- [S-Lang SLregexp and SLsearch](langs/slang.md)
+
+## Uncategorized
+
 - awk
 
 - [Brief text editor](./text_editors.md#brief) [[site](https://briefeditor.com/)]
@@ -14,65 +25,10 @@
   Background in [“Regular Expression Matching with a Trigram Index—or—How Google
   Code Search Worked”](https://swtch.com/~rsc/regexp/regexp4.html) by Russ Cox (2012)
 
-- D `std.regex` [[src](https://github.com/dlang/phobos/tree/master/std/regex)]
-
-  - D `std.regexp`, now undeaD `undead.regexp` [[src](https://github.com/dlang/undeaD/blob/master/src/undead/regexp.d)]:
-    earlier regexp engine in D standard library
-
 - [DECUS grep](./greps.md#decus-grep)
 
 - ECMAScript `RegExp`
 
-  - JavaScript `RegExp` [[list](https://test262.fyi/)]
-
-    - V8 Irregexp
-      - SpiderMonkey Irregexp [[src](https://github.com/mozilla/gecko-dev/tree/master/js/src/irregexp)]
-
-        SpiderMonkey switched from YARR to Irregexp [in 2014](https://bugzilla.mozilla.org/show_bug.cgi?id=976446).
-
-      - Node.js Irregexp [[src](https://github.com/nodejs/node/tree/main/deps/v8/src/regexp)]
-
-    - JavaScriptCore YARR [src [engine](https://github.com/WebKit/WebKit/tree/main/Source/JavaScriptCore/yarr),
-      [object](https://github.com/WebKit/WebKit/blob/main/Source/JavaScriptCore/runtime/RegExp.h)]
-
-      A [post on performance improvements](https://webkit.org/blog/8685/introducing-the-jetstream-2-benchmark-suite/)
-      describes some of its architecture.
-
-      - SpiderMonkey YARR (formerly)
-      - Samsung YARR [[src](https://github.com/Samsung/yarr)]: YARR extracted as
-        a library (unknown if modified)
-
-    - ChakraCore [src [parser](https://github.com/chakra-core/ChakraCore/blob/master/lib/Parser/RegexParser.cpp),
-      [compiler](https://github.com/chakra-core/ChakraCore/blob/master/lib/Parser/RegexCompileTime.cpp),
-      [runtime](https://github.com/chakra-core/ChakraCore/blob/master/lib/Parser/RegexRuntime.cpp)]
-    - SerenityOS LibJS [[src](https://github.com/SerenityOS/serenity/blob/master/Userland/Libraries/LibJS/Runtime/RegExpPrototype.cpp)]
-    - Hermes [src [engine](https://github.com/facebook/hermes/tree/main/lib/Regex),
-      [object c](https://github.com/facebook/hermes/blob/main/lib/VM/JSLib/RegExp.cpp),
-      [object h](https://github.com/facebook/hermes/blob/main/include/hermes/VM/JSRegExp.h)]
-      [[docs](https://github.com/facebook/hermes/blob/main/doc/RegExp.md)]
-    - QuickJS libregexp [src [c](https://github.com/bellard/quickjs/blob/master/libregexp.c),
-      [h](https://github.com/bellard/quickjs/blob/master/libregexp.h),
-      [opcodes](https://github.com/bellard/quickjs/blob/master/libregexp-opcode.h)]
-
-      Author: Fabrice Bellard
-
-      - QuickJS NG [src [c](https://github.com/quickjs-ng/quickjs/blob/master/libregexp.c),
-        [h](https://github.com/quickjs-ng/quickjs/blob/master/libregexp.h),
-        [opcodes](https://github.com/quickjs-ng/quickjs/blob/master/libregexp-opcode.h)]
-
-    - XS [[src](https://github.com/Moddable-OpenSource/moddable/blob/public/xs/sources/xsRegExp.c)]
-    - Rhino [[src](https://github.com/mozilla/rhino/tree/master/src/org/mozilla/javascript/regexp)]
-    - Nashorn JDK and Joni engines [[src](https://github.com/openjdk/nashorn/tree/main/src/org.openjdk.nashorn/share/classes/org/openjdk/nashorn/internal/runtime/regexp)]:
-    - `reress` [[src](https://github.com/ridiculousfish/regress)]
-      - Boa [[src](https://github.com/boa-dev/boa/blob/main/core/engine/src/builtins/regexp/mod.rs)]:
-        implemented with `reress`
-    - Kiesel [[src](https://codeberg.org/kiesel-js/kiesel/src/branch/main/src/builtins/reg_exp.zig)]
-    - porffor Rhemyn [[src](https://github.com/CanadaHonk/porffor/tree/main/rhemyn)]
-    - engine262 [src [parser](https://github.com/engine262/engine262/tree/main/src/parser/RegExpParser.mts),
-      [prototype](https://github.com/engine262/engine262/tree/main/src/intrinsics/RegExpPrototype.mts)]
-    - DMDScript [[src](https://github.com/DigitalMars/DMDScript/blob/master/engine/source/dmdscript/dregexp.d)]:
-      implemented with `undead.regexp`
-  - [ActionScript 3 `RegExp`](./actionscript.md)
   - XRegExp [[src](https://github.com/slevithan/xregexp)]: extended parsing for
     JavaScript `RegExp`
 
@@ -154,13 +110,6 @@
 
   Andrew Gallant says ICgrep implements (most of?) UTS #18 level 2 [[HN](https://news.ycombinator.com/item?id=32435303#32445174)].
 
-- Java `java.util.regex` [docs [1.4.2][java-1.4.2], [5.0][java-5.0], [6][java-6],
-  [7][java-7], [8][java-8], [9][java-9], [10][java-10], [11][java-11],
-  [12][java-12], [13][java-13], [14][java-14], [15][java-15], [16][java-16],
-  [17][java-17], [18][java-18], [19][java-19], [20][java-20], [21][java-21]]
-
-  - Scala.js
-
 - [Jerry Coffin's JGREP](./greps.md#jerry-coffins-jgrep)
 
 - McIlroy's `regex` [[src](https://github.com/arnoldrobbins/mcilroy-regex)]
@@ -180,8 +129,6 @@
 
 - PCRE (Perl Compatible Regular Expressions) [[src](https://github.com/PCRE2Project/pcre2)]
   [[Wikipedia](https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions)]
-
-- Perl [[docs](https://perldoc.perl.org/perlre)]
 
 - Plan 9 `grep` [[src](https://github.com/plan9foundation/plan9/tree/main/sys/src/cmd/grep)]
   [docs [grep(1)](https://github.com/plan9foundation/plan9/blob/main/sys/man/1/grep)]
@@ -289,6 +236,8 @@
   [CVE-2022-36021](https://nvd.nist.gov/vuln/detail/CVE-2022-36021) being
   reported and [fixed](https://github.com/redis/redis/commit/dcbfcb916ca1a269b3feef86ee86835294758f84).
 
+- `ripgrep` [[src](https://github.com/BurntSushi/ripgrep)]: uses Rust `regex`
+
 - `rn` [[site](https://web.archive.org/web/19970401040656/http://www.academ.com/academ/rn.html)]
   [[history](https://web.archive.org/web/20140227213900/http://www.faqs.org:80/faqs/usenet/software/part1)]
   [[Wikipedia](https://en.wikipedia.org/wiki/Rn_(newsreader))]
@@ -311,53 +260,7 @@
 
   - strn [[Wikipedia](https://en.wikipedia.org/wiki/Rn_(newsreader))]
 
-- Ruby
-
-  - Prism [src [c](https://github.com/ruby/prism/blob/main/src/regexp.c),
-    [h](https://github.com/ruby/prism/blob/main/include/prism/regexp.h)]:
-    universal parser for Ruby syntax, including regexp literals. Introduced in
-    [Ruby 3.3.0](https://www.ruby-lang.org/en/news/2023/12/25/ruby-3-3-0-released/).
-    - CRuby Prism [src [c](https://github.com/ruby/ruby/blob/master/prism/regexp.c),
-      [h](https://github.com/ruby/ruby/blob/master/prism/regexp.h)]
-
-- Rust `regex` [[src](https://github.com/rust-lang/regex)]
-  [[docs](https://docs.rs/regex/latest/regex/)]
-
-  Author: Andrew Gallant
-
-  On [converting](https://docs.rs/regex-syntax/latest/regex_syntax/utf8/index.html#lineage)
-  from ranges of Unicode codepoints to ranges of UTF-8 bytes:
-
-  > I got the idea and general implementation strategy from Russ Cox in his
-  > [article on regexps](https://web.archive.org/web/20160404141123/https://swtch.com/~rsc/regexp/regexp3.html)
-  > and RE2. Russ Cox got it from Ken Thompson’s `grep` (no source, folk lore?).
-  > I also got the idea from [Lucene](https://github.com/apache/lucene-solr/blob/ae93f4e7ac6a3908046391de35d4f50a0d3c59ca/lucene/core/src/java/org/apache/lucene/util/automaton/UTF32ToUTF8.java),
-  > which uses it for executing automata on their term index.
-
-  - `ripgrep` [[src](https://github.com/BurntSushi/ripgrep)]
-
 - Shell globs
-
-- S-Lang `SLRegexp` [[src](https://www.jedsoft.org/snapshots/)] [[docs](https://www.jedsoft.org/slang/doc/html/slang-22.html)]
-
-  Author: John E. Davis
-
-  `SLRegexp` is used by `slrn` and `slsh`, among other parts of S-Lang. I have
-  not determined whether `slrn` is a port of `rn` to S-Lang, a reimplementation,
-  or completely unrelated. `src/slregexp.c` seems unrelated to in `search.c` in
-  `trn`.
-
-  In `src/slregexp.c`, it states that it implements “ed style regular
-  expressions”.
-
-  - `slrn` [src [JED](https://www.jedsoft.org/snapshots/), [GitHub](https://github.com/jedsoft/slrn),
-    [SourceForge](https://sourceforge.net/projects/slrn/)] [[site](https://web.archive.org/web/20140924103420/http://www.slrn.org/index.html)]
-    [[FreeBSD Ports](https://ports.freebsd.org/cgi/ports.cgi?query=slrn&stype=all&sektion=news)]
-  - S-Lang `slsh` glob: converts globs to `SLRegexp`
-  - JED software (e.g., S-Lang, slrn, most) ported to OpenVMS has older versions
-    than available from jedsoft.org [src [v10](https://www.digiater.nl/openvms/freeware/v10/jed097/),
-    [v20](https://www.digiater.nl/openvms/freeware/v20/jed/),
-    …]
 
 - Spencer's library [[algorithm](https://swtch.com/~rsc/regexp/regexp2.html#backtrack)]
 
@@ -506,21 +409,3 @@
 
 
 [rsc-history]: https://swtch.com/~rsc/regexp/regexp1.html#History
-[java-1.4.2]: https://web.archive.org/web/20111126092902/http://docs.oracle.com/javase/1.4.2/docs/api/java/util/regex/package-summary.html
-[java-5.0]: https://docs.oracle.com/javase/1.5.0/docs/api/java/util/regex/package-summary.html
-[java-6]: https://docs.oracle.com/javase/6/docs/api/java/util/regex/package-summary.html
-[java-7]: https://docs.oracle.com/javase/7/docs/api/java/util/regex/package-summary.html
-[java-8]: https://docs.oracle.com/javase/8/docs/api/java/util/regex/package-summary.html
-[java-9]: https://docs.oracle.com/javase/9/docs/api/java/util/regex/package-summary.html
-[java-10]: https://docs.oracle.com/javase/10/docs/api/java/util/regex/package-summary.html
-[java-11]: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/package-summary.html
-[java-12]: https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/util/regex/package-summary.html
-[java-13]: https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/regex/package-summary.html
-[java-14]: https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/regex/package-summary.html
-[java-15]: https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/util/regex/package-summary.html
-[java-16]: https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/regex/package-summary.html
-[java-17]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/package-summary.html
-[java-18]: https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/regex/package-summary.html
-[java-19]: https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/regex/package-summary.html
-[java-20]: https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/util/regex/package-summary.html
-[java-21]: https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/regex/package-summary.html

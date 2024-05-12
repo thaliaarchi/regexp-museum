@@ -1,13 +1,35 @@
 # S-Lang SLregexp and SLsearch
 
+Author: John E. Davis
+
 The [S-Lang Library](https://www.jedsoft.org/slang/) is the standard library for
 the S-Lang programming language and is also usable from C. With it, the jed
 editor and slrn usenet reader were written. It includes a regular expression
 engine, SLregexp, and string-searching algorithms, SLsearch.
 
+`SLRegexp` is used by `slrn` and `slsh`, among other parts of S-Lang. I have
+not determined whether `slrn` is a port of `rn` to S-Lang, a reimplementation,
+or completely unrelated. `src/slregexp.c` seems unrelated to in `search.c` in
+`trn`.
+
+In `src/slregexp.c`, it states that it implements “ed style regular
+expressions”.
+
 - slang `src/slregexp.c`
 - slang `src/slsearch.c`
 - most `src/search.c` appears to use either slregexp or Unix V8 regexp.
+- S-Lang `SLRegexp` [[src](https://www.jedsoft.org/snapshots/)] [[docs](https://www.jedsoft.org/slang/doc/html/slang-22.html)]
+
+Users:
+
+- `slrn` [src [JED](https://www.jedsoft.org/snapshots/), [GitHub](https://github.com/jedsoft/slrn),
+  [SourceForge](https://sourceforge.net/projects/slrn/)] [[site](https://web.archive.org/web/20140924103420/http://www.slrn.org/index.html)]
+  [[FreeBSD Ports](https://ports.freebsd.org/cgi/ports.cgi?query=slrn&stype=all&sektion=news)]
+- S-Lang `slsh` glob: converts globs to `SLRegexp`
+- JED software (e.g., S-Lang, slrn, most) ported to OpenVMS has older versions
+  than available from jedsoft.org [src [v10](https://www.digiater.nl/openvms/freeware/v10/jed097/),
+  [v20](https://www.digiater.nl/openvms/freeware/v20/jed/),
+  …]
 
 ## Mailing list
 
