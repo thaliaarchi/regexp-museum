@@ -2,6 +2,7 @@
 
 - [ActionScript 3 `RegExp`](langs/actionscript.md)
 - [Bingo](editors/bingo.md)
+- [Blackbeard](editors/blackbeard.md)
 - [Brief](editors/brief.md)
 - [CRiSP](editors/crisp.md)
 - [D](langs/d.md)

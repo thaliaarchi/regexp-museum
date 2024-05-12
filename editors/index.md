@@ -1,6 +1,7 @@
 # Text editors
 
 - [Bingo](bingo.md)
+- [Blackbeard](blackbeard.md)
 - [Brief](brief.md)
 - [CRiSP](crisp.md)
 - ed

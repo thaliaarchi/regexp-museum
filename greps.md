@@ -13,6 +13,10 @@ Traces of the source:
 - [grep](https://github.com/z88dk/z88dk/wiki/grep) on the Z88DK (development kit
   for Z70) project wiki
 
+The [Blackbeard](editors/blackbeard.md) programmer's editor uses DECUS grep (or
+some variant). Its regular expression docs copied from DECUS grep were modified
+1981-01-02 00:05:00.
+
 ## Jerry Coffin's JGREP
 
 Author: Jerry Coffin
