@@ -10,4 +10,5 @@
 - [NED](ned.md)
 - QED
 - QEdit
+- [Tech-Edit](tech-edit.md)
 - [Zeus](zeus.md)

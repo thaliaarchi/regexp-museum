@@ -18,6 +18,7 @@
 - [Ruby](langs/ruby.md)
 - [Rust `regex`](langs/rust.md)
 - [S-Lang SLregexp and SLsearch](langs/slang.md)
+- [Tech-Edit](editors/tech-edit.md)
 - [Zeus](editors/zeus.md)
 
 ## Uncategorized
