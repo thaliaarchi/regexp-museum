@@ -2,13 +2,18 @@
 
 Author: James K. Powers (1985–1987)
 
-Blackbeard is a shareware programmer's editor with regular expression search and
-“normal” search. The Blackbeard regular expression documentation in `RE.HLP` and
-`BB.DOC` matches that of DECUS grep, word for word (after the intro paragraph),
-even with the `\"` and `\\` escape sequences from the C source, but is rewrapped
-to fit a narrower width. `BB.DOC` includes `RE.HLP` in its entirety, but with
-different wrapping. In both versions `RE.HLP` and the relevant section of
-`BB.DOC` are identical. `BB725.ZIP:RE.HLP` was modified 1981-01-02 00:05:00.
+Blackbeard is a programmer's editor with regular expression search and “normal”
+search. Blackbeard is the original shareware version, Captain Blackbeard is the
+enhanced version, and Blackbeard/2 is the OS/2 version. It is reviewed on
+[texteditors.org](https://texteditors.org/cgi-bin/wiki.pl?BlackBeard).
+
+The Blackbeard regular expression documentation in `RE.HLP` and `BB.DOC` matches
+that of DECUS grep, word for word (after the intro paragraph), even with the
+`\"` and `\\` escape sequences from the C source, but is rewrapped to fit a
+narrower width. `BB.DOC` includes `RE.HLP` in its entirety, but with different
+wrapping. `RE.HLP` and the relevant section of `BB.DOC` are identical (at least
+for 2.25 and 7.34). `BB725.ZIP:RE.HLP` was modified 1981-01-02 00:05:00.
+Blackbeard/2 has the same text, but in a binary format in `BB2.SGD`.
 
 Its source is not available. The executables work in DOSBox-X.
 
@@ -18,8 +23,11 @@ Versions:
 - Blackbeard 7.34 in [NightOwl 004 - 1991](http://annex.retroarchive.org/cdrom/nightowl-004/004A/BLACKBRD.ZIP)
   and [Chestnut Shareware Overload - 1992](http://annex.retroarchive.org/cdrom/chst-swoverload/WP/BLACKBRD.ZIP)
   (listed date: 1988-01-07)
+- Blackbeard/2 1.20 in [ProfitPress Mega WinOS/2 - 1991](https://archive.org/download/ProfitPress_Mega_WINOS2_Sharewares_Win31_OS2_1991_Eng/ProfitPress-MegaWINOS2-Sharewares-MANUALLY_FIXED_ISO.iso/OS2%2FEDITORS%2FBB2_120.ZIP)
+  (listed date: 1989-07-24 22:00:48) and
+  [Dr. OS/2 Gold - 1994](https://archive.org/download/dr_os2/dr_os2.zip/dr_os2%2FEDITORS_%2FBB2_120.ZIP)
 
-From `RE.HLP`:
+From Blackbeard 7.34 `RE.HLP`:
 
 ```
 Regular Expression Search
