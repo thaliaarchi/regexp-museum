@@ -1,22 +1,27 @@
 # Regular expression implementations
 
 - [ActionScript 3 `RegExp`](langs/actionscript.md)
+- [Bingo](editors/bingo.md)
+- [Brief](editors/brief.md)
+- [CRiSP](editors/crisp.md)
 - [D](langs/d.md)
+- ed
+- [Elvis](editors/elvis.md)
+- [EVE](editors/eve.md)
 - [Java `java.util.regex`](langs/java.md)
 - [JavaScript `RegExp`](langs/javascript.md)
+- [NED](editors/ned.md)
 - [Perl](langs/perl.md)
+- QED
+- QEdit
 - [Ruby](langs/ruby.md)
 - [Rust `regex`](langs/rust.md)
 - [S-Lang SLregexp and SLsearch](langs/slang.md)
+- [Zeus](editors/zeus.md)
 
 ## Uncategorized
 
 - awk
-
-- [Brief text editor](./text_editors.md#brief) [[site](https://briefeditor.com/)]
-  [[Wikipedia](https://en.wikipedia.org/wiki/Brief_(text_editor))]
-
-  - [CRiSP text editor](./text_editors.md#crisp): clone of Brief
 
 - BSD grep
 
@@ -309,9 +314,6 @@
   Andrew Gallant has [discussed](https://news.ycombinator.com/item?id=32435303#32445174)
   why implementing UTS #18 level 2 is difficult and has rarely been done (e.g.,
   by ICgrep).
-
-- [Zeus IDE](./text_editors.md#zeus): uses Unix-style (which?), although it is a
-  clone of Brief
 
 ## Other
 
