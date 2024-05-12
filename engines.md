@@ -231,6 +231,9 @@
       failures [[HN](https://news.ycombinator.com/item?id=32434412#32436442)]
   - Shaya Potter ported it [to Java](https://github.com/sjpotter/regex) (2016)
     and [to Go](https://github.com/sjpotter/regex-go) (2019)
+  - [“Collapsing Towers of Interpreters”](https://www.cs.purdue.edu/homes/rompf/papers/amin-popl18.pdf)
+    by Nada Amin and Tiark Rompf (2018) implements this matcher with
+    binding-time polymorphism
 
 - Python `re` (Secret Labs' Regular Expression Engine, SRE) [src [py](https://github.com/python/cpython/tree/main/Lib/re),
   [c](https://github.com/python/cpython/tree/main/Modules/_sre)]
