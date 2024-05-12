@@ -1,4 +1,4 @@
-# Regular expression history
+# Regular Expression Museum
 
 - [ActionScript 3 `RegExp`](actionscript.md)
 - [Grammar for Rust `regex`](rust_regex.bnf)
