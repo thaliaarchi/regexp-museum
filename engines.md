@@ -6,11 +6,13 @@
 - [Brief](editors/brief.md)
 - [CRiSP](editors/crisp.md)
 - [D](langs/d.md)
+- [DECUS grep](greps/decus.md)
 - ed
 - [Elvis](editors/elvis.md)
 - [EVE](editors/eve.md)
 - [Java `java.util.regex`](langs/java.md)
 - [JavaScript `RegExp`](langs/javascript.md)
+- [Jerry Coffin's JGREP](greps/jgrep.md)
 - [NED](editors/ned.md)
 - [Perl](langs/perl.md)
 - QED
@@ -31,8 +33,6 @@
 
   Background in [“Regular Expression Matching with a Trigram Index—or—How Google
   Code Search Worked”](https://swtch.com/~rsc/regexp/regexp4.html) by Russ Cox (2012)
-
-- [DECUS grep](./greps.md#decus-grep)
 
 - ECMAScript `RegExp`
 
@@ -116,8 +116,6 @@
   [Mirror](https://www.popowich.net/icgrep/)(?)
 
   Andrew Gallant says ICgrep implements (most of?) UTS #18 level 2 [[HN](https://news.ycombinator.com/item?id=32435303#32445174)].
-
-- [Jerry Coffin's JGREP](./greps.md#jerry-coffins-jgrep)
 
 - McIlroy's `regex` [[src](https://github.com/arnoldrobbins/mcilroy-regex)]
 

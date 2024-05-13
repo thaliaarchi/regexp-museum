@@ -1,6 +1,6 @@
 # Regular Expression Museum
 
-- [grep implementations](greps.md)
+- [grep utilities](greps/index.md)
 - [Programming languages](langs/index.md)
 - [Regular expression engine history](history.md)
 - [Regular expression implementations](engines.md)
