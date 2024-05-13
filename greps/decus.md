@@ -6,8 +6,11 @@ on VMS and has been modified and distributed in DOS and Unix circles since. The
 Z88DK version (but not the others) notes that the original authors are David
 Conroy and Martin Minow.
 
-It has no grouping (e.g., with parentheses). Patterns (including `:a`, `:d`, and
-`:n`) and matching are case-insensitive.
+It has no alternation or grouping. Pattern syntax is case-insensitive (even
+`:a`, `:d`, and `:n` can be equivalently written as `:A`, `:D`, and `:N`,
+respectively) and matching is case-insensitive. When `\` appears at the end of a
+line, instead of escaping the (missing) following character, it matches a
+literal `\`.
 
 ## Documentation
 
