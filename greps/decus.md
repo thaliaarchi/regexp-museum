@@ -6,6 +6,9 @@ on VMS and has been modified and distributed in DOS and Unix circles since. The
 Z88DK version (but not the others) notes that the original authors are David
 Conroy and Martin Minow.
 
+It has no grouping (e.g., with parentheses). Patterns (including `:a`, `:d`, and
+`:n`) and matching are case-insensitive.
+
 ## Documentation
 
 When run as `grep ?`, it prints:
