@@ -1,4 +1,4 @@
-# Blackbeard
+# Blackbeard Programmer's Editor
 
 Author: James K. Powers (1985–1987)
 

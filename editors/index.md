@@ -1,7 +1,7 @@
 # Text editors
 
-- [Bingo](bingo.md)
-- [Blackbeard](blackbeard.md)
+- [Bingo Text Editor](bingo.md)
+- [Blackbeard Programmer's Editor](blackbeard.md)
 - [Brief](brief.md)
 - [CRiSP](crisp.md)
 - ed
@@ -11,4 +11,4 @@
 - QED
 - QEdit
 - [Tech-Edit](tech-edit.md)
-- [Zeus](zeus.md)
+- [Zeus Programmers Editor](zeus.md)

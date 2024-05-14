@@ -1,8 +1,8 @@
 # Regular expression implementations
 
 - [ActionScript 3 `RegExp`](langs/actionscript.md)
-- [Bingo](editors/bingo.md)
-- [Blackbeard](editors/blackbeard.md)
+- [Bingo Text Editor](editors/bingo.md)
+- [Blackbeard Programmer's Editor](editors/blackbeard.md)
 - [Brief](editors/brief.md)
 - [CRiSP](editors/crisp.md)
 - [D](langs/d.md)
@@ -21,7 +21,7 @@
 - [Rust `regex`](langs/rust.md)
 - [S-Lang SLregexp and SLsearch](langs/slang.md)
 - [Tech-Edit](editors/tech-edit.md)
-- [Zeus](editors/zeus.md)
+- [Zeus Programmers Editor](editors/zeus.md)
 
 ## Uncategorized
 

@@ -1,4 +1,4 @@
-# Zeus
+# Zeus Programmers Editor
 
 [[site](https://www.zeusedit.com/index.html)]
 
