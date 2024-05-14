@@ -10,7 +10,34 @@ It has no alternation or grouping. Pattern syntax is case-insensitive (even
 `:a`, `:d`, and `:n` can be equivalently written as `:A`, `:D`, and `:N`,
 respectively) and matching is case-insensitive. When `\` appears at the end of a
 line, instead of escaping the (missing) following character, it matches a
-literal `\`.
+literal `\`. Each character class is limited to at most 255 parsed bytes. Named
+classes cannot appear in a character class.
+
+## Bugs
+
+The SO control character (i.e., U+000E or ^N) is parsed incorrectly when in a
+character class. It has the decimal value 14, which is the same as `RANGE`, so
+`pmatch` interprets it and the following two characters as a range. It can
+instead be written as a single-character range, `␎-␎` (within a character
+class), to match correctly.
+
+Dashes after ranges in character classes are parsed erroneously. When the parser
+encounters a dash and it's not the first or last character in the class, it pops
+the previous character from the pattern (the range start) and pushes `RANGE`,
+the range start, and the next character (the range end). This doesn't account
+for when the previous element was part of a range and it substitutes the range
+end with 14 (`RANGE`).
+
+## Optimizations
+
+Syntactic optimizations that are possible with this dialect:
+
+- Remove duplicate chars from char classes.
+- Replace equivalent ad hoc char classes with named char classes.
+- Replace SO in char classes with `␎-␎`.
+- Unescape superfluous escapes.
+- If anything precedes `^` or follows `$`, the entire pattern can be replaced
+  with `[]`.
 
 ## Documentation
 
@@ -103,7 +130,8 @@ versions have been located.
           - Change `main` to `return (0);` in all cases.
           - Remove unused `int gotcha` in `main` and `register int c` in
             `badpat`.
-          - Fix `compile` to set the `lp` last pattern pointer at the start.
+          - Assign the `lp` last pattern pointer at the start of `compile`.
+            (However, it was impossible to read an unassigned `lp` before.)
           - Change `pp >= &pbuf[PMAX]` to `pp > &pbuf[PMAX-1]` in `store`.
 
         - (1996-04-10) **Zeus**
