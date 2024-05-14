@@ -1,11 +1,13 @@
 # Regular Expression Museum
 
+A museum of historical and modern regular expression engines, showing their
+development and influence.
+
+Engines are grouped into categories or listed in the [index](index.md).
+
 - [grep utilities](greps/index.md)
 - [Programming languages](langs/index.md)
-- [Regular expression engine history](history.md)
-- [Regular expression implementations](engines.md)
 - [Text editors](editors/index.md)
-- [Thompson regular expressions](thompson.md)
 
 ## License
 
