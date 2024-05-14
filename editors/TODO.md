@@ -2,14 +2,20 @@
 
 Investigate whether these editors contained regular expression engines.
 
-OpenVMS editors:
+## Known editors with regexp engines
+
+- ed
+- QEdit
+- vim
+
+## OpenVMS editors
 
 - [EDT](https://en.wikipedia.org/wiki/EDT_(Digital))
 - [DEC Text Processing Utility](https://en.wikipedia.org/wiki/DEC_Text_Processing_Utility)
   - [VITPU](https://en.wikipedia.org/wiki/DEC_Text_Processing_Utility#Implementations)
 - [TECO](https://en.wikipedia.org/wiki/TECO_(text_editor))
 
-Lists:
+## Lists
 
 - [texteditors.org family tree](https://texteditors.org/cgi-bin/wiki.pl?FamilyTree)
 - [Popular MS-DOS text editors in the 1980s](https://retrocomputing.stackexchange.com/questions/26873/what-were-the-most-popular-text-editors-for-ms-dos-in-the-1980s)
@@ -48,6 +54,8 @@ Lists:
   - MicroEmacs
   - Pmate
   - XTree
+
+## DEMU Collection Unsorted
 
 These are likely dead ends, but are among many editor search results in the
 [DEMU Collection Unsorted](https://archive.org/search?query=subject%3A%22DEMU+Collection+Unsorted%22+editor),

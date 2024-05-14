@@ -7,19 +7,24 @@
 - [CRiSP](editors/crisp.md)
 - [D](langs/d.md)
 - [DECUS grep](greps/decus.md)
-- ed
 - [Elvis](editors/elvis.md)
+- [Emacs](editors/emacs.md)
 - [EVE](editors/eve.md)
+- [GNU Emacs](editors/emacs.md#gnu-emacs)
+- [GNU fgrep](greps/gnu.md#gnu-fgrep)
+- [GNU grep](greps/gnu.md#gnu-grep)
 - [Java `java.util.regex`](langs/java.md)
 - [JavaScript `RegExp`](langs/javascript.md)
 - [Jerry Coffin's JGREP](greps/jgrep.md)
 - [NED](editors/ned.md)
 - [Perl](langs/perl.md)
-- QED
-- QEdit
+- [Plan 9 grep](greps/plan9.md)
+- [Python](langs/python.md)
+- [QED](editors/qed.md)
 - [Ruby](langs/ruby.md)
 - [Rust `regex`](langs/rust.md)
 - [S-Lang SLregexp and SLsearch](langs/slang.md)
+- [sam](editors/sam.md)
 - [Tech-Edit](editors/tech-edit.md)
 - [Zeus Programmers Editor](editors/zeus.md)
 
@@ -60,36 +65,11 @@
     …,
     [v80](https://www.digiater.nl/openvms/freeware/v80/bison/)]
 
-- GNU Emacs [[docs](https://www.gnu.org/software/emacs/manual/html_node/emacs/Regexps.html)]
-  [[emacs](https://www.emacswiki.org/emacs/RegularExpression)]
-
-  - GNU Emacs ported to OpenVMS [src [v10](https://www.digiater.nl/openvms/freeware/v10/emacs/) (Emacs 19.22),
-    [v20](https://www.digiater.nl/openvms/freeware/v20/emacs/) (Emacs 19.22),
-    [v30](https://www.digiater.nl/openvms/freeware/v30/emacsv1928/) (Emacs 19.28),
-    …]
-
 - GNU Gawk [[docs](https://www.gnu.org/software/gawk/manual/html_node/Regexp.html)]
 
   - GNU Gawk 2.15.6 ported to OpenVMS [src [v20](https://www.digiater.nl/openvms/freeware/v20/gawk-2_15_6/),
     [v30](https://www.digiater.nl/openvms/freeware/v30/gawk-2_15_6/),
     …]
-
-- GNU `grep`
-
-  Author: Mike Haertel
-
-  Mike described strategies GNU `grep` uses for efficient matching in a message
-  to the FreeBSD mailing list, [“why GNU grep is fast”](https://lists.freebsd.org/pipermail/freebsd-current/2010-August/019310.html).
-
-  - GNU `grep` 2.0 ported to OpenVMS [src [v20](https://www.digiater.nl/openvms/freeware/v20/grep/),
-    …,
-    [v80](https://www.digiater.nl/openvms/freeware/v80/grep/)]
-
-- GNU `fgrep`
-
-  - GNU `fgrep` 1.1 ported to OpenVMS [src [v20](https://www.digiater.nl/openvms/freeware/v20/fgrep/),
-    …,
-    [v80](https://www.digiater.nl/openvms/freeware/v80/fgrep-1-1/)]
 
 - GNU `sed`
 
@@ -135,38 +115,6 @@
 - PCRE (Perl Compatible Regular Expressions) [[src](https://github.com/PCRE2Project/pcre2)]
   [[Wikipedia](https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions)]
 
-- Plan 9 `grep` [[src](https://github.com/plan9foundation/plan9/tree/main/sys/src/cmd/grep)]
-  [docs [grep(1)](https://github.com/plan9foundation/plan9/blob/main/sys/man/1/grep)]
-
-  - Plan 9 from User Space `grep` [[src](https://github.com/9fans/plan9port/tree/master/src/cmd/grep)]
-
-- Plan 9 `sam` [[src](https://github.com/plan9foundation/plan9/tree/main/sys/src/cmd/sam/regexp.c)]
-
-  Author: Rob Pike
-
-  Introduced Pike VM [history [vm](https://swtch.com/~rsc/regexp/regexp2.html#pike),
-  [submatch](https://swtch.com/~rsc/regexp/regexp2.html#ahu74)]
-
-  - Plan 9 from User Space `sam` [[src](https://github.com/9fans/plan9port/blob/master/src/cmd/sam/regexp.c)]:
-    ported to Unix by Russ Cox
-  - Plan 9 `libregexp` [[src](https://github.com/plan9foundation/plan9/tree/main/sys/src/libregexp)]
-    [docs [regexp(2)](https://github.com/plan9foundation/plan9/blob/main/sys/man/2/regexp),
-    [regexp(6)](https://github.com/plan9foundation/plan9/blob/main/sys/man/6/regexp)]
-    - Plan 9 from User Space `libregexp` [[src](https://github.com/9fans/plan9port/tree/master/src/libregexp)]
-      [docs [regexp(3)](https://9fans.github.io/plan9port/man/man3/regexp.html),
-      [regexp(7)](https://9fans.github.io/plan9port/man/man7/regexp.html)]:
-      ported to Unix by Russ Cox
-      - tylov/regexp9 [[src](https://github.com/tylov/regexp9)]: fork with more
-        modern features
-    - 9legacy `libregexp-fixes.diff` [[src](http://9legacy.org/9legacy/patch/libregexp-fixes.diff)]:
-      patch by David du Colombier
-    - Inferno `libregexp` [[src](https://github.com/inferno-os/inferno-os/tree/master/utils/libregexp)]
-      [docs [regex(2)](https://github.com/inferno-os/inferno-os/blob/master/man/2/regex),
-      [regexp(6)](https://github.com/inferno-os/inferno-os/blob/master/man/6/regexp)]:
-      copied to Inferno
-  - A library in Eighth Edition Unix [[history][rsc-history]]:
-    extracted by Dave Presotto
-
 - POSIX `regex.h`
 
   - SerenityOS LibRegex [[src](https://github.com/SerenityOS/serenity/tree/master/Userland/Libraries/LibRegex)]
@@ -186,35 +134,6 @@
   - [“Collapsing Towers of Interpreters”](https://www.cs.purdue.edu/homes/rompf/papers/amin-popl18.pdf)
     by Nada Amin and Tiark Rompf (2018) implements this matcher with
     binding-time polymorphism
-
-- Python `re` (Secret Labs' Regular Expression Engine, SRE) [src [py](https://github.com/python/cpython/tree/main/Lib/re),
-  [c](https://github.com/python/cpython/tree/main/Modules/_sre)]
-
-  Author: Fredrik Lundh [[initial commit](https://github.com/python/cpython/commit/b700df9824a768893fb83dec41779ac89035313e)]
-
-  It was part of [PEP 100 – Python Unicode Integration](https://peps.python.org/pep-0100/#regular-expressions)
-
-  - tinyre [[src](https://github.com/fy0/TinyRe)]: fork of `re`
-
-- Python 1.5 `re` (PCRE) [[working group](https://web.archive.org/web/19980422202951/http://starship.skyport.net/crew/amk/regex/)]
-
-- Python `regex` and `regsub` (removed)
-
-  Deprecated in Python 2.0, removed in [Python 2.5](https://docs.python.org/3/whatsnew/2.5.html#new-improved-and-removed-modules)
-
-  [Migrating to `re`](https://web.archive.org/web/19980526014452/http://www.python.org/doc/howto/regex-to-re/)
-
-- QED text editor [[Wikipedia](https://en.wikipedia.org/wiki/QED_(text_editor))]
-  [[algorithm](https://swtch.com/~rsc/regexp/regexp2.html#thompsonvm)]
-
-  Author: Ken Thompson
-
-  [“Regular Expression Search Algorithm”](./thompson.md) by Ken Thompson (1968)
-  introduced Thompson's construction and it was implemented in QED [[history][rsc-history]],
-  [[attribution](https://swtch.com/~rsc/regexp/regexp2.html#attrib)]
-
-  Patent [US3568156A Text matching algorithm](https://patents.google.com/patent/US3568156A/en)
-  [[HN](https://news.ycombinator.com/item?id=33566557)]
 
 - re1 [[src](https://code.google.com/archive/p/re1/)] [[blog](https://swtch.com/~rsc/regexp/regexp2.html)]
 
@@ -394,20 +313,6 @@
 - Andrew Gallant's [rebar](https://github.com/BurntSushi/rebar)
 - [regex-redux](https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/regexredux.html)
   in the Computer Language Benchmarks Game
-
-## TODO
-
-- Wikipedia [Regular expression](https://en.wikipedia.org/wiki/Regular_expression)
-  describes history and POSIX and Perl standards
-- Wikipedia [Comparison of regular expression engines](https://en.wikipedia.org/wiki/Comparison_of_regular_expression_engines)
-- A [discussion](https://news.ycombinator.com/item?id=33566557) on Thompson's
-  patent has many leads
-  - Glushkov automata [[HN](https://news.ycombinator.com/item?id=33567087)]
-- A [discussion](https://news.ycombinator.com/item?id=32435303#32445174) on why
-  intersection and complement are difficult to implement efficiently with large
-  alphabets (Unicode)
-- Xerox Research Europe's xfst [[HN](https://news.ycombinator.com/item?id=32434705)]
-  [[demo](https://dsacl3-2018.github.io/xfst-demo/)]
 
 
 [rsc-history]: https://swtch.com/~rsc/regexp/regexp1.html#History

@@ -1,8 +1,20 @@
 # TODO
 
+- [TODO for text editors](editors/TODO.md)
+
 ## Research
 
-- [TODO for text editors](editors/TODO.md)
+- Wikipedia [Regular expression](https://en.wikipedia.org/wiki/Regular_expression)
+  describes history and POSIX and Perl standards
+- Wikipedia [Comparison of regular expression engines](https://en.wikipedia.org/wiki/Comparison_of_regular_expression_engines)
+- A [discussion](https://news.ycombinator.com/item?id=33566557) on Thompson's
+  patent has many leads
+  - Glushkov automata [[HN](https://news.ycombinator.com/item?id=33567087)]
+- A [discussion](https://news.ycombinator.com/item?id=32435303#32445174) on why
+  intersection and complement are difficult to implement efficiently with large
+  alphabets (Unicode)
+- Xerox Research Europe's xfst [[HN](https://news.ycombinator.com/item?id=32434705)]
+  [[demo](https://dsacl3-2018.github.io/xfst-demo/)]
 - Evaluate [string rewriting](https://esolangs.org/wiki/Rewriting) esolangs
 - Archive and search comp.sources.unix [[archive](https://sources.vsta.org/comp.sources.unix/)]
   [[mirror](https://github.com/Cutlery-Drawer/comp.sources.unix)]

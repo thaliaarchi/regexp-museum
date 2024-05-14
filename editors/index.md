@@ -4,11 +4,12 @@
 - [Blackbeard Programmer's Editor](blackbeard.md)
 - [Brief](brief.md)
 - [CRiSP](crisp.md)
-- ed
 - [Elvis](elvis.md)
+- [Emacs](emacs.md)
 - [EVE](eve.md)
+- [GNU Emacs](emacs.md#gnu-emacs)
 - [NED](ned.md)
-- QED
-- QEdit
+- [QED](qed.md)
+- [sam](sam.md)
 - [Tech-Edit](tech-edit.md)
 - [Zeus Programmers Editor](zeus.md)
