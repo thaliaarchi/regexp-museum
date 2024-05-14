@@ -6,6 +6,8 @@ on VMS and has been modified and distributed in DOS and Unix circles since. The
 Z88DK version (but not the others) notes that the original authors are David
 Conroy and Martin Minow.
 
+## Limitations
+
 It has no alternation or grouping. Pattern syntax is case-insensitive (even
 `:a`, `:d`, and `:n` can be equivalently written as `:A`, `:D`, and `:N`,
 respectively) and matching is case-insensitive. When `\` appears at the end of a
@@ -100,21 +102,27 @@ x      An ordinary character (not mentioned below) matches that character.
 The concatenation of regular expressions is a regular expression.
 ```
 
+## Descendants
+
+- [Blackbeard](../editors/blackbeard.md): The Blackbeard Programmer's Editor
+  uses DECUS grep (or some variant) and its regular expression docs, which were
+  copied from DECUS grep, were modified 1981-01-02 00:05:00.
+- [Zeus](../editors/zeus.md): Early versions of the Zeus Programmers Editor
+  bundled DECUS grep with modifications to adjust the output format for Zeus.
+- [decus-grep-rust](https://github.com/thaliaarchi/decus-grep-rust): A close
+  port of DECUS grep to Rust by Thalia Archibald (2024).
+
 ## Traces of the source
 
 - comp.sources.unix [[archive](https://sources.vsta.org/comp.sources.unix/volume3/decus_grep)]
   [[mirror](https://github.com/Cutlery-Drawer/comp.sources.unix/blob/master/volume3/decus_grep)]
-- grep.c in [AROS operating system ports](https://github.com/aros-development-team/contrib/blob/master/fish/grep/grep.c)
+- grep.c in [AROS contrib](https://github.com/aros-development-team/contrib/blob/master/fish/grep/grep.c)
 - GREP.C in [Zeus 2.15](../editors/zeus.md): Unclear how this is connected to
   Zeus.
 - GREP.C in the [SNIPPETS collection](https://web.archive.org/web/19971221055229/http://snippets.org/)
   (first added in the [1992-04 release](http://annex.retroarchive.org/cdrom/cotc-1/PROGRAM/SNIP0492.ARJ))
 - [grep](https://github.com/z88dk/z88dk/wiki/grep) on the Z88DK (development kit
   for Z70) project wiki
-
-The [Blackbeard](../editors/blackbeard.md) programmer's editor uses DECUS grep
-(or some variant) and its regular expression docs copied from DECUS grep were
-modified 1981-01-02 00:05:00.
 
 ## Comparative version history
 
@@ -153,6 +161,7 @@ versions have been located.
           - Adjust printing to be to stdout and tailer output for Zeus.
           - Change the parameter to help from `char **` (good) to `char *`
             (incorrect). This could be an earlier fix that only the others have.
+          - Add SUB control character at the end of the file.
 
         - (1991-09-30) **SNIP0492/SNIP0792**
 
