@@ -10,8 +10,15 @@ It has no alternation or grouping. Pattern syntax is case-insensitive (even
 `:a`, `:d`, and `:n` can be equivalently written as `:A`, `:D`, and `:N`,
 respectively) and matching is case-insensitive. When `\` appears at the end of a
 line, instead of escaping the (missing) following character, it matches a
-literal `\`. Each character class is limited to at most 255 parsed bytes. Named
-classes cannot appear in a character class.
+literal `\`. Named classes cannot appear in a character class.
+
+Each character class is limited to at most 255 parsed bytes. All possible ranges
+can still be expressed with ranges; only those with grossly inefficient
+encodings would be limited. Since it matches bytes, and never can match NUL or
+LF, this leaves 254 possible bytes, so all possible classes can be represented
+using just chars. Using ranges, the worst case is ranges of two chars, because
+each range is parsed to 3 bytes yet matches 2 chars. A class of 85 2-char
+ranges, costs 255 bytes and spans 254 chars, so still works.
 
 ## Bugs
 
@@ -32,7 +39,11 @@ end with 14 (`RANGE`).
 
 Syntactic optimizations that are possible with this dialect:
 
-- Remove duplicate chars from char classes.
+- Combine ranges in char classes, while keeping input order: Combine ranges with
+  any later chars and ranges that adjoin it. Explode any ranges that match less
+  than 4 chars, to save compiled and source space.
+- Remove duplicate chars from char classes when included in prior ranges.
+- Join ranges in char classes when they are at least 3
 - Replace equivalent ad hoc char classes with named char classes.
 - Replace SO in char classes with `␎-␎`.
 - Unescape superfluous escapes.
