@@ -37,6 +37,13 @@ the range start, and the next character (the range end). This doesn't account
 for when the previous element was part of a range and it substitutes the range
 end with 14 (`RANGE`).
 
+Empty character classes, `[]` and `[^]`, are not properly forbidden and matching
+assumes they are impossible. In `compile`, the length of the character class
+includes the length byte itself, so it will never be less than 1 and the error
+for an empty character class is unreachable. In `pmatch`, it only checks the
+length after reading the first character or range, leading to an incorrect
+interpretation and a possible buffer overrun.
+
 ## Optimizations
 
 Syntactic optimizations that are possible with this dialect:
@@ -50,7 +57,7 @@ Syntactic optimizations that are possible with this dialect:
 - Replace SO in char classes with `␎-␎`.
 - Unescape superfluous escapes.
 - If anything precedes `^` or follows `$`, the entire pattern can be replaced
-  with `[]`.
+  with `.^` or `$.`.
 
 ## Documentation
 
