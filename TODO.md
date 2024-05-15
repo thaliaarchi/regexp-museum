@@ -27,3 +27,8 @@ WebAssembly API. Integrate them with Rebar.
 Build an interactive demo, that allows you to convert between dialects using
 InterRegexp and test expressions on text like Regexr, but executing the engines
 locally via WebAssembly.
+
+Implement each engine with an interactive mode, so you can step through
+execution of the same pattern with multiple engines at once and visually compare
+their strategies. This could help demonstrate cases of catastrophic backtracking
+or showcase engines with efficient algorithmic complexity.
