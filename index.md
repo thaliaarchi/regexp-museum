@@ -151,6 +151,9 @@
 
 - RE2 [[src](https://github.com/google/re2)] [[syntax](https://github.com/google/re2/wiki/Syntax)]
 
+- REC Regular Expression Compiler [[src](http://www.cpm.z80.de/download/rec.zip),
+  [mirror](http://cpmarchives.classiccmp.org/cpm/mirrors/www.seanet.com/~klaw/files.htm)]
+
 - Redis `stringmatchlen` [[src](https://github.com/redis/redis/blob/0e1de78fca849c135fd00cd85b5b87920e46e50d/src/util.c#L57)]
 
   Author: Salvatore Sanfilippo
