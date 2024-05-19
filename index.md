@@ -13,6 +13,7 @@
 - [GNU Emacs](editors/emacs.md#gnu-emacs)
 - [GNU fgrep](greps/gnu.md#gnu-fgrep)
 - [GNU grep](greps/gnu.md#gnu-grep)
+- [Ian Ashdown's fgrep](greps/ashdown_fgrep.md)
 - [Java `java.util.regex`](langs/java.md)
 - [JavaScript `RegExp`](langs/javascript.md)
 - [Jerry Coffin's JGREP](greps/jgrep.md)

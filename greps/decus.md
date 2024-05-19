@@ -3,8 +3,17 @@
 DECUS grep is a grep implementation distributed by Digital Equipment Corporation
 Users' Society. It was first written in 1980 to run with the DECUS compiler or
 on VMS and has been modified and distributed in DOS and Unix circles since. The
-Z88DK version (but not the others) notes that the original authors are David
-Conroy and Martin Minow.
+Z88DK version notes that the original authors are David Conroy and Martin Minow.
+
+The [Z88DK project wiki](https://github.com/z88dk/z88dk/wiki/grep) has more
+information on its history, including mentions of earlier versions:
+
+> This 'grep' command implementation is a piece of history. It was originally
+> developed for the PDP-11 and then ported to several targets (CP/M, VAX,
+> earlier MS DOS compilers, etc..). Due to the very simple operating systems it
+> had run on, some of its earlier implementations included internal tricks to
+> simulate the file redirection and other similar workarounds which inspired
+> some z88dk feature.
 
 ## Limitations
 
@@ -121,15 +130,18 @@ The concatenation of regular expressions is a regular expression.
 
 ## Traces of the source
 
+Ordered from least-to-most changed:
+
 - comp.sources.unix [[archive](https://sources.vsta.org/comp.sources.unix/volume3/decus_grep)]
   [[mirror](https://github.com/Cutlery-Drawer/comp.sources.unix/blob/master/volume3/decus_grep)]
+- GREP.C in Dominic Shields' [C code](https://github.com/dominicshields/C/blob/master/GREP.C)
 - grep.c in [AROS contrib](https://github.com/aros-development-team/contrib/blob/master/fish/grep/grep.c)
 - GREP.C in [Zeus 2.15](../editors/zeus.md): Unclear how this is connected to
   Zeus.
 - GREP.C in the [SNIPPETS collection](https://web.archive.org/web/19971221055229/http://snippets.org/)
   (first added in the [1992-04 release](http://annex.retroarchive.org/cdrom/cotc-1/PROGRAM/SNIP0492.ARJ))
 - [grep](https://github.com/z88dk/z88dk/wiki/grep) on the Z88DK (development kit
-  for Z70) project wiki
+  for Z80) project wiki
 
 ## Comparative version history
 
@@ -150,6 +162,20 @@ versions have been located.
           - Added `#ifdef BSD` block to define `islower` for BSD by moderator
             John P. Nelson.
 
+        - (1985-09-04) **Dominic Shields**
+
+          Changes:
+          - Write “dns added extra '*'” next to `char **hp` parameter to `help`.
+            This dns could be David N. Smith, an author listed in all these
+            versions, or possibly Dominic Shields. Since signing changes with
+            dns is not a convention used by Dominic in other files, I presume it
+            was by David.
+          - Add file header. It is not written by the code authors, because it
+            states: “The typist of this heading does not have equipment to run
+            this program and prepared this header from comments within the
+            source code or companion files.”
+          - Convert tab stops to spaces and add more line breaks.
+
         - (1998-08-25) **AROS**
 
           Changes:
@@ -166,7 +192,7 @@ versions have been located.
           - Expand filename wildcards with `findfirst` and `findnext` from
             `<dir.h>`.
           - Adjust printing to be to stdout and tailer output for Zeus.
-          - Change the parameter to help from `char **` (good) to `char *`
+          - Change the parameter to `help` from `char **` (good) to `char *`
             (incorrect). This could be an earlier fix that only the others have.
           - Add SUB control character at the end of the file.
 
