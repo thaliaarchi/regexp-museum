@@ -118,6 +118,102 @@ x      An ordinary character (not mentioned below) matches that character.
 The concatenation of regular expressions is a regular expression.
 ```
 
+[$$DOC](https://github.com/mainframed/CBTTAPE/blob/0af043012b18a7a645b430db861950abaca02a25/CBT419/CBT.V500.FILE419.PDS/%24%24DOC.txt)
+from CBT TAPE writes:
+
+> The C source code for a grep clone,
+> originally taken from the DECUS tape.  Modified
+> for running under OS/390.
+
+[`$DIGNUS`](https://github.com/mainframed/CBTTAPE/blob/main/CBT419/CBT.V500.FILE419.PDS/%24DIGNUS.txt)
+from CBT TAPE documents info on its distribution by Dignus and how it can be used
+with TSO (a version control system?):
+
+```
+                      Free Programs for OS/390
+
+  ----------------------------------------------------------------
+
+The following programs are available for *free* download from
+Dignus, LLC.
+
+Each has been compiled with Systems/C - usually in a cross-platform
+environment. Systems/C has no runtime library requirements, there is
+nothing more to download to run these programs.
+
+They are made available free of charge, and unless otherwise noted, are
+copyright Dignus, LLC.
+
+Dignus provides NO WARRANTY, whatsoever, to these programs. Use them at
+your own discretion.
+
+We will update this page as more downloads become available.
+
+Of course, nothing is totally free - while you're here, we hope you'll
+take a moment and look at the information provided in these web pages
+for Systems/C.
+
+   * printps - a program to convert text to postscript.
+   * indent - a program to "pretty print" C source.
+   * grep - the standard GREP utility.
+   * what - the WHAT utility for object versions.
+   * byacc - the Berkely YACC utility for parser generation.
+   * flex - the Berkely Fast LEXical generator.
+
+Note that the files are provided in TSO XMIT format. When downloading,
+you should ensure that the file is copied in BINARY mode. Also, when
+up-loading to your mainframe, you should ensure the up-loaded data set
+is Fixed with an LRECL of 80, e.g. DCB=(RECFM=FB,LRECL=80,BLKSIZE=80*n).
+
+A good way to ensure the data set is correct is to pre-allocate it.
+
+Once the file has been properly transferred to your mainframe, the TSO
+RECEIVE command is used to unload the data set on OS/390. e.g.:
+
+     RECEIVE INDS(file-name)
+
+  ----------------------------------------------------------------
+
+[…]
+
+grep
+
+This is a version of the GREP (General Regular Expression Processor)
+program, taken from http://www.snippets.org.
+
+GREP will be familiar to UNIX and OE/MVS users, however, there isn't a
+convenient version supplied for TSO or BATCH processing.
+
+You can download the TSO Transmit file for GREP here .
+
+[…]
+
+Here is some example JCL which shows how GREP can be used to locate
+specific lines in output.
+
+     //GREP JOB
+     //GREP1 EXEC PGM=GREP,PARM='-n,bar.*('
+     //STEPLIB  DD DSN=grep.load.module,DISP=SHR
+     //SYSPRINT DD SYSOUT=*
+     //SYSTERM  DD SYSOUT=*
+     //STDOUT   DD SYSOUT=*,LRECL=133,RECFM=FB
+     //STDERR   DD SYSOUT=*,LRECL=133,RECFM=FB
+     //STDIN    DD *,LRECL=80
+
+     This line will not match
+     This line has bar(  and will match
+     This line also has bar....(  and will match
+
+     //
+
+Or, you can call it from TSO. In this example, we are examining the file
+MY.TEXT.FILE for lines that contain the string "help".
+
+     CALL grep.load.module(GREP) 'help,//DSN:MY.TEXT.FILE' ASIS
+
+Note that GREP expects the STDOUT and STDIN DD's to be allocated.
+```
+
 ## Descendants
 
 - [Blackbeard](../editors/blackbeard.md): The Blackbeard Programmer's Editor
@@ -134,14 +230,16 @@ Ordered from least-to-most changed:
 
 - comp.sources.unix [[archive](https://sources.vsta.org/comp.sources.unix/volume3/decus_grep)]
   [[mirror](https://github.com/Cutlery-Drawer/comp.sources.unix/blob/master/volume3/decus_grep)]
-- GREP.C in Dominic Shields' [C code](https://github.com/dominicshields/C/blob/master/GREP.C)
-- grep.c in [AROS contrib](https://github.com/aros-development-team/contrib/blob/master/fish/grep/grep.c)
-- GREP.C in [Zeus 2.15](../editors/zeus.md): Unclear how this is connected to
-  Zeus.
-- GREP.C in the [SNIPPETS collection](https://web.archive.org/web/19971221055229/http://snippets.org/)
-  (first added in the [1992-04 release](http://annex.retroarchive.org/cdrom/cotc-1/PROGRAM/SNIP0492.ARJ))
-- [grep](https://github.com/z88dk/z88dk/wiki/grep) on the Z88DK (development kit
-  for Z80) project wiki
+- Dominic Shields' [C code](https://github.com/dominicshields/C/blob/master/GREP.C)
+- [AROS contrib](https://github.com/aros-development-team/contrib/blob/master/fish/grep/grep.c)
+- [Zeus 2.15](../editors/zeus.md)
+- [SNIPPETS collection](https://web.archive.org/web/19971221055229/http://snippets.org/),
+  first added in the [1992-04 release](http://annex.retroarchive.org/cdrom/cotc-1/PROGRAM/SNIP0492.ARJ)
+- [CBT TAPE](https://www.cbttape.org/), also includes assembly for grep
+  generated with the System/C compiler [[mirror](https://github.com/mainframed/CBTTAPE/blob/main/CBT419/CBT.V500.FILE419.PDS/GREP%40C.txt)]
+- [HPSource Archive](https://github.com/noczero/PASCAL-DAP/blob/master/Tubes/References/HPSource/Source16/C/grep.c)
+- [Z88DK](https://github.com/z88dk/z88dk/wiki/grep) (development kit for Z80)
+  project wiki
 
 ## Comparative version history
 
@@ -228,6 +326,7 @@ versions have been located.
           - Expand tabs to spaces with 8-space tab stops.
           - Align variable, parameter, and comment groups in columns.
           - Remove `#include <ctypes.h>`.
+          - Replace empty strings in documentation with `\n`.
           - Remove the commented VMS defines.
           - Move `cclass` and `pmatch` forward declarations to the top.
           - Specify implicit parameter types (in K&R style).
@@ -245,6 +344,15 @@ versions have been located.
                 last modified: 05-Jul-1997”.
                 - (2003-08-17) **snip-c**: Changes: Remove “+++Date last
                   modified” comment.
+                - (?) **CBT TAPE**
+
+                  Changes:
+                  - Remove “(wildcards are acceptable on RSX modes)” from
+                    `documentation`.
+                  - Do not print `\n` after matched lines.
+
+            - (?) **HPSource**: Changes: Remove all blank lines. Add SUB control
+              character and extra text at the end of the file.
           - (?) **Z88DK**
 
             Changes:

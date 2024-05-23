@@ -33,6 +33,8 @@
 
 - awk
 
+- Bash
+
 - BSD grep
 
 - Code Search [[src](https://github.com/google/codesearch)]
