@@ -15,6 +15,13 @@ information on its history, including mentions of earlier versions:
 > simulate the file redirection and other similar workarounds which inspired
 > some z88dk feature.
 
+In the Amiga Library Disks (1986), it was called “Decus grep” and the author was
+unknown:
+
+> Decus grep (Get Regular Expression and Print).  Useful
+> for finding strings in files.
+> Author: Unknown
+
 ## Limitations
 
 It has no alternation or grouping. Pattern syntax is case-insensitive (even
@@ -231,6 +238,8 @@ Roughly ordered from least-to-most changed:
 - comp.sources.unix [[archive](https://sources.vsta.org/comp.sources.unix/volume3/decus_grep)]
   [[mirror](https://github.com/Cutlery-Drawer/comp.sources.unix/blob/master/volume3/decus_grep)]
 - Dominic Shields' [C code](https://github.com/dominicshields/C/blob/master/GREP.C)
+- [Fred Fish](https://en.wikipedia.org/wiki/Fred_Fish)'s Amiga Library Disks,
+  [disk 4](https://aminet.net/package/misc/fish/fish-0004) [[initial post](https://groups.google.com/g/net.micro.amiga/c/NsLSHhHHI_4/m/UsP8Y_ixh4YJ)]
 - [AROS contrib](https://github.com/aros-development-team/contrib/blob/master/fish/grep/grep.c)
 - [Zeus 2.15](../editors/zeus.md)
 - [SNIPPETS collection](https://web.archive.org/web/19971221055229/http://snippets.org/),
@@ -276,7 +285,7 @@ versions have been located.
             source code or companion files.”
           - Convert tab stops to spaces and add more line breaks.
 
-        - (1998-08-25) **AROS**
+        - (1986-01-01) **Amiga Library Disks**
 
           Changes:
           - Change `main` to `return (0);` in all cases.
@@ -285,6 +294,9 @@ versions have been located.
           - Assign the `lp` last pattern pointer at the start of `compile`.
             (However, it was impossible to read an unassigned `lp` before.)
           - Change `pp >= &pbuf[PMAX]` to `pp > &pbuf[PMAX-1]` in `store`.
+
+          Descendants:
+          - (1998-08-25) **AROS** (initial version): Identical.
 
         - (1996-04-10) **Zeus**
 
