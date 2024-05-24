@@ -226,7 +226,7 @@ Note that GREP expects the STDOUT and STDIN DD's to be allocated.
 
 ## Traces of the source
 
-Ordered from least-to-most changed:
+Roughly ordered from least-to-most changed:
 
 - comp.sources.unix [[archive](https://sources.vsta.org/comp.sources.unix/volume3/decus_grep)]
   [[mirror](https://github.com/Cutlery-Drawer/comp.sources.unix/blob/master/volume3/decus_grep)]
@@ -238,6 +238,8 @@ Ordered from least-to-most changed:
 - [CBT TAPE](https://www.cbttape.org/), also includes assembly for grep
   generated with the System/C compiler [[mirror](https://github.com/mainframed/CBTTAPE/blob/main/CBT419/CBT.V500.FILE419.PDS/GREP%40C.txt)]
 - [HPSource Archive](https://github.com/noczero/PASCAL-DAP/blob/master/Tubes/References/HPSource/Source16/C/grep.c)
+- [PicoC](https://gitlab.com/zsaleeba/picoc/-/blob/master/tests/46_grep.c)
+- [Tiny C Compiler](https://repo.or.cz/tinycc.git/blob/HEAD:/tests/tests2/46_grep.c)
 - [Z88DK](https://github.com/z88dk/z88dk/wiki/grep) (development kit for Z80)
   project wiki
 
@@ -338,6 +340,7 @@ versions have been located.
           Descendants:
 
           - (1995-11-02) **SNIP9510**: Changes: Use named exit codes.
+
             - (1996-11-24) **SNIP9611**: Changes: Add “+++Date last modified:
               02-Nov-1995” comment (probably from TLIB).
               - (1997-07-05) **SNIP9707**: Changes: Change comment to “+++Date
@@ -353,6 +356,35 @@ versions have been located.
 
             - (?) **HPSource**: Changes: Remove all blank lines. Add SUB control
               character and extra text at the end of the file.
+
+          - (2011-02-10) **PicoC**
+
+            Changes:
+            - Enclose `documentation` and `patdoc` in `#ifdef 0`.
+            - Remove `extern` from forward declarations.
+            - Move `main` to the end of the file.
+            - Convert prototypes from K&R- to ANSI-style, but keep commented
+              parameters as comments.
+            - Remove `register` from variables.
+
+            Descendants:
+            - (2012-06-18) **tinycc**
+
+              Changes in the initial commit:
+              - Adjust indentation, primarily indenting `case`s, keeping 3-space
+                indentation.
+              - Change `main` to `return 0;` instead of `return;` or implicit.
+              - Add `/* vim: set expandtab ts=4 sw=3 sts=3 tw=80 :*/` to end.
+
+              Changes in later commits:
+              - Remove `#ifdef 0` around `documentation` and `patdoc`.
+              - Fix typos in printed text.
+              - Add forward declarations for `store`, `error`, `badpat`, and
+                `match`.
+              - Change `%d` to `%ld`.
+              - Fix `match` return type.
+              - Avoid `STAR` from temporarily seeking under the allocation.
+
           - (?) **Z88DK**
 
             Changes:
