@@ -58,9 +58,9 @@ implements `RegExp` in:
 - [RegExpObject.cpp](https://github.com/adobe/avmplus/blob/master/core/RegExpObject.cpp),
   [h](https://github.com/adobe/avmplus/blob/master/core/RegExpObject.h)
 
-It seems to use both [PCRE](https://github.com/adobe/avmplus/tree/master/pcre)
-and [PCRE2](https://github.com/adobe/avmplus/tree/master/pcre2), possibly
-interchangeably.
+It uses a [modified version](https://github.com/adobe/avmplus/tree/master/pcre)
+of PCRE 7.3 and includes a [copy](https://github.com/adobe/avmplus/tree/master/pcre2)
+of PCRE 10.20, but does not use it.
 
 The [initial commit](https://github.com/adobe/avmplus/commit/65a05927767f3735db37823eebf7d743531f5d37)
 of avmplus records that it is the source code for the ActionScript VM in the
