@@ -18,7 +18,8 @@ The Perl interpreter is the recommended implementation and the C interpreter has
 
 Sortle is distributed in [the Esoteric File Archive](https://esolangs.org/wiki/The_Esoteric_File_Archive),
 which is maintained by the same author. It is now [on GitHub](https://github.com/graue/esofiles),
-but was previously managed [with Subversion](https://esolangs.org/w/index.php?title=The_Esoteric_File_Archive&oldid=35510).
+but was previously available on a [file server](https://web.archive.org/web/20160826042551/http://esoteric.voxelperfect.net/files/)
+and managed [with Subversion](https://esolangs.org/w/index.php?title=The_Esoteric_File_Archive&oldid=35510).
 The revision history was truncated and old versions of implementations were
 dropped when it [transitioned to Git](https://github.com/graue/esofiles/commit/03eb1ca764e28e9e1f8f2fdce2f96523728f8675).
 
