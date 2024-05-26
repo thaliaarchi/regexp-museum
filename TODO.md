@@ -2,6 +2,7 @@
 
 - [TODO for esoteric programming languages](langs/esolangs/TODO.md)
 - [TODO for libraries](libs/TODO.md)
+- [TODO for programming languages](langs/TODO.md)
 - [TODO for text editors](editors/TODO.md)
 
 ## Research
@@ -33,3 +34,5 @@ Implement each engine with an interactive mode, so you can step through
 execution of the same pattern with multiple engines at once and visually compare
 their strategies. This could help demonstrate cases of catastrophic backtracking
 or showcase engines with efficient algorithmic complexity.
+
+Make nicely-rendered grammars like the regexp grammar in [The Racket Reference](https://docs.racket-lang.org/reference/regexp.html).

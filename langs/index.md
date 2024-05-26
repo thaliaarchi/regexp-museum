@@ -7,6 +7,7 @@
 - [JavaScript `RegExp`](javascript.md)
 - [Perl](perl.md)
 - [Python](python.md)
+- [Racket regexp](racket.md)
 - [Ruby](ruby.md)
 - [Rust `regex`](rust.md)
   - [Grammar](rust.bnf)

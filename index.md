@@ -25,6 +25,7 @@
 - [Plan 9 grep](greps/plan9.md)
 - [Python](langs/python.md)
 - [QED](editors/qed.md)
+- [Racket regexp](langs/racket.md)
 - [Ruby](langs/ruby.md)
 - [Rust `regex`](langs/rust.md)
 - [S-Lang SLregexp and SLsearch](langs/slang.md)
