@@ -12,6 +12,8 @@ Implementations:
   [[1.0](https://github.com/graue/esofiles/blob/master/sortle/impl/sortle-1.0.tar.gz)]
 - [Interpreter in Perl](https://github.com/graue/esofiles/blob/master/sortle/impl/sortle.pl)
   by Scott Feeney (2012)
+- [Interpreter in JavaScript](https://codeberg.org/graue/sortle-js)
+  by Scott Feeney (2019)
 
 The Perl interpreter is the recommended implementation and the C interpreter has
 “hopelessly broken regex support”. [^_readme]
