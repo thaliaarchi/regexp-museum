@@ -93,12 +93,8 @@ library, which converts its own extended syntax to JavaScript syntax. The
 current design indicates, that it fixes more tests than XRegExp, which implies
 that XRegExp syntax was not a design inspiration for the AS3 language authors.
 
-The approach in Shumway (and AwayFL) reminds me of how Scala.js
-[compiles regular expressions](https://github.com/scala-js/scala-js/tree/main/javalib/src/main/scala/java/util/regex#readme)
-([talk](https://youtu.be/luEmOvCx0WU?t=1648), [release notes](https://www.scala-js.org/news/2021/08/04/announcing-scalajs-1.7.0/)).
-They compile Java regex patterns to semantically equivalent JavaScript patterns,
-so that the native `RegExp` can be used, with all the browser optimizations that
-come with it.
+The approach in Shumway (and AwayFL) reminds me of how [Scala.js](java.md#scalajs)
+compiles Java regex patterns to semantically equivalent JavaScript patterns.
 
 Shumway has a few [`RegExp`-specific tests](https://github.com/mozilla/shumway/tree/master/test/avm2/acceptance/as3/RegExp).
 
