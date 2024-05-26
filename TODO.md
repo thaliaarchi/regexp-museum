@@ -1,5 +1,6 @@
 # TODO
 
+- [TODO for esoteric programming languages](langs/esolangs/TODO.md)
 - [TODO for libraries](libs/TODO.md)
 - [TODO for text editors](editors/TODO.md)
 
@@ -16,7 +17,6 @@
   alphabets (Unicode)
 - Xerox Research Europe's xfst [[HN](https://news.ycombinator.com/item?id=32434705)]
   [[demo](https://dsacl3-2018.github.io/xfst-demo/)]
-- Evaluate [string rewriting](https://esolangs.org/wiki/Rewriting) esolangs
 - Archive and search comp.sources.unix [[archive](https://sources.vsta.org/comp.sources.unix/)]
   [[mirror](https://github.com/Cutlery-Drawer/comp.sources.unix)]
 

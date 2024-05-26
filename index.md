@@ -29,6 +29,7 @@
 - [Rust `regex`](langs/rust.md)
 - [S-Lang SLregexp and SLsearch](langs/slang.md)
 - [sam](editors/sam.md)
+- [Sortle](langs/esolangs/sortle.md)
 - [Tech-Edit](editors/tech-edit.md)
 - [Zeus Programmers Editor](editors/zeus.md)
 
