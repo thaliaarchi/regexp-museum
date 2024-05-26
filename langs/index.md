@@ -1,6 +1,7 @@
-# Regular expressions in programming languages
+# Programming languages with regular expressions
 
 - [ActionScript 3 `RegExp`](actionscript.md)
+- [C++ `std::regex`](cpp.md)
 - [D](d.md)
 - [Java `java.util.regex`](java.md)
 - [JavaScript `RegExp`](javascript.md)

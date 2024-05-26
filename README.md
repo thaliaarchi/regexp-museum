@@ -6,6 +6,7 @@ development and influence.
 Engines are grouped into categories or listed in the [index](index.md).
 
 - [grep utilities](greps/index.md)
+- [Libraries](libs/index.md)
 - [Programming languages](langs/index.md)
 - [Text editors](editors/index.md)
 

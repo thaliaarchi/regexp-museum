@@ -3,7 +3,9 @@
 - [ActionScript 3 `RegExp`](langs/actionscript.md)
 - [Bingo Text Editor](editors/bingo.md)
 - [Blackbeard Programmer's Editor](editors/blackbeard.md)
+- [Boost.Regex](libs/boost.md)
 - [Brief](editors/brief.md)
+- [C++ `std::regex`](langs/cpp.md)
 - [CRiSP](editors/crisp.md)
 - [D](langs/d.md)
 - [DECUS grep](greps/decus.md)
@@ -18,6 +20,7 @@
 - [JavaScript `RegExp`](langs/javascript.md)
 - [Jerry Coffin's JGREP](greps/jgrep.md)
 - [NED](editors/ned.md)
+- [PCRE](libs/pcre.md)
 - [Perl](langs/perl.md)
 - [Plan 9 grep](greps/plan9.md)
 - [Python](langs/python.md)
@@ -114,9 +117,6 @@
 
   - Joni [[src](https://github.com/jruby/joni)]: Java port of Oniguruma
     - JRuby Joni [src [object](https://github.com/jruby/jruby/blob/master/core/src/main/java/org/jruby/RubyRegexp.java)]
-
-- PCRE (Perl Compatible Regular Expressions) [[src](https://github.com/PCRE2Project/pcre2)]
-  [[Wikipedia](https://en.wikipedia.org/wiki/Perl_Compatible_Regular_Expressions)]
 
 - POSIX `regex.h`
 

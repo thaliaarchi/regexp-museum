@@ -1,4 +1,4 @@
-# Text editors
+# Text editors with regular expressions
 
 - [Bingo Text Editor](bingo.md)
 - [Blackbeard Programmer's Editor](blackbeard.md)

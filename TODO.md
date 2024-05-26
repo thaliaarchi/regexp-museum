@@ -1,5 +1,6 @@
 # TODO
 
+- [TODO for libraries](libs/TODO.md)
 - [TODO for text editors](editors/TODO.md)
 
 ## Research
