@@ -11,7 +11,10 @@ Secret Labs' Regular Expression Engine (SRE)
 
 It was part of [PEP 100 – Python Unicode Integration](https://peps.python.org/pep-0100/#regular-expressions)
 
-- tinyre [[src](https://github.com/fy0/TinyRe)]: fork of `re`
+- mrab-regex [[src](https://github.com/mrabarnett/mrab-regex)] [[PyPI](https://pypi.org/project/regex/)]:
+  A fork of SRE, that adds additional features. It has a configurable version to
+  control backwards compatibility.
+- tinyre [[src](https://github.com/fy0/TinyRe)]: A fork of SRE.
 
 ## Python 1.5 `re`
 

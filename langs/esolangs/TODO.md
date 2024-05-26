@@ -1,18 +1,19 @@
 # TODO for esoteric programming languages
 
+There are many string-rewriting esolangs; however, I only include those which
+can express patterns more complex than literal strings and which match languages
+of any alphabet. Regular expressions could be converted to [Markov algorithms](https://en.wikipedia.org/wiki/Markov_algorithm)
+a [Post canonical system](https://esolangs.org/wiki/Post_canonical_system)
+(which are both Turing-complete, so the reverse is not always possible).
+
 ## Links to regular expressions
 
-- [AnyGolf](https://esolangs.org/wiki/AnyGolf) [^re]
 - [Bounded-storage machine](https://esolangs.org/wiki/Bounded-storage_machine) [^re]
 - [Fargo](https://esolangs.org/wiki/Fargo) [^re]
 - [Irregular Expression](https://esolangs.org/wiki/Irregular_Expression) [^re]
 - [REXS](https://esolangs.org/wiki/REXS) [^re]
 - [Stu](https://esolangs.org/wiki/Stu) [^re]
-- [SynDev](https://esolangs.org/wiki/SynDev) [^re]
-- [User:PythonshellDebugwindow/(Unnamed language)](https://esolangs.org/wiki/User:PythonshellDebugwindow/(Unnamed_language)) [^re]
 - [Version](https://esolangs.org/wiki/Version) [^re]
-- [Writeover](https://esolangs.org/wiki/Writeover) [^re]
-- [Your Time Is Up](https://esolangs.org/wiki/Your_Time_Is_Up) [^re] [^rw] [^srw]
 
 ## Uses string rewriting
 
@@ -26,7 +27,6 @@
 - [2022](https://esolangs.org/wiki/2022) [^srw]
 - [2C](https://esolangs.org/wiki/2C) [^srw]
 - [7](https://esolangs.org/wiki/7) [^srw]
-- [An Odd Rewriting System](https://esolangs.org/wiki/An_Odd_Rewriting_System) [^srw]
 - [Antigram](https://esolangs.org/wiki/Antigram) [^srw]
 - [ASM](https://esolangs.org/wiki/ASM) [^srw]
 - [AutomataFuck](https://esolangs.org/wiki/AutomataFuck) [^srw]
@@ -52,8 +52,6 @@
 - [Lete](https://esolangs.org/wiki/Lete) [^srw]
 - [Liberation](https://esolangs.org/wiki/Liberation) [^srw]
 - [Lines](https://esolangs.org/wiki/Lines) [^srw]
-- [Luigi](https://esolangs.org/wiki/Luigi) [^rw] [^srw]
-- [Markov algorithm](https://esolangs.org/wiki/Markov_algorithm) [^srw]
 - [Marthue](https://esolangs.org/wiki/Marthue) [^srw]
 - [McCulloch's second machine](https://esolangs.org/wiki/McCulloch%27s_second_machine) [^srw]
 - [McCulloch's third machine](https://esolangs.org/wiki/McCulloch%27s_third_machine) [^srw]
@@ -61,7 +59,6 @@
 - [Myth](https://esolangs.org/wiki/Myth) [^srw]
 - [Night Shift](https://esolangs.org/wiki/Night_Shift) [^srw]
 - [Noisett](https://esolangs.org/wiki/Noisett) [^srw]
-- [Novice](https://esolangs.org/wiki/Novice) [^srw]
 - [NRSRSSOMN](https://esolangs.org/wiki/NRSRSSOMN) [^srw]
 - [Number Seventy-Four](https://esolangs.org/wiki/Number_Seventy-Four) [^rw] [^srw]
 - [Numeric Batch](https://esolangs.org/wiki/Numeric_Batch) [^srw]
@@ -75,7 +72,6 @@
 - [REBEL](https://esolangs.org/wiki/REBEL) [^srw]
 - [RegexPL](https://esolangs.org/wiki/RegexPL) [^srw]
 - [REsKrIb!lo](https://esolangs.org/wiki/REsKrIb!lo) [^srw]
-- [ROT-13](https://esolangs.org/wiki/ROT-13) [^srw]
 - [Semper dissolubilis](https://esolangs.org/wiki/Semper_dissolubilis) [^srw]
 - [SIMPLE (preprocessor)](https://esolangs.org/wiki/SIMPLE_(preprocessor)) [^srw]
 - [Something positive](https://esolangs.org/wiki/Something_positive) [^rw] [^srw]
@@ -87,8 +83,6 @@
 - [Swap](https://esolangs.org/wiki/Swap) [^srw]
 - [Tandem](https://esolangs.org/wiki/Tandem) [^srw]
 - [Tarski](https://esolangs.org/wiki/Tarski) [^srw]
-- [Tetanus](https://esolangs.org/wiki/Tetanus) [^srw]
-- [Tetra](https://esolangs.org/wiki/Tetra) [^srw]
 - [The Subtyping Machine](https://esolangs.org/wiki/The_Subtyping_Machine) [^srw]
 - [Thubi](https://esolangs.org/wiki/Thubi) [^srw]
 - [Thue](https://esolangs.org/wiki/Thue) [^rw] [^srw]
@@ -99,26 +93,6 @@
 - [Udymts](https://esolangs.org/wiki/Udymts) [^srw]
 - [Varigen](https://esolangs.org/wiki/Varigen) [^srw]
 - [Zone](https://esolangs.org/wiki/Zone) [^srw]
-- [Собачка](https://esolangs.org/wiki/%D0%A1%D0%BE%D0%B1%D0%B0%D1%87%D0%BA%D0%B0) [^srw]
-
-## Links to rewriting
-
-- [Combinatory logic](https://esolangs.org/wiki/Combinatory_logic) [^rw]
-- [Graph rewriting](https://esolangs.org/wiki/Graph_rewriting) [^rw]
-- [HUNTER](https://esolangs.org/wiki/HUNTER) [^rw]
-- [Hydra](https://esolangs.org/wiki/Hydra) [^rw]
-- [Null string](https://esolangs.org/wiki/Null_string) [^rw]
-- [Post canonical system](https://esolangs.org/wiki/Post_canonical_system) [^rw]
-- [String](https://esolangs.org/wiki/String) [^rw]
-- [STRong](https://esolangs.org/wiki/STRong) [^rw]
-- [Talk:Hydra](https://esolangs.org/wiki/Talk:Hydra) [^rw]
-- [Tamerlane](https://esolangs.org/wiki/Tamerlane) [^rw]
-- [Timeline of esoteric programming languages](https://esolangs.org/wiki/Timeline_of_esoteric_programming_languages) [^rw]
-- [Tree machine](https://esolangs.org/wiki/Tree_machine) [^rw]
-- [Unordered tree machine](https://esolangs.org/wiki/Unordered_tree_machine) [^rw]
-- [User:PythonshellDebugwindow/Rewriting Language](https://esolangs.org/wiki/User:PythonshellDebugwindow/Rewriting_Language) [^rw]
-- [User:Salpynx](https://esolangs.org/wiki/User:Salpynx) [^rw]
-- [Ypsilax](https://esolangs.org/wiki/Ypsilax) [^rw]
 
 [^re]: https://esolangs.org/wiki/Special:WhatLinksHere/Regular_expression
 [^rw]: https://esolangs.org/wiki/Special:WhatLinksHere/Rewriting
