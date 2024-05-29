@@ -109,3 +109,12 @@ matched at all.
 ```
 
 [^_readme]: https://github.com/graue/esofiles/blob/master/sortle/_readme.txt
+
+## Bugs
+
+### sortle.c
+
+Any pattern with a capture or group with more than one byte in it is vulnerable
+to buffer overruns.
+
+A literal char `c` is equivalent to Perl `[c.]`, due to a bug.
