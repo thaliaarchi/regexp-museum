@@ -108,6 +108,9 @@
 
   Andrew Gallant says ICgrep implements (most of?) UTS #18 level 2 [[HN](https://news.ycombinator.com/item?id=32435303#32445174)].
 
+- [Logical Foundations](https://softwarefoundations.cis.upenn.edu/lf-current/IndProp.html#lab255)
+  regular expressions case study
+
 - McIlroy's `regex` [[src](https://github.com/arnoldrobbins/mcilroy-regex)]
 
   Author: Doug McIlroy
