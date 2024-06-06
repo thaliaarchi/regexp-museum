@@ -1,6 +1,7 @@
 # Regular expression implementations
 
 - [ActionScript 3 `RegExp`](langs/actionscript.md)
+- [antirez `stringmatch`](langs/tcl/antirez_stringmatch.md)
 - [Bingo Text Editor](editors/bingo.md)
 - [Blackbeard Programmer's Editor](editors/blackbeard.md)
 - [Boost.Regex](libs/boost.md)
@@ -34,6 +35,7 @@
 - [Scala `scala.util.matching.Regex`](java.md#scala-scalautilmatchingregex)
 - [Scala.js](java.md#scalajs)
 - [Sortle](langs/esolangs/sortle.md)
+- [Tcl](langs/tcl.md)
 - [Tech-Edit](editors/tech-edit.md)
 - [Zeus Programmers Editor](editors/zeus.md)
 
@@ -163,16 +165,6 @@
 
 - REC Regular Expression Compiler [[src](http://www.cpm.z80.de/download/rec.zip),
   [mirror](http://cpmarchives.classiccmp.org/cpm/mirrors/www.seanet.com/~klaw/files.htm)]
-
-- Redis `stringmatchlen` [[src](https://github.com/redis/redis/blob/0e1de78fca849c135fd00cd85b5b87920e46e50d/src/util.c#L57)]
-
-  Author: Salvatore Sanfilippo
-
-  After Salvatore [mentioned `stringmatchlen`](https://news.ycombinator.com/item?id=32436743)
-  on Hacker News, a commenter demonstrated that it has exponential time
-  complexity for pathological patterns, which (seems to have) led to
-  [CVE-2022-36021](https://nvd.nist.gov/vuln/detail/CVE-2022-36021) being
-  reported and [fixed](https://github.com/redis/redis/commit/dcbfcb916ca1a269b3feef86ee86835294758f84).
 
 - `ripgrep` [[src](https://github.com/BurntSushi/ripgrep)]: uses Rust `regex`
 

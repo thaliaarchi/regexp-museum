@@ -14,3 +14,5 @@
 - [S-Lang SLregexp and SLsearch](slang.md)
 - [Scala `scala.util.matching.Regex`](java.md#scala-scalautilmatchingregex)
 - [Scala.js](java.md#scalajs)
+- [Tcl](tcl.md)
+  - [antirez `stringmatch`](tcl/antirez_stringmatch.md)
