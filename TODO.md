@@ -7,6 +7,9 @@
 - [TODO for text editors](editors/TODO.md)
 - Engines included in and [wanted](https://github.com/BurntSushi/rebar/blob/master/WANTED.md)
   for rebar
+- Databases
+  - PostgreSQL
+  - MongoDB
 
 ## Research
 

@@ -36,6 +36,7 @@
 - [Scala `scala.util.matching.Regex`](java.md#scala-scalautilmatchingregex)
 - [Scala.js](java.md#scalajs)
 - [Sortle](langs/esolangs/sortle.md)
+- [SQL](langs/sql.md)
 - [Tcl](langs/tcl.md)
 - [Tech-Edit](editors/tech-edit.md)
 - [Zeus Programmers Editor](editors/zeus.md)
