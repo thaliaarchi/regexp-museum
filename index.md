@@ -21,6 +21,7 @@
 - [Java `java.util.regex`](langs/java.md)
 - [JavaScript `RegExp`](langs/javascript.md)
 - [Jerry Coffin's JGREP](greps/jgrep.md)
+- [Jim](langs/tcl/jim.md)
 - [NED](editors/ned.md)
 - [PCRE](libs/pcre.md)
 - [Perl](langs/perl.md)

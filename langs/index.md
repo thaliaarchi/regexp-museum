@@ -16,3 +16,4 @@
 - [Scala.js](java.md#scalajs)
 - [Tcl](tcl.md)
   - [antirez `stringmatch`](tcl/antirez_stringmatch.md)
+  - [Jim](tcl/jim.md)
