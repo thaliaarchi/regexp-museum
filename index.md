@@ -2,6 +2,7 @@
 
 - [ActionScript 3 `RegExp`](langs/actionscript.md)
 - [antirez `stringmatch`](langs/tcl/antirez_stringmatch.md)
+- [AutoHotkey RegEx](libs/pcre.md#autohotkey-regex)
 - [Bingo Text Editor](editors/bingo.md)
 - [Blackbeard Programmer's Editor](editors/blackbeard.md)
 - [Boost.Regex](libs/boost.md)

@@ -1,6 +1,7 @@
 # Programming languages with regular expressions
 
 - [ActionScript 3 `RegExp`](actionscript.md)
+- [AutoHotkey RegEx](../libs/pcre.md#autohotkey-regex)
 - [C++ `std::regex`](cpp.md)
 - [Clojure re](java.md#clojure-re)
 - [D](d.md)
