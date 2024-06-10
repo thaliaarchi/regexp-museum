@@ -23,7 +23,7 @@
   [compiler](https://github.com/chakra-core/ChakraCore/blob/master/lib/Parser/RegexCompileTime.cpp),
   [runtime](https://github.com/chakra-core/ChakraCore/blob/master/lib/Parser/RegexRuntime.cpp)]
 - SerenityOS LibJS [[src](https://github.com/SerenityOS/serenity/blob/master/Userland/Libraries/LibJS/Runtime/RegExpPrototype.cpp)]
-  - Ladybird LibJS [[src](https://github.com/LadybirdWebBrowser/ladybird/blob/master/Userland/Libraries/LibJS/Runtime/RegExpPrototype.cpp)]:
+  - Ladybird LibJS [[src](https://github.com/LadybirdBrowser/ladybird/blob/master/Userland/Libraries/LibJS/Runtime/RegExpPrototype.cpp)]:
     Ladybird officially [forked](https://awesomekling.substack.com/p/forking-ladybird-and-stepping-down-serenityos)
     from SerenityOS on 2024-06-03. The last common commit was [44bb6e8390](https://github.com/SerenityOS/serenity/commit/44bb6e8390898ebd132fa379d8f3e32229f2812f)
     (LibWeb: Handle the cssFloat and cssOffset keyframe properties properly,
