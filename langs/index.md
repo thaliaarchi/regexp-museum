@@ -10,6 +10,7 @@
 - [Perl](perl.md)
 - [Python](python.md)
 - [Racket regexp](racket.md)
+- [REC](rec.md)
 - [Ruby](ruby.md)
 - [Rust `regex`](rust.md)
 - [S-Lang SLregexp and SLsearch](slang.md)
