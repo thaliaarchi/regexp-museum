@@ -9,6 +9,7 @@ Engines are grouped into categories or listed in the [index](index.md).
 - [Libraries](libs/index.md)
 - [Programming languages](langs/index.md)
 - [Text editors](editors/index.md)
+- [Viewers](viewers/index.md)
 
 ## License
 
