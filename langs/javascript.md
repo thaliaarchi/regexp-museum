@@ -2,6 +2,8 @@
 
 [List of engines](https://test262.fyi/)
 
+Test262 has tests for `RegExp` in [built-ins/RegExp](https://github.com/tc39/test262/tree/main/test/built-ins/RegExp).
+
 - V8 Irregexp
   - SpiderMonkey Irregexp [[src](https://github.com/mozilla/gecko-dev/tree/master/js/src/irregexp)]
 
