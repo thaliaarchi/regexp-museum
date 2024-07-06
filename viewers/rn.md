@@ -10,6 +10,16 @@ Author: Larry Wall
 subjects. It was first released in 1984, while Perl was in 1987, so its engine
 was likely influential.
 
+- rn version 4.1 distribution kit (parts [1](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzJAc2RjcmRjZi5VVUNQPg),
+  [2](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzNAc2RjcmRjZi5VVUNQPg),
+  [3](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzRAc2RjcmRjZi5VVUNQPg),
+  [4](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzVAc2RjcmRjZi5VVUNQPg),
+  [5](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzZAc2RjcmRjZi5VVUNQPg),
+  [6](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzdAc2RjcmRjZi5VVUNQPg),
+  [7](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzhAc2RjcmRjZi5VVUNQPg),
+  and [8](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzlAc2RjcmRjZi5VVUNQPg))
+  on net.sources, 1984-09-24
+
 ## Descendants
 
 - rrn [[Wikipedia](https://en.wikipedia.org/wiki/Rn_(newsreader))]
