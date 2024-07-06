@@ -30,6 +30,7 @@
 - [Python](langs/python.md)
 - [QED](editors/qed.md)
 - [Racket regexp](langs/racket.md)
+- [REC](langs/rec.md)
 - [Ruby](langs/ruby.md)
 - [Rust `regex`](langs/rust.md)
 - [S-Lang SLregexp and SLsearch](langs/slang.md)
@@ -165,9 +166,6 @@
     implementation in Rust
 
 - RE2 [[src](https://github.com/google/re2)] [[syntax](https://github.com/google/re2/wiki/Syntax)]
-
-- REC Regular Expression Compiler [[src](http://www.cpm.z80.de/download/rec.zip),
-  [mirror](http://cpmarchives.classiccmp.org/cpm/mirrors/www.seanet.com/~klaw/files.htm)]
 
 - `ripgrep` [[src](https://github.com/BurntSushi/ripgrep)]: uses Rust `regex`
 
