@@ -25,6 +25,7 @@ Users:
 - `slrn` [src [JED](https://www.jedsoft.org/snapshots/), [GitHub](https://github.com/jedsoft/slrn),
   [SourceForge](https://sourceforge.net/projects/slrn/)] [[site](https://web.archive.org/web/20140924103420/http://www.slrn.org/index.html)]
   [[FreeBSD Ports](https://ports.freebsd.org/cgi/ports.cgi?query=slrn&stype=all&sektion=news)]
+  [[history](https://web.archive.org/web/20140227213900/http://www.faqs.org:80/faqs/usenet/software/part1)]
 - S-Lang `slsh` glob: converts globs to `SLRegexp`
 - JED software (e.g., S-Lang, slrn, most) ported to OpenVMS has older versions
   than available from jedsoft.org [src [v10](https://www.digiater.nl/openvms/freeware/v10/jed097/),
