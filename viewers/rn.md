@@ -10,7 +10,8 @@ Author: Larry Wall
 to match email subjects. It was first released in 1984, while Perl was in 1987,
 so its engine was likely influential.
 
-Its regular expression engine is in `search.c`.
+Its regular expression engine is in `search.c` and was used in [Perl](../langs/perl.md)
+1.0.
 
 Larry Wall used RCS for version control of `rn` [^rn-hackers] and distributed
 patches with `patch`.
