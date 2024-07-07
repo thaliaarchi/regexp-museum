@@ -42,3 +42,9 @@ their strategies. This could help demonstrate cases of catastrophic backtracking
 or showcase engines with efficient algorithmic complexity.
 
 Make nicely-rendered grammars like the regexp grammar in [The Racket Reference](https://docs.racket-lang.org/reference/regexp.html).
+
+Organize engines into a tree like eylenburg's [operating system](https://eylenburg.github.io/os_familytree.htm)
+timeline and family tree, which is generated from [CSVs](https://github.com/eylenburg/os-family-tree)
+with [gnuclad](https://github.com/FabioLolix/gnuclad). Solid lines would denote
+code forks, dotted would denote algorithm or syntax borrowing, and colors would
+group families (e.g., Spencer, RE2).
