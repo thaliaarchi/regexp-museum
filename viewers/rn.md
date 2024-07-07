@@ -12,6 +12,9 @@ so its engine was likely influential.
 
 Its regular expression engine is in `search.c`.
 
+Larry Wall used RCS for version control of `rn` [^rn-hackers] and distributed
+patches with `patch`.
+
 From the [rn site](https://web.archive.org/web/19970401040656/http://www.academ.com/academ/rn.html):
 
 > The RN Newsreader was part of the second generation of newsreaders for USENET
@@ -88,3 +91,4 @@ From [“Usenet Software: History and Sources”](https://web.archive.org/web/20
 
 [^wikipedia]: https://en.wikipedia.org/wiki/Rn_(newsreader)
 [^usenet-faq]: https://web.archive.org/web/20140227213900/http://www.faqs.org:80/faqs/usenet/software/part1
+[^rn-hackers]: `HACKERSGUIDE` in rn distribution
