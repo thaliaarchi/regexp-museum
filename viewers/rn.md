@@ -43,25 +43,25 @@ From [“Usenet Software: History and Sources”](https://web.archive.org/web/20
 > provided with the standard news software release, but is very widely available
 > because of its popularity.
 
-- rn version 4.1 (parts [1](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzJAc2RjcmRjZi5VVUNQPg),
-  [2](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzNAc2RjcmRjZi5VVUNQPg),
-  [3](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzRAc2RjcmRjZi5VVUNQPg),
-  [4](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzVAc2RjcmRjZi5VVUNQPg),
-  [5](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzZAc2RjcmRjZi5VVUNQPg),
-  [6](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzdAc2RjcmRjZi5VVUNQPg),
-  [7](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzhAc2RjcmRjZi5VVUNQPg),
-  and [8](https://usenetarchives.com/view.php?id=net.sources&mid=PDEzMzlAc2RjcmRjZi5VVUNQPg))
+- rn version 4.1 (parts [1](https://groups.google.com/g/net.sources/c/xUGB_4Meno8),
+  [2](https://groups.google.com/g/net.sources/c/XUBHx73xK7s),
+  [3](https://groups.google.com/g/net.sources/c/X78CZnttHqg),
+  [4](https://groups.google.com/g/net.sources/c/U8wjLYgZ9XQ),
+  [5](https://groups.google.com/g/net.sources/c/9MA0hI3j4iI),
+  [6](https://groups.google.com/g/net.sources/c/FFbGY5bbixE),
+  [7](https://groups.google.com/g/net.sources/c/iLF8GYR36k8),
+  and [8](https://groups.google.com/g/net.sources/c/g8oUj9EgApA))
   on net.sources, 1984-09-24
-- rn version 4.3 (parts [0](https://usenetarchives.com/view.php?id=mod.sources&mid=PDgxOUBnZW5yYWQuVVVDUD4),
-  [1](https://usenetarchives.com/view.php?id=mod.sources&mid=PDgyMUBnZW5yYWQuVVVDUD4),
-  [2](https://usenetarchives.com/view.php?id=mod.sources&mid=PDgyMkBnZW5yYWQuVVVDUD4),
-  [3](https://usenetarchives.com/view.php?id=mod.sources&mid=PDgyM0BnZW5yYWQuVVVDUD4),
-  [4](https://usenetarchives.com/view.php?id=mod.sources&mid=PDgyNUBnZW5yYWQuVVVDUD4),
-  [5](https://usenetarchives.com/view.php?id=mod.sources&mid=PDgyNkBnZW5yYWQuVVVDUD4),
-  [6](https://usenetarchives.com/view.php?id=mod.sources&mid=PDgyN0BnZW5yYWQuVVVDUD4),
-  [7](https://usenetarchives.com/view.php?id=mod.sources&mid=PDgyOEBnZW5yYWQuVVVDUD4),
-  [8](https://usenetarchives.com/view.php?id=mod.sources&mid=PDgyOUBnZW5yYWQuVVVDUD4),
-  and [9](https://usenetarchives.com/view.php?id=mod.sources&mid=PDgzMEBnZW5yYWQuVVVDUD4))
+- rn version 4.3 (parts [0](https://groups.google.com/g/mod.sources/c/ZGohbRfEi2w),
+  [1](https://groups.google.com/g/mod.sources/c/hJok66uiWTU),
+  [2](https://groups.google.com/g/mod.sources/c/H7mx3N-0jk4),
+  [3](https://groups.google.com/g/mod.sources/c/27eQUTed3J0),
+  [4](https://groups.google.com/g/mod.sources/c/QzOejfSBrdQ),
+  [5](https://groups.google.com/g/mod.sources/c/hvSc-jCBMmY),
+  [6](https://groups.google.com/g/mod.sources/c/RM9voSBl-98),
+  [7](https://groups.google.com/g/mod.sources/c/WAihOBJZf7A),
+  [8](https://groups.google.com/g/mod.sources/c/jLfBDURu-_8),
+  and [9](https://groups.google.com/g/mod.sources/c/0xMLaQS6V5s))
   on mod.sources, 1985-05-09
 - rn version 4.4.4, 1992-02-23 [[mention](https://web.archive.org/web/19970401040656/http://www.academ.com/academ/rn.html)]
 
