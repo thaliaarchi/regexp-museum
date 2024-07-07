@@ -43,6 +43,36 @@ From [“Usenet Software: History and Sources”](https://web.archive.org/web/20
 > provided with the standard news software release, but is very widely available
 > because of its popularity.
 
+## Features using regular expressions
+
+### Pager commands
+
+`g`, `G`, `^G`, and `TAB` pager commands use regular expressions to search lines
+in the article and jump forward to the next matching line. (`^G` denotes Ctrl+G
+or Ctrl+g and `TAB` denotes tab, Ctrl+I, or Ctrl+i.)
+
+As documented by the `h` command (`help.c:help_page`):
+
+    g pat   Go to (search forward within article for) pattern.
+    G       Search again for current pattern within article.
+    ^G      Search for next line beginning with "Subject:".
+    TAB     Search for next line beginning with a different character.
+
+`g` executes the given pattern (with an optional, ignored space separating the
+pattern and `g`). `^G` uses the pattern `^Subject:`. `TAB` uses the pattern
+`^[^%c]`, where `%c` is substituted for the first character on the current line.
+
+(Commands handled in `art.c:page_switch`.)
+
+### Line filtering
+
+The user can supply patterns to suppress matching lines or define the end of the
+page with the `HIDELINE` and `PAGESTOP` environment variables, respectively.
+
+(Patterns parsed in `ng.c:do_newsgroup` and executed in `art.c`.)
+
+## Versions
+
 - rn version 4.1 (parts [1](https://groups.google.com/g/net.sources/c/xUGB_4Meno8),
   [2](https://groups.google.com/g/net.sources/c/XUBHx73xK7s),
   [3](https://groups.google.com/g/net.sources/c/X78CZnttHqg),
