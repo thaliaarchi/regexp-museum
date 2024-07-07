@@ -2,6 +2,9 @@
 
 [[docs](https://perldoc.perl.org/perlre)]
 
+[search.c](https://github.com/Perl/perl5/blob/perl-1.0/search.c) in Perl 1.0 is
+derived from [rn](../viewers/rn.md).
+
 ## miniperl
 
 [[src](https://github.com/Perl/perl5/blob/blead/miniperlmain.c)]
