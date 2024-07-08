@@ -24,6 +24,7 @@
 - [JavaScript `RegExp`](langs/javascript.md)
 - [Jerry Coffin's JGREP](greps/jgrep.md)
 - [Jim](langs/tcl/jim.md)
+- [*Logical Foundations*](edu/lf.md)
 - [NED](editors/ned.md)
 - [PCRE](libs/pcre.md)
 - [Perl](langs/perl.md)
@@ -31,6 +32,7 @@
 - [Python](langs/python.md)
 - [QED](editors/qed.md)
 - [Racket regexp](langs/racket.md)
+- [re1](edu/re1.md)
 - [REC](langs/rec.md)
 - [`rn`](viewers/rn.md)
 - [Ruby](langs/ruby.md)
@@ -43,6 +45,7 @@
 - [SQL](langs/sql.md)
 - [Tcl](langs/tcl.md)
 - [Tech-Edit](editors/tech-edit.md)
+- [*The Practice of Programming*](edu/tpop.md)
 - [Zeus Programmers Editor](editors/zeus.md)
 
 ## Uncategorized
@@ -116,9 +119,6 @@
 
   Andrew Gallant says ICgrep implements (most of?) UTS #18 level 2 [[HN](https://news.ycombinator.com/item?id=32435303#32445174)].
 
-- [Logical Foundations](https://softwarefoundations.cis.upenn.edu/lf-current/IndProp.html#lab255)
-  regular expressions case study
-
 - McIlroy's `regex` [[src](https://github.com/arnoldrobbins/mcilroy-regex)]
 
   Author: Doug McIlroy
@@ -137,35 +137,6 @@
 - POSIX `regex.h`
 
   - SerenityOS LibRegex [[src](https://github.com/SerenityOS/serenity/tree/master/Userland/Libraries/LibRegex)]
-
-- *The Practice of Programming* [[book](https://archive.org/details/practiceofprogra0000kern)]
-  [[exegesis](https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html)]
-
-  Author: Rob Pike
-
-  - Ben Hoyt ported it to Go in [“Rob Pike’s simple C regex matcher in Go”](https://benhoyt.com/writings/rob-pike-regex/)
-    (2022) [[code](https://github.com/benhoyt/repike/tree/master)] [[HN](https://news.ycombinator.com/item?id=32434412)]
-    - A commenter patched it to make the runtime runtime
-      *O(len(pattern) \* len(text))* instead of exponential by memoizing
-      failures [[HN](https://news.ycombinator.com/item?id=32434412#32436442)]
-  - Shaya Potter ported it [to Java](https://github.com/sjpotter/regex) (2016)
-    and [to Go](https://github.com/sjpotter/regex-go) (2019)
-  - [“Collapsing Towers of Interpreters”](https://www.cs.purdue.edu/homes/rompf/papers/amin-popl18.pdf)
-    by Nada Amin and Tiark Rompf (2018) implements this matcher with
-    binding-time polymorphism
-
-- re1 [[src](https://code.google.com/archive/p/re1/)] [[blog](https://swtch.com/~rsc/regexp/regexp2.html)]
-
-  Author: Russ Cox
-
-  - pfalcon/re1.5 [[src](https://github.com/pfalcon/re1.5)]: fork of re1 to add
-    features for real-world use. Contains the Mercurial history of re1 migrated
-    to git, with the only difference being that commits with an empty author
-    name use `Unknown`.
-    - kyx0r/pikevm [[src](https://github.com/kyx0r/pikevm)]: fork of re1.5 with
-      only pikevm
-  - jameysharp/pikevm [[src](https://github.com/jameysharp/pikevm)]: pikevm
-    implementation in Rust
 
 - RE2 [[src](https://github.com/google/re2)] [[syntax](https://github.com/google/re2/wiki/Syntax)]
 
