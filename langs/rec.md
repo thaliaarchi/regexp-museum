@@ -6,7 +6,48 @@ microprocessors, including REC86, the version of REC for MS-DOS on 8086
 
 REC86 CLI usage [^ci89].
 
-## Syntax and semantics
+## `RXPCOM` compiler
+
+REC has compilers for converting regular expressions, push-down automata, Markov
+algorithms, Turing machines, Post production systems, and Lisp to REC programs.
+
+> `AUTOMATA` executes the `RXPCOM` compiler to transform a
+> regular expression contained in a file whose extension is
+> `.RXP` into a `REC` program which accepts strings read from
+> the keyboard if they belong to the language denoted by
+> the regular expression or rejects them otherwise.
+>
+> Regular expressions accepted by this compiler may include
+> any printing ASCII characters [between the exclamation
+> point (`!`) and the tilde (`~`)], all of them taken
+> as alphabet letters except for the following characters,
+> which have the indicated meaning:
+>
+> - `#` the empty set
+> - `$` the null string
+> - `()` grouping symbols
+> - `|` alternation operator
+> - `*` closure operator
+>
+> Spaces and tabs may be used freely, and bracket-enclosed
+> comments may appear at the beginning of the
+> file. The first non-blank, non-left-bracket character will
+> mark the beginning of the regular expression for which
+> a parser is to be generated; the expression is taken to
+> include all non-blank characters up to the end of the file.
+> For example, the following lines
+>
+> [ZAT3RD.RXP]
+> [[Binary strings w/3rd-from-last digit = 0]]
+>
+> (0 | 1)* 0 (0 | 1) (0 | 1)
+>
+> may be placed in a file `ZAT3RD.RXP` for which `RXPCOM`
+> will generate a file `ZAT3RD.REC`, which when executed will
+> read strings and determine whether or not they are binary
+> numbers whose third-from-last digit is a 0. [^ci89]
+
+## REC language
 
 > **REC Syntax and Semantics.**
 >
@@ -80,9 +121,18 @@ REC86 CLI usage [^ci89].
 
 - [REC86 and REC86FP](http://www.cpm.z80.de/download/rec.zip) for [CP/M](http://www.cpm.z80.de/binary.html)
   [[mirror](http://cpmarchives.classiccmp.org/cpm/mirrors/www.seanet.com/~klaw/files.htm)]
+- REC for CP/M 80 and 86, volumes [1](http://www.retroarchive.org/cpm/cdrom/SIMTEL/SIGM/VOLS100/VOL164/),
+  [2](http://www.retroarchive.org/cpm/cdrom/SIMTEL/SIGM/VOLS100/VOL165/),
+  and [3](http://www.retroarchive.org/cpm/cdrom/SIMTEL/SIGM/VOLS100/VOL166/)
 
+[A CONVERT compiler of REC for PDP-8](https://arxiv.org/abs/1107.2437),
+  Harold V. McIntosh, 1968
+[A FORTRAN coded Regular Expression Compiler for the IBM 1130 Computing System](https://arxiv.org/abs/0905.0740),
+  Gerardo Cisneros, 1970
 [^ci89]: [REC and Convert as aids in teaching Automata Theory](https://delta.cs.cinvestav.mx/~mcintosh/cellularautomata/REC_files/eautom.pdf),
   Gerardo Cisneros and Harold V. McIntosh, 1989
+[The programming languages REC and convert](https://dl.acm.org/doi/10.1145/382076.382648),
+  Harold V. McIntosh and Gerardo Cisneros, 1990
 [^he05]: [LIDA/REC Visual Language for Databases interface PostgreSQL](https://sci-hub.st/10.1109/ICEEE.2005.1529565),
   A. Hernández-Montoya and S. V. Chapa-Vergara, 2005
 [REC language is a live on IBM1130 simulator](https://arxiv.org/abs/0905.0737),
