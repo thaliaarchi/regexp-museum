@@ -223,10 +223,6 @@
 
   - rurban/tiny-regex-c [[src](https://github.com/rurban/tiny-regex-c)]
 
-## Papers
-
-- [Tagged DFA](https://en.wikipedia.org/wiki/Tagged_Deterministic_Finite_Automaton)
-
 ## Benchmarks
 
 - Mario Juárez's [Languages Regex Benchmark](https://github.com/mariomka/regex-benchmark)
