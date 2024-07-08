@@ -1,6 +1,6 @@
-# Reading list by date
+# TODO for papers
 
-## 2024
+## Unsorted
 
 - 2024-05-03:
   [RFC 9485 “I-Regexp: An Interoperable Regular Expression Format”](https://www.rfc-editor.org/rfc/rfc9485.html)
@@ -20,7 +20,7 @@
   [“Regular Expression Search Algorithm”](https://dl.acm.org/doi/10.1145/363347.363387)
   (Ken Thompson, 1968)
 
-## TODO
+## Unread
 
 - [“Derivatives of regular expressions”](https://dl.acm.org/doi/10.1145/321239.321249)
   (Janusz A. Brzozowski, 1964)
