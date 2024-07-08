@@ -353,7 +353,9 @@ bracket you want—`%0` will give you the last bracket matched.
 - xvnews: Compatible with rn-style commands[^usenet-faq]; unclear whether it
   shares code with rn.
 
-[^academ]: "RN Newsreader Software". https://web.archive.org/web/19970401040656/http://www.academ.com/academ/rn.html
-[^wikipedia]: "Rn (newsletter)" on Wikipedia. https://en.wikipedia.org/wiki/Rn_(newsreader)
-[^usenet-faq]: "Usenet Software: History and Sources". https://web.archive.org/web/20140227213900/http://www.faqs.org:80/faqs/usenet/software/part1
+[^academ]: “RN Newsreader Software”.
+  https://web.archive.org/web/19970401040656/http://www.academ.com/academ/rn.html
+[^wikipedia]: “Rn (newsletter)” on Wikipedia. https://en.wikipedia.org/wiki/Rn_(newsreader)
+[^usenet-faq]: “Usenet Software: History and Sources”.
+  https://web.archive.org/web/20140227213900/http://www.faqs.org:80/faqs/usenet/software/part1
 [^rn-hackers]: `HACKERSGUIDE` in rn 4.1 and 4.3 distributions
