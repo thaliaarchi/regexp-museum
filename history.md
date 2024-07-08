@@ -23,33 +23,11 @@
     - Issue #4: not fixed
   - Source trees in “Downloads” are redundant to commits
   - It has no wiki
-- Go `regexp`
-  - In the Google TechTalk for the initial release of Go, Rob Pike mentions that
-    some packages, including `regexp`, “work fine but are too simple”. I should
-    analyze earlier designs of `regexp`, including [at the initial release](https://github.com/golang/go/blob/c90d392ce3d3203e0c32b3f98d1e68c4c2b4c49b/src/pkg/regexp/regexp.go).
 - rsc code for POSIX semantics:
   https://swtch.com/~rsc/regexp/nfa-posix.y.txt
 - rsc code for postfix notation regexp:
   https://swtch.com/~rsc/regexp/nfa.c.txt
   (Check IA for all URL patterns under /regexp/*)
-
-## Rob Pike
-
-- sam
-  - From [“Regular Expression Matching: the Virtual Machine Approach”](https://swtch.com/~rsc/regexp/regexp2.html)
-    by Russ Cox (2009)
-    > In a “threaded” implementation like thompsonvm above, we simply add the
-    > saved pointer set to the thread state. Rob Pike first used this
-    > approach, in the text editor sam.
-
-    > The most interesting technique in this article is the one of storing
-    > submatch information in the regular expression thread state. The
-    > earliest instance I know of this technique in a regular expression
-    > engine is in Rob Pike's sam editor, written around 1985. (The
-    > modifications to store submatches were contributed by Bruce Janson a
-    > couple of years after the original implementation.) The technique makes
-    > a cameo in a textbook in 1974 but then seems to get lost until its
-    > reappearance in sam.
 
 ## Ken Thompson
 
@@ -64,12 +42,6 @@
 
 ## Others
 
-- [Doug McIlroy's regex](https://github.com/arnoldrobbins/mcilroy-regex)
-  - Includes contributions [from Russ Cox](https://github.com/arnoldrobbins/mcilroy-regex/commits?author=rsc)
-  - Features (see Background.txt):
-    - Implements intersection and negation
-    - Breaks out separate sublanguages for special treatment, all the way down
-      to Knuth-Morris-Pratt string-searching, that uses only concatenation
 - tests (linked in regexp2, along with other tess):
   https://web.archive.org/web/20130420020035/http://www2.research.att.com/~gsf/testregex/
 - [Ragel state machine compiler](https://github.com/adrian-thurston/ragel).

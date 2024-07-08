@@ -6,3 +6,4 @@
 - [Ian Ashdown's fgrep](ashdown_fgrep.md)
 - [Jerry Coffin's JGREP](jgrep.md)
 - [Plan 9 grep](plan9.md)
+- [ripgrep](ripgrep.md)

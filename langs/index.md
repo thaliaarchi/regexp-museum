@@ -2,9 +2,11 @@
 
 - [ActionScript 3 `RegExp`](actionscript.md)
 - [AutoHotkey RegEx](../libs/pcre.md#autohotkey-regex)
+- [awk](awk.md)
 - [C++ `std::regex`](cpp.md)
 - [Clojure re](java.md#clojure-re)
 - [D](d.md)
+- [Go `regexp`](go.md)
 - [Java `java.util.regex`](java.md)
 - [JavaScript `RegExp`](javascript.md)
 - [Perl](perl.md)

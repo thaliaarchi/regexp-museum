@@ -3,6 +3,7 @@
 - [ActionScript 3 `RegExp`](langs/actionscript.md)
 - [antirez `stringmatch`](langs/tcl/antirez_stringmatch.md)
 - [AutoHotkey RegEx](libs/pcre.md#autohotkey-regex)
+- [awk](langs/awk.md)
 - [Bingo Text Editor](editors/bingo.md)
 - [Blackbeard Programmer's Editor](editors/blackbeard.md)
 - [Boost.Regex](libs/boost.md)
@@ -12,13 +13,17 @@
 - [CRiSP](editors/crisp.md)
 - [D](langs/d.md)
 - [DECUS grep](greps/decus.md)
+- [Doug McIlroy's `regex`](libs/mcilroy.md)
+- [ed](editors/ed.md)
 - [Elvis](editors/elvis.md)
 - [Emacs](editors/emacs.md)
 - [EVE](editors/eve.md)
 - [GNU Emacs](editors/emacs.md#gnu-emacs)
 - [GNU fgrep](greps/gnu.md#gnu-fgrep)
 - [GNU grep](greps/gnu.md#gnu-grep)
+- [Go `regexp`](langs/go.md)
 - [Gosling Emacs](editors/gosling_emacs.md)
+- [Henry Spencer's `regexp`](libs/spencer.md)
 - [Ian Ashdown's fgrep](greps/ashdown_fgrep.md)
 - [Java `java.util.regex`](langs/java.md)
 - [JavaScript `RegExp`](langs/javascript.md)
@@ -26,14 +31,18 @@
 - [Jim](langs/tcl/jim.md)
 - [*Logical Foundations*](edu/lf.md)
 - [NED](editors/ned.md)
+- [Oniguruma](libs/oniguruma.md)
 - [PCRE](libs/pcre.md)
 - [Perl](langs/perl.md)
 - [Plan 9 grep](greps/plan9.md)
+- [POSIX `regex.h`](libs/posix.md)
 - [Python](langs/python.md)
 - [QED](editors/qed.md)
 - [Racket regexp](langs/racket.md)
 - [re1](edu/re1.md)
+- [RE2](libs/re2.md)
 - [REC](langs/rec.md)
+- [ripgrep](greps/ripgrep.md)
 - [`rn`](viewers/rn.md)
 - [Ruby](langs/ruby.md)
 - [Rust `regex`](langs/rust.md)
@@ -49,8 +58,6 @@
 - [Zeus Programmers Editor](editors/zeus.md)
 
 ## Uncategorized
-
-- awk
 
 - Bash
 
@@ -87,12 +94,6 @@
     …,
     [v80](https://www.digiater.nl/openvms/freeware/v80/bison/)]
 
-- GNU Gawk [[docs](https://www.gnu.org/software/gawk/manual/html_node/Regexp.html)]
-
-  - GNU Gawk 2.15.6 ported to OpenVMS [src [v20](https://www.digiater.nl/openvms/freeware/v20/gawk-2_15_6/),
-    [v30](https://www.digiater.nl/openvms/freeware/v30/gawk-2_15_6/),
-    …]
-
 - GNU `sed`
 
   The version 2.03 `readme` indicates that `sed` uses GNU `rx` and before that
@@ -101,12 +102,6 @@
   - GNU `sed` ported to OpenVMS [src [v30](https://www.digiater.nl/openvms/freeware/v30/sed-2-05/) (sed 2.05)
     …,
     [v80](https://www.digiater.nl/openvms/freeware/v80/sed/) (sed 2.03)]
-
-- Go `regexp` [[src](https://github.com/golang/go/tree/master/src/regexp)]
-  [[docs](https://pkg.go.dev/regexp)]
-
-  - `rsc.io/binaryregexp` [[src](https://github.com/rsc/binaryregexp)]: simple
-    fork of Go `regexp`, changing it to work on Latin1, instead of UTF-8
 
 - I-Regexp [[rfc](https://www.rfc-editor.org/rfc/rfc9485.html)]
 
@@ -119,52 +114,19 @@
 
   Andrew Gallant says ICgrep implements (most of?) UTS #18 level 2 [[HN](https://news.ycombinator.com/item?id=32435303#32445174)].
 
-- McIlroy's `regex` [[src](https://github.com/arnoldrobbins/mcilroy-regex)]
-
-  Author: Doug McIlroy
-
 - .NET `System.Text.RegularExpressions` [[docs](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions)]
 
   - `dlclark/regexp2` [[src](https://github.com/dlclark/regexp2)]: port of .NET
     `System.Text.RegularExpressions` to Go, which has RE2 and ECMAScript
     compatibility modes
 
-- Oniguruma
-
-  - Joni [[src](https://github.com/jruby/joni)]: Java port of Oniguruma
-    - JRuby Joni [src [object](https://github.com/jruby/jruby/blob/master/core/src/main/java/org/jruby/RubyRegexp.java)]
-
-- POSIX `regex.h`
-
-  - SerenityOS LibRegex [[src](https://github.com/SerenityOS/serenity/tree/master/Userland/Libraries/LibRegex)]
-
-- RE2 [[src](https://github.com/google/re2)] [[syntax](https://github.com/google/re2/wiki/Syntax)]
-
-- `ripgrep` [[src](https://github.com/BurntSushi/ripgrep)]: uses Rust `regex`
-
 - Shell globs
-
-- Spencer's library [[algorithm](https://swtch.com/~rsc/regexp/regexp2.html#backtrack)]
-
-  Author: Henry Spencer
-
-  Introduced backtracking widely [[history][rsc-history]]
-
-  Sources:
-  - [NightOwl 001 - 1990](http://annex.retroarchive.org/cdrom/nightowl-001/005A/REGEXP.ZIP)
-  - [NightOwl 004 - 1991](http://annex.retroarchive.org/cdrom/nightowl-004/005A/REGEXP.ZIP)
 
 - Truffle TRegex [[src](https://github.com/oracle/graal/tree/master/regex)]
 
   - GraalJS [src [object](https://github.com/oracle/graaljs/tree/master/graal-js/src/com.oracle.truffle.js/src/com/oracle/truffle/js/runtime/builtins/JSRegExp.java),
     [prototype](https://github.com/oracle/graaljs/tree/master/graal-js/src/com.oracle.truffle.js/src/com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins.java),
     more]
-
-- Unix `ed` [[history][rsc-history]]
-
-  Author: Ken Thompson
-
-  First appeared in First Edition Unix
 
 - Unix `egrep` [[history][rsc-history]]
 

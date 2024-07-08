@@ -5,6 +5,7 @@
 - [Brief](brief.md)
 - [CRiSP](crisp.md)
 - [Elvis](elvis.md)
+- [ed](ed.md)
 - [Emacs](emacs.md)
 - [EVE](eve.md)
 - [GNU Emacs](emacs.md#gnu-emacs)
