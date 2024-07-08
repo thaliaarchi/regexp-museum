@@ -18,6 +18,7 @@
 - [GNU Emacs](editors/emacs.md#gnu-emacs)
 - [GNU fgrep](greps/gnu.md#gnu-fgrep)
 - [GNU grep](greps/gnu.md#gnu-grep)
+- [Gosling Emacs](editors/gosling_emacs.md)
 - [Ian Ashdown's fgrep](greps/ashdown_fgrep.md)
 - [Java `java.util.regex`](langs/java.md)
 - [JavaScript `RegExp`](langs/javascript.md)
