@@ -13,7 +13,7 @@ so its engine was likely influential.
 Its regular expression engine is in `search.c` and was used in [Perl](../langs/perl.md)
 1.0. It is derived from [Gosling Emacs](../editors/gosling_emacs.md).
 
-Larry Wall used RCS for version control of `rn` [^rn-hackers] and distributed
+Larry Wall used RCS for version control of `rn`[^rn-hackers] and distributed
 patches with `patch`.
 
 From the [rn site](https://web.archive.org/web/19970401040656/http://www.academ.com/academ/rn.html):
@@ -39,10 +39,9 @@ From [“Usenet Software: History and Sources”](https://web.archive.org/web/20
 > and has been very popular with many regular net readers. The interface
 > includes reading, discarding, and/or processing of articles based on
 > user-definable patterns, and the ability of the user to develop customized
-> macros for display and keyboard interaction. "rn" is currently at release
-> 4.4.4. It is being maintained by Stan Barber <sob@academ.com>. "rn" is not
-> provided with the standard news software release, but is very widely available
-> because of its popularity.
+> macros for display and keyboard interaction. […] It is being maintained by
+> Stan Barber <sob@academ.com>. "rn" is not provided with the standard news
+> software release, but is very widely available because of its popularity.
 
 ## Features using regular expressions
 
@@ -327,32 +326,34 @@ bracket you want—`%0` will give you the last bracket matched.
   [8](https://groups.google.com/g/mod.sources/c/jLfBDURu-_8),
   and [9](https://groups.google.com/g/mod.sources/c/0xMLaQS6V5s))
   on mod.sources, 1985-05-09
-- rn version 4.4.4, 1992-02-23 [[mention](https://web.archive.org/web/19970401040656/http://www.academ.com/academ/rn.html)]
+- rn version 4.4 patchlevel 4, 1992-02-23 (the latest version as of 1998[^academ]
+  [^usenet-faq])
 
 ## Descendants
 
 - rrn "remote rn": Patches to rn by Stan O. Barber which enable communicating
-  with an NNTP server [^wikipedia].
+  with an NNTP server[^wikipedia].
 
 - trn "Threaded Read News": A code fork of rn by Wayne Davison that organizes
-  messages into threads [^usenet-faq].
+  messages into threads[^usenet-faq].
 
   [[src](https://sourceforge.net/projects/trn/)] [[site](https://trn.sourceforge.net/)]
   [[usage](https://kb.iu.edu/d/abxg)] [[FreeBSD Ports](https://ports.freebsd.org/cgi/ports.cgi?query=trn&stype=all&sektion=news)]
   [[Void Linux package](https://github.com/void-linux/void-packages/blob/master/srcpkgs/trn/template)]
 
-- strn: A code fork of trn that adds scoring and was later integrated into trn
-  [^wikipedia].
+- strn: A code fork of trn that adds scoring and was later integrated into
+  trn[^wikipedia].
 
 - [slrn](../langs/slang.md): A newsreader implemented in S-Lang that supports rn
   killfiles.
 
-- xrn: Supports rn killfiles [^usenet-faq]; unclear whether it shares code with
+- xrn: Supports rn killfiles[^usenet-faq]; unclear whether it shares code with
   rn.
 
-- xvnews: Compatible with rn-style commands [^usenet-faq]; unclear whether it
+- xvnews: Compatible with rn-style commands[^usenet-faq]; unclear whether it
   shares code with rn.
 
-[^wikipedia]: https://en.wikipedia.org/wiki/Rn_(newsreader)
-[^usenet-faq]: https://web.archive.org/web/20140227213900/http://www.faqs.org:80/faqs/usenet/software/part1
-[^rn-hackers]: `HACKERSGUIDE` in rn distribution
+[^academ]: "RN Newsreader Software". https://web.archive.org/web/19970401040656/http://www.academ.com/academ/rn.html
+[^wikipedia]: "Rn (newsletter)" on Wikipedia. https://en.wikipedia.org/wiki/Rn_(newsreader)
+[^usenet-faq]: "Usenet Software: History and Sources". https://web.archive.org/web/20140227213900/http://www.faqs.org:80/faqs/usenet/software/part1
+[^rn-hackers]: `HACKERSGUIDE` in rn 4.1 and 4.3 distributions
