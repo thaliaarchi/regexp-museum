@@ -227,7 +227,8 @@ Note that GREP expects the STDOUT and STDIN DD's to be allocated.
   uses DECUS grep (or some variant) and its regular expression docs, which were
   copied from DECUS grep, were modified 1981-01-02 00:05:00.
 - [Zeus](../editors/zeus.md): Early versions of the Zeus Programmers Editor
-  bundled DECUS grep with modifications to adjust the output format for Zeus.
+  (at least 2.15) bundled DECUS grep with modifications to adjust the output
+  format for Zeus.
 - [decus-grep-rust](https://github.com/thaliaarchi/decus-grep-rust): A close
   port of DECUS grep to Rust by Thalia Archibald (2024).
 

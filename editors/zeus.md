@@ -6,8 +6,11 @@ Zeus has regexp search and replace, but [uses Unix-style](https://www.zeusedit.c
 which is different from the original Brief. [Zeus Lite](https://www.zeusedit.com/lite/index.html)
 still has search and replace with regexps.
 
-Although is closed-source, the source for versions 1.04 and 2.15 is available.
-CTAGS.C is taken from Elvis and changes to it are annotated.
+Although is closed-source, versions 1.04 and 2.15 included some source. CTAGS.C
+is taken from Elvis and changes to it are annotated.
+
+Zeus 2.15 bundled [DECUS grep](../greps/decus.md) with modifications to adjust
+the output format for Zeus.
 
 Zeus was called Zeus Programmers Editor in its early releases and is now called
 Zeus IDE.
