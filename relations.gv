@@ -1,0 +1,300 @@
+digraph regexp_relations {
+  compund=true;
+
+  subgraph cluster_cpp {
+    label="C++";
+    boost [label="Boost.Regex"];
+    cpp [label="C++ std::regex"];
+
+    boost; // TODO: Influences?
+    cpp -> boost;
+  }
+
+  subgraph cluster_d {
+    label="D";
+    d [label="D std.regex"];
+    d_undead [label="D undead.regexp"];
+
+    d_undead; // TODO: Influences?
+    d -> d_undead; // TODO: Kind of influence
+  }
+
+  subgraph cluster_decus_grep {
+    label="DECUS grep";
+    blackbeard [label="Blackbeard"];
+    decus_grep [label="DECUS grep"];
+    zeus_215 [label="Zeus 2.15"];
+
+    decus_grep;
+    blackbeard -> decus_grep;
+    zeus_215 -> decus_grep;
+  }
+
+  subgraph cluster_ecmascript {
+    label="ECMAScript";
+
+    subgraph cluster_javascript {
+      label="JavaScript";
+      ecmascript1 [label="ECMAScript 1 RegExp", color=blue];
+      ecmascript2 [label="ECMAScript 2 RegExp", color=blue];
+      ecmascript3 [label="ECMAScript 3 RegExp", color=blue];
+      ecmascript5 [label="ECMAScript 5 RegExp", color=blue];
+      ecmascript51 [label="ECMAScript 5.1 RegExp", color=blue];
+      ecmascript2015 [label="ECMAScript 2015 RegExp", color=blue];
+      ecmascript2016 [label="ECMAScript 2016 RegExp", color=blue];
+      ecmascript2017 [label="ECMAScript 2017 RegExp", color=blue];
+      ecmascript2018 [label="ECMAScript 2018 RegExp", color=blue];
+      ecmascript2019 [label="ECMAScript 2019 RegExp", color=blue];
+      ecmascript2020 [label="ECMAScript 2020 RegExp", color=blue];
+      ecmascript2021 [label="ECMAScript 2021 RegExp", color=blue];
+      ecmascript2022 [label="ECMAScript 2022 RegExp", color=blue];
+      ecmascript2023 [label="ECMAScript 2023 RegExp", color=blue];
+      ecmascript2024 [label="ECMAScript 2024 RegExp", color=blue];
+
+      ecmascript1;
+      ecmascript2 -> ecmascript1;
+      ecmascript3 -> ecmascript2;
+      ecmascript5 -> ecmascript3;
+      ecmascript51 -> ecmascript5;
+      ecmascript2015 -> ecmascript51;
+      ecmascript2016 -> ecmascript2015;
+      ecmascript2017 -> ecmascript2016;
+      ecmascript2018 -> ecmascript2017;
+      ecmascript2019 -> ecmascript2018;
+      ecmascript2020 -> ecmascript2019;
+      ecmascript2021 -> ecmascript2020;
+      ecmascript2022 -> ecmascript2021;
+      ecmascript2023 -> ecmascript2022;
+      ecmascript2024 -> ecmascript2023;
+
+      subgraph cluster_irregexp {
+        label="Irregexp";
+        v8_irregexp [label="V8 Irregexp"];
+        spidermonkey_irregexp [label="SpiderMonkey Irregexp"];
+        nodejs_irregexp [label="Node.js Irregexp"];
+
+        spidermonkey_irregexp -> v8_irregexp;
+        nodejs_irregexp -> v8_irregexp; // TODO: Is this sufficiently different from V8 to include?
+      }
+
+      subgraph cluster_yarr {
+        label="YARR";
+        javascriptcore_yarr [label="JavaScript Core YARR"];
+        spidermonkey_yarr [label="SpiderMonkey YARR"];
+        samsung_yarr [label="Samsung YARR"];
+
+        spidermonkey_yarr -> javascriptcore_yarr;
+        samsung_yarr -> javascriptcore_yarr;
+      }
+
+      subgraph cluster_regress {
+        label="regress";
+        regress [label="reress"];
+        boa [label="Boa"];
+
+        boa -> regress;
+      }
+
+      subgraph cluster_quickjs {
+        label="QuickJS";
+        quickjs [label="QuickJS libregexp"];
+        quickjs_ng [label="QuickJS NG"];
+
+        quickjs -> quickjs_ng;
+        quickjs_ng -> quickjs;
+      }
+
+      chakracore [label="ChakraCore"];
+
+      hermes [label="Hermes"];
+
+      xs [label="XS"];
+
+      rhino [label="Rhino"];
+
+      nashorn [label="Nashorn JDK"];
+      // nashorn -> joni in cluster_oniguruma
+
+      kiesel [label="Kiesel"];
+
+      porffor [label="Porffor Rhemyn"];
+
+      engine262 [label="engine262"];
+
+      dmdscript [label="DMDScript"];
+      dmdscript -> d_undead;
+    }
+
+    subgraph cluster_actionscript {
+      label="ActionScript";
+      ecmascript4 [label="ECMAScript 4 RegExp", color=blue];
+      actionscript [label="ActionScript 3 RegExp", color=blue];
+      tamarin [label="Tamarin RegExp"];
+
+      ecmascript4 -> ecmascript3;
+      actionscript -> ecmascript4;
+      tamarin -> actionscript [style=dotted];
+      // tamarin -> pcre1 in cluster_pcre
+    }
+  }
+
+  subgraph cluster_java {
+    label="Java";
+    java [label="Java java.util.regex"];
+    clojure [label="Clojure re"];
+    scala [label="Scala scala.util.matching.Regex"];
+    scala_js [label="Scala.js"];
+
+    java; // TODO: Influences?
+    clojure -> java [label="wraps"];
+    scala -> java [label="wraps"];
+    scala_js -> java [label="compiles from", style=dotted];
+    scala_js -> ecmascript2024 [label="compiles to", style=dotted]; // TODO: Specific versions
+    scala_js -> scala;
+  }
+
+  subgraph cluster_mcilroy {
+    mcilroy [label="McIlroy regex"];
+  }
+
+  subgraph cluster_oniguruma {
+    label="Oniguruma";
+    oniguruma [label="Oniguruma"];
+    joni [label="Joni"];
+
+    oniguruma; // TODO
+    joni -> oniguruma [label="port"];
+    nashorn -> joni;
+  }
+
+  subgraph cluster_perl_pcre {
+    label="Perl and PCRE";
+
+    subgraph cluster_perl {
+      label="Perl";
+      perl [label="Perl"];
+      miniperl [label="miniperl"];
+      microperl [label="microperl"];
+
+      perl -> perl1;
+      miniperl; // TODO: Unclear relation
+      microperl; // TODO: Unclear relation
+
+      subgraph cluster_gosling_emacs {
+        label="Gosling Emacs";
+        gosling_emacs [label="Gosling Emacs"];
+        rn [label="rn"];
+        perl1 [label="Perl 1.0"];
+
+        gosling_emacs; // TODO: Influences?
+        rn -> gosling_emacs;
+        perl1 -> rn;
+      }
+    }
+
+    subgraph cluster_pcre {
+      label="PCRE";
+      pcre1 [label="PCRE 1"];
+      pcre2 [label="PCRE 2"];
+
+      pcre1 -> perl; // TODO
+      pcre2 -> pcre1; // TODO
+      pcre2 -> perl; // TODO
+
+      tamarin -> pcre1;
+    }
+  }
+
+  subgraph cluster_plan9 {
+    label="Plan 9";
+    plan9_grep [label="Plan 9 grep"];
+
+    plan9_grep; // TODO
+  }
+
+  subgraph cluster_posix {
+    label="POSIX"
+    posix [label="POSIX regex.h"];
+    posix;
+  }
+
+  subgraph cluster_python {
+    label="Python";
+    python_regex [label="Python regex and regsub"];
+    python_15_re [label="Python 1.5 re"];
+    python_sre [label="Python re (SRE)"];
+
+    python_regex; // TODO: Unclear relations
+    python_15_re -> python_regex; // TODO: Unclear relations
+    python_sre -> python_15_re; // TODO: Unclear relations
+  }
+
+  subgraph cluster_re2 {
+    label="RE2";
+    code_search [label="Google Code Search"];
+    re2 [label="RE2"];
+    re1 [label="re1"];
+    go [label="Go regexp"];
+    go_binary [label="rsc.io/binaryregexp"];
+    rust [label="Rust regex"];
+
+    code_search -> re2;
+    code_search -> plan9_grep; // Early versions
+    code_search -> plan9_grep [style=dotted];
+    re2 -> plan9_grep [style=dotted];
+    re2 -> pcre1; // Minor(?) code reuse
+    re1 -> re2 [style=dotted]; // TODO: Mark other relations
+    go -> re2 [style=dotted];
+    go_binary -> go;
+    rust -> re2 [style=dotted]; // TODO: Mark other relations
+  }
+
+  subgraph cluster_serenity {
+    label="SerenityOS";
+    serenity_libregex [label="SerenityOS LibRegex"];
+    serenity_libjs [label="SerenityOS LibJS RegExp"];
+    ladybird_libjs [label="Ladybird LibJS RegExp"];
+
+    serenity_libregex -> posix;
+    serenity_libregex -> ecmascript2024;
+    serenity_libjs -> ladybird_libjs;
+    serenity_libjs -> serenity_libregex;
+    ladybird_libjs -> serenity_libjs;
+    ladybird_libjs -> serenity_libregex;
+  }
+
+  subgraph cluster_sortle {
+    label="Sortle";
+    sortle_c [label="sortle.c"];
+    sortle_pl [label="sortle.pl"];
+    sortle_js [label="sortle-js"];
+
+    sortle_c;
+    sortle_pl -> sortle_c [style=dotted];
+    sortle_js -> sortle_c [style=dotted];
+    sortle_js -> sortle_pl [style=dotted];
+  }
+
+  subgraph cluster_tcl {
+    label="Tcl";
+    tcl [label="Tcl string match"]; // TODO: Is this a language standard or implementation?
+
+    tcl; // TODO: Influences?
+
+    subgraph cluster_antirez {
+      label="antirez";
+      jim [label="Jim JimStringMatch"]; // TODO: Later versions
+      visitors [label="Visitors vi_match"];
+      strabo [label="Strabo stringmatch"];
+      redis [label="Redis stringmatch"];
+      disque [label="Disque stringmatch"];
+
+      visitors -> jim [label="fork"];
+      strabo -> visitors [label="fork"];
+      redis -> strabo [label="fork"];
+      disque -> redis [label="fork"];
+    }
+
+    jim -> tcl [style=dotted]; // TODO: Kind of influence
+  }
+}

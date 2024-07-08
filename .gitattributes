@@ -1,0 +1,2 @@
+# Disable diffs for generated files
+*.svg -diff

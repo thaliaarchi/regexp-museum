@@ -13,6 +13,8 @@ Engines are grouped into categories or listed in the [index](index.md).
 - [Text editors](editors/index.md)
 - [Viewers](viewers/index.md)
 
+![Relations between regular expression engines](relations.svg)
+
 ## License
 
 Licensed under the terms of the GNU Free Documentation License, version 1.3.
