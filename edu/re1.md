@@ -1,6 +1,7 @@
 # re1
 
-[[src](https://code.google.com/archive/p/re1/)] [[blog](https://swtch.com/~rsc/regexp/regexp2.html)]
+[src [GitHub](https://github.com/rsc/re1), [Google Code](https://code.google.com/archive/p/re1/)]
+[[blog](https://swtch.com/~rsc/regexp/regexp2.html)]
 
 Author: Russ Cox
 
@@ -12,3 +13,6 @@ Author: Russ Cox
     only pikevm
 - jameysharp/pikevm [[src](https://github.com/jameysharp/pikevm)]: pikevm
   implementation in Rust
+- thaliaarchi/re1-rust [[src](https://github.com/thaliaarchi/re1-rust)]: port
+  to Rust
+- thaliaarchi/re1 [[src](https://github.com/thaliaarchi/re1)]: bug fixes for re1
