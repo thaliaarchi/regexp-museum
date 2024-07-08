@@ -11,7 +11,7 @@ to match email subjects. It was first released in 1984, while Perl was in 1987,
 so its engine was likely influential.
 
 Its regular expression engine is in `search.c` and was used in [Perl](../langs/perl.md)
-1.0.
+1.0. It is derived from [Gosling Emacs](../editors/gosling_emacs.md).
 
 Larry Wall used RCS for version control of `rn` [^rn-hackers] and distributed
 patches with `patch`.
