@@ -5,8 +5,9 @@
 
 Author: Ken Thompson
 
-[“Regular Expression Search Algorithm”](../thompson.md) by Ken Thompson (1968)
-introduced Thompson's construction and it was implemented in QED [[history](https://swtch.com/~rsc/regexp/regexp1.html#History)],
+[“Regular Expression Search Algorithm”](../papers/thompson.md) by Ken Thompson
+(1968) introduced Thompson's construction and it was implemented in QED
+[[history](https://swtch.com/~rsc/regexp/regexp1.html#History)],
 [[attribution](https://swtch.com/~rsc/regexp/regexp2.html#attrib)]
 
 Patent [US3568156A Text matching algorithm](https://patents.google.com/patent/US3568156A/en)

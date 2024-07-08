@@ -3,6 +3,7 @@
 - [TODO for esoteric programming languages](langs/esolangs/TODO.md)
 - [TODO for greps](greps/TODO.md)
 - [TODO for libraries](libs/TODO.md)
+- [TODO for papers](papers/TODO.md)
 - [TODO for programming languages](langs/TODO.md)
 - [TODO for text editors](editors/TODO.md)
 - Engines included in and [wanted](https://github.com/BurntSushi/rebar/blob/master/WANTED.md)
