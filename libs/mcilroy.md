@@ -1,4 +1,4 @@
-# Doug McIlroy's `regex`
+# McIlroy `regex`
 
 [[src](https://github.com/arnoldrobbins/mcilroy-regex)]
 
