@@ -8,12 +8,13 @@ enhanced version, and Blackbeard/2 is the OS/2 version. It is reviewed on
 [texteditors.org](https://texteditors.org/cgi-bin/wiki.pl?BlackBeard).
 
 The Blackbeard regular expression documentation in `RE.HLP` and `BB.DOC` matches
-that of DECUS grep, word for word (after the intro paragraph), even with the
-`\"` and `\\` escape sequences from the C source, but is rewrapped to fit a
-narrower width. `BB.DOC` includes `RE.HLP` in its entirety, but with different
-wrapping. `RE.HLP` and the relevant section of `BB.DOC` are identical (at least
-for 2.25 and 7.34). `BB725.ZIP:RE.HLP` was modified 1981-01-02 00:05:00.
-Blackbeard/2 has the same text, but in a binary format in `BB2.SGD`.
+that of [DECUS grep](../greps/decus.md), word for word (after the intro
+paragraph), even with the `\"` and `\\` escape sequences from the C source, but
+is rewrapped to fit a narrower width. `BB.DOC` includes `RE.HLP` in its
+entirety, but with different wrapping. `RE.HLP` and the relevant section of
+`BB.DOC` are identical (at least for 2.25 and 7.34). `BB725.ZIP:RE.HLP` was
+modified 1981-01-02 00:05:00. Blackbeard/2 has the same text, but in a binary
+format in `BB2.SGD`.
 
 Its source is not available. The executables work in DOSBox-X.
 
