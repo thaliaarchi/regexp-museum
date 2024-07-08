@@ -5,7 +5,7 @@
 This includes programs such as pagers and newsreaders, which contain regular
 expression engines for searching or filtering.
 
-- [`rn`](rn.md)
+- [rn](rn.md)
 
 ## Viewers using other engines
 

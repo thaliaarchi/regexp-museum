@@ -1,4 +1,4 @@
-# Bingo Text Editor
+# Bingo
 
 Author: Chris Schanck
 

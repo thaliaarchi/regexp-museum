@@ -1,4 +1,4 @@
-# Zeus Programmers Editor
+# Zeus
 
 [[site](https://www.zeusedit.com/index.html)]
 
@@ -8,6 +8,9 @@ still has search and replace with regexps.
 
 Although is closed-source, the source for versions 1.04 and 2.15 is available.
 CTAGS.C is taken from Elvis and changes to it are annotated.
+
+Zeus was called Zeus Programmers Editor in its early releases and is now called
+Zeus IDE.
 
 Versions:
 - [Zeus for Windows 1.04](https://archive.org/details/ZEUSV105_ZIP) (exe and source)

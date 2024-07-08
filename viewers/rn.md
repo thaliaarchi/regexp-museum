@@ -1,4 +1,4 @@
-# `rn`
+# rn
 
 [[site](https://web.archive.org/web/19970401040656/http://www.academ.com/academ/rn.html)]
 [[history](https://web.archive.org/web/20140227213900/http://www.faqs.org:80/faqs/usenet/software/part1)]
@@ -6,14 +6,14 @@
 
 Author: Larry Wall
 
-`rn` used regular expressions for searching and introduced [KILL files](https://en.wikipedia.org/wiki/Kill_file)
+rn used regular expressions for searching and introduced [KILL files](https://en.wikipedia.org/wiki/Kill_file)
 to match email subjects. It was first released in 1984, while Perl was in 1987,
 so its engine was likely influential.
 
 Its regular expression engine is in `search.c` and was used in [Perl](../langs/perl.md)
 1.0. It is derived from [Gosling Emacs](../editors/gosling_emacs.md).
 
-Larry Wall used RCS for version control of `rn`[^rn-hackers] and distributed
+Larry Wall used RCS for version control of rn[^rn-hackers] and distributed
 patches with `patch`.
 
 From the [rn site](https://web.archive.org/web/19970401040656/http://www.academ.com/academ/rn.html):
