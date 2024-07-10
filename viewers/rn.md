@@ -13,6 +13,18 @@ so its engine was likely influential.
 Its regular expression engine is in `search.c` and was used in [Perl](../langs/perl.md)
 1.0. It is derived from [Gosling Emacs](../editors/gosling_emacs.md).
 
+From `search.c`:
+
+> Copyright (c) 1981,1980 James Gosling
+
+From `rn.1`:
+
+> **AUTHOR**
+>
+> Larry Wall <lwall@sdcrdcf.UUCP>
+>
+> Regular expression routines are borrowed from emacs, by James Gosling.
+
 Larry Wall used RCS for version control of rn[^rn-hackers] and distributed
 patches with `patch`.
 
