@@ -8,7 +8,7 @@
 - [ed](ed.md)
 - [Emacs](emacs.md)
 - [EVE](eve.md)
-- [GNU Emacs](emacs.md#gnu-emacs)
+- [GNU Emacs](gnu_emacs.md)
 - [Gosling Emacs](gosling_emacs.md)
 - [NED](ned.md)
 - [QED](qed.md)

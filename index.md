@@ -17,7 +17,7 @@
 - [Elvis](editors/elvis.md)
 - [Emacs](editors/emacs.md)
 - [EVE](editors/eve.md)
-- [GNU Emacs](editors/emacs.md#gnu-emacs)
+- [GNU Emacs](editors/gnu_emacs.md)
 - [GNU fgrep](greps/gnu.md#gnu-fgrep)
 - [GNU grep](greps/gnu.md#gnu-grep)
 - [Go `regexp`](langs/go.md)
