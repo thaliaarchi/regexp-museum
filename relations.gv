@@ -180,13 +180,15 @@ digraph regexp_relations {
       miniperl; // TODO: Unclear relation
       microperl; // TODO: Unclear relation
 
-      subgraph cluster_gosling_emacs {
-        label="Gosling Emacs";
+      subgraph cluster_montgomery_emacs {
+        label="Montgomery Emacs";
+        montgomery_emacs [label="Montgomery Emacs"];
         gosling_emacs [label="Gosling Emacs"];
         rn [label="rn"];
         perl1 [label="Perl 1.0"];
 
-        gosling_emacs; // TODO: Influences?
+        montgomery_emacs; // TODO: Influences?
+        gosling_emacs -> montgomery_emacs;
         rn -> gosling_emacs;
         perl1 -> rn;
       }

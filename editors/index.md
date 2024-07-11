@@ -10,6 +10,7 @@
 - [EVE](eve.md)
 - [GNU Emacs](gnu_emacs.md)
 - [Gosling Emacs](gosling_emacs.md)
+- [Montgomery Emacs](montgomery_emacs.md)
 - [NED](ned.md)
 - [QED](qed.md)
 - [sam](sam.md)

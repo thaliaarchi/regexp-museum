@@ -29,6 +29,7 @@
 - [Jim](langs/tcl/jim.md)
 - [*Logical Foundations*](edu/lf.md)
 - [McIlroy `regex`](libs/mcilroy.md)
+- [Montgomery Emacs](editors/montgomery_emacs.md)
 - [NED](editors/ned.md)
 - [Oniguruma](libs/oniguruma.md)
 - [PCRE](libs/pcre.md)
