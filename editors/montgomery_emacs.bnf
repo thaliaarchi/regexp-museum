@@ -1,0 +1,29 @@
+re ::= (literal_star | literal_brace)? ((atom | literal_dollar)* atom)? "$"?
+atom ::=
+    | "."
+    | class
+    | "\\<"
+    | "\\>"
+    | "\\n"
+    | "\\" [1-9]
+    # Note: \\} is not excluded.
+    # BUG: \\\0 is not checked and overruns.
+    | "\\" [^()<>{\nn0-9]
+
+    | … "*"+ # Repeated stars are redundant
+    | "$" … # literal if not final
+    | group
+    | … range
+literal_star ::= "*"
+literal_dollar ::= "$"
+literal_brace ::= "\\{"
+# BUG: Unclosed parens are not checked.
+group ::= "\\(" literal_star? … ("\\)" literal_star?)?
+# Note: Ranges like [x-y-z] are allowed.
+# BUG: The range end does not check \0 and can overrun.
+class ::= "[" "^"? [^\]\0] ([^\]\0\-]* ("-" [^\]])*)* "]"
+# The lower bound must be less than or equal to the upper bound.
+range ::= "\\{" bound ("," bound)? "\\}"
+bound ::=
+    | [0-9]* # Finite (0 if empty)
+    | "\\"   # Infinity
