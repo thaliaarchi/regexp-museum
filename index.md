@@ -68,10 +68,6 @@
 
 ## Uncategorized
 
-- Bash
-
-- BSD grep
-
 - Code Search [[src](https://github.com/google/codesearch)]
 
   Background in [“Regular Expression Matching with a Trigram Index—or—How Google
