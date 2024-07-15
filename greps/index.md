@@ -7,3 +7,5 @@
 - [Jerry Coffin's JGREP](jgrep.md)
 - [Plan 9 grep](plan9.md)
 - [ripgrep](ripgrep.md)
+- [Unix egrep](unix_egrep.md)
+- [Unix grep](unix_grep.md)

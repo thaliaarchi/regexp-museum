@@ -20,6 +20,7 @@
 - [GNU Emacs](editors/gnu_emacs.md)
 - [GNU fgrep](greps/gnu.md#gnu-fgrep)
 - [GNU grep](greps/gnu.md#gnu-grep)
+- [GNU sed](editors/gnu_sed.md)
 - [Go `regexp`](langs/go.md)
 - [Gosling Emacs](editors/gosling_emacs.md)
 - [Ian Ashdown's fgrep](greps/ashdown_fgrep.md)
@@ -56,6 +57,9 @@
 - [Tcl](langs/tcl.md)
 - [Tech-Edit](editors/tech-edit.md)
 - [*The Practice of Programming*](edu/tpop.md)
+- [Unix egrep](greps/unix_egrep.md)
+- [Unix grep](greps/unix_grep.md)
+- [Unix sed](editors/unix_sed.md)
 - [Zeus Programmers Editor](editors/zeus.md)
 
 ## Uncategorized
@@ -95,15 +99,6 @@
     …,
     [v80](https://www.digiater.nl/openvms/freeware/v80/bison/)]
 
-- GNU `sed`
-
-  The version 2.03 `readme` indicates that `sed` uses GNU `rx` and before that
-  GNU `regex`.
-
-  - GNU `sed` ported to OpenVMS [src [v30](https://www.digiater.nl/openvms/freeware/v30/sed-2-05/) (sed 2.05)
-    …,
-    [v80](https://www.digiater.nl/openvms/freeware/v80/sed/) (sed 2.03)]
-
 - I-Regexp [[rfc](https://www.rfc-editor.org/rfc/rfc9485.html)]
 
   RFC 9485 I-Regexp: An Interoperable Regular Expression Format
@@ -129,23 +124,7 @@
     [prototype](https://github.com/oracle/graaljs/tree/master/graal-js/src/com.oracle.truffle.js/src/com/oracle/truffle/js/builtins/RegExpPrototypeBuiltins.java),
     more]
 
-- Unix `egrep` [[history][rsc-history]]
-
-  Author: Al Aho
-
-  First appeared in Seventh Edition Unix
-
-- Unix `grep` [[history][rsc-history]]
-
-  First appeared in Fourth Edition Unix
-
 - Unix `lex`
-
-- Unix `sed` [[Wikipedia](https://en.wikipedia.org/wiki/Sed)]
-
-  - [SED15](http://cd.textfiles.com/simtel/DISK1/DISC2/TEXTUTIL/SED15.ZIP) and
-    [SED15X](http://cd.textfiles.com/simtel/DISK1/DISC2/TEXTUTIL/SED15X.ZIP)
-    in the Simtel MSDOS Archive and SED15 in [NightOwl 008 - 1993](http://annex.retroarchive.org/cdrom/nightowl-008/)
 
 - Unix `yacc` [[Wikipedia](https://en.wikipedia.org/wiki/Yacc)]
 
@@ -230,6 +209,3 @@
 - Andrew Gallant's [rebar](https://github.com/BurntSushi/rebar)
 - [regex-redux](https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/regexredux.html)
   in the Computer Language Benchmarks Game
-
-
-[rsc-history]: https://swtch.com/~rsc/regexp/regexp1.html#History
