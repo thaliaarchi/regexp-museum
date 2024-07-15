@@ -17,6 +17,7 @@
 - [Elvis](editors/elvis.md)
 - [Emacs](editors/emacs.md)
 - [EVE](editors/eve.md)
+- [ex](editors/ex.md)
 - [GNU Emacs](editors/gnu_emacs.md)
 - [GNU fgrep](greps/gnu.md#gnu-fgrep)
 - [GNU grep](greps/gnu.md#gnu-grep)
@@ -58,7 +59,10 @@
 - [Tech-Edit](editors/tech-edit.md)
 - [*The Practice of Programming*](edu/tpop.md)
 - [Unix egrep](greps/unix_egrep.md)
+- [Unix fgrep](greps/unix_fgrep.md)
+- [Unix gre](greps/unix_gre.md)
 - [Unix grep](greps/unix_grep.md)
+- [Unix `regexp`](libs/unix_regexp.md)
 - [Unix sed](editors/unix_sed.md)
 - [Zeus Programmers Editor](editors/zeus.md)
 

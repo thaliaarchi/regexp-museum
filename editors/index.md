@@ -8,6 +8,7 @@
 - [ed](ed.md)
 - [Emacs](emacs.md)
 - [EVE](eve.md)
+- [ex](ex.md)
 - [GNU Emacs](gnu_emacs.md)
 - [GNU sed](gnu_sed.md)
 - [Gosling Emacs](gosling_emacs.md)

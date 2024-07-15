@@ -8,4 +8,6 @@
 - [Plan 9 grep](plan9.md)
 - [ripgrep](ripgrep.md)
 - [Unix egrep](unix_egrep.md)
+- [Unix fgrep](unix_fgrep.md)
+- [Unix gre](unix_gre.md)
 - [Unix grep](unix_grep.md)

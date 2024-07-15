@@ -12,3 +12,8 @@ Author: Ken Thompson
 
 Patent [US3568156A Text matching algorithm](https://patents.google.com/patent/US3568156A/en)
 [[HN](https://news.ycombinator.com/item?id=33566557)]
+
+## Versions
+
+- Unix V8 [/usr/src/cmd/qed/](https://www.tuhs.org/cgi-bin/utree.pl?file=V8/usr/src/cmd/qed)
+- Unix V9 ([not included?](https://www.tuhs.org/cgi-bin/utree.pl?file=V9/cmd))

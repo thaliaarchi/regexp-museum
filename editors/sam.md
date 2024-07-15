@@ -1,6 +1,7 @@
 # sam
 
 [[src](https://github.com/plan9foundation/plan9/tree/main/sys/src/cmd/sam/regexp.c)]
+[[Wikipedia](https://en.wikipedia.org/wiki/Sam_(text_editor))]
 
 Author: Rob Pike
 
@@ -22,6 +23,10 @@ by Russ Cox (2009):
 > couple of years after the original implementation.) The technique makes
 > a cameo in a textbook in 1974 but then seems to get lost until its
 > reappearance in sam.
+
+## Versions
+
+- Unix V9 5620 tools [jtools/src/sam/](https://www.tuhs.org/cgi-bin/utree.pl?file=V9/jtools/src/sam)
 
 ## Descendants
 
