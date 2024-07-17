@@ -8,6 +8,8 @@ Author: Rob Pike
 Introduced Pike VM [history [vm](https://swtch.com/~rsc/regexp/regexp2.html#pike),
 [submatch](https://swtch.com/~rsc/regexp/regexp2.html#ahu74)]
 
+In Unix, sam first appeared in the Ninth Edition[^mcilroy-history].
+
 From [“Regular Expression Matching: the Virtual Machine Approach”](https://swtch.com/~rsc/regexp/regexp2.html)
 by Russ Cox (2009):
 
@@ -47,5 +49,11 @@ by Russ Cox (2009):
     [docs [regex(2)](https://github.com/inferno-os/inferno-os/blob/master/man/2/regex),
     [regexp(6)](https://github.com/inferno-os/inferno-os/blob/master/man/6/regexp)]:
     copied to Inferno
-- A library in Eighth Edition Unix [[history][rsc-history]]:
-  extracted by Dave Presotto
+- A library in Eighth Edition Unix: extracted by Dave Presotto[^rsc-history]
+
+[^rsc-history]: [“History and References”](https://swtch.com/~rsc/regexp/regexp1.html#History),
+  “Regular Expression Matching Can Be Simple And Fast (but is slow in Java,
+  Perl, PHP, Python, Ruby, ...)”, Russ Cox, 2007
+[^mcilroy-history]: [“A Research UNIX Reader: Annotated Excerpts from the
+  Programmer’s Manual, 1971-1986”](https://www.cs.dartmouth.edu/~doug/reader.pdf),
+  M. Douglas McIlroy, 1987
