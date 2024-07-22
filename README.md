@@ -1,9 +1,10 @@
 # Regular Expression Museum
 
 A museum of historical and modern regular expression engines, showing their
-development and influence.
+development and influence. It is early in development and information is
+currently organized as research notes, not yet polished for presentation.
 
-Engines are grouped into categories or listed in the [index](index.md).
+Engines are grouped into categories and listed in the [index](index.md):
 
 - [Educational](edu/index.md)
 - [grep utilities](greps/index.md)
@@ -13,7 +14,12 @@ Engines are grouped into categories or listed in the [index](index.md).
 - [Text editors](editors/index.md)
 - [Viewers](viewers/index.md)
 
-![Relations between regular expression engines](relations.svg)
+Some [people](people/index.md) who were influential to regular expressions have
+additional pages.
+
+Relations between regular expression engines, as a graph (very incomplete):
+
+![Graph of relations between regular expression engines](relations.svg)
 
 ## License
 
