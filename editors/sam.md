@@ -34,6 +34,8 @@ by Russ Cox (2009):
 
 - Plan 9 from User Space `sam` [[src](https://github.com/9fans/plan9port/blob/master/src/cmd/sam/regexp.c)]:
   ported to Unix by Russ Cox
+- `9fans.net/go` `sam` [[src](https://github.com/9fans/go/blob/main/cmd/sam/regexp.go)]:
+  ported to Go by Russ Cox
 - Plan 9 `libregexp` [[src](https://github.com/plan9foundation/plan9/tree/main/sys/src/libregexp)]
   [docs [regexp(2)](https://github.com/plan9foundation/plan9/blob/main/sys/man/2/regexp),
   [regexp(6)](https://github.com/plan9foundation/plan9/blob/main/sys/man/6/regexp)]

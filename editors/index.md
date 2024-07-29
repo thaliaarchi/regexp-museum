@@ -1,5 +1,6 @@
 # Text editors with regular expressions
 
+- [Acme](acme.md)
 - [Bingo](bingo.md)
 - [Blackbeard](blackbeard.md)
 - [Brief](brief.md)

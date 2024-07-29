@@ -1,5 +1,6 @@
 # Regular expression implementations
 
+- [Acme](editors/acme.md)
 - [ActionScript 3 `RegExp`](langs/actionscript.md)
 - [antirez `stringmatch`](langs/tcl/antirez_stringmatch.md)
 - [AutoHotkey RegEx](libs/pcre.md#autohotkey-regex)
