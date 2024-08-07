@@ -1,6 +1,8 @@
 # Regular expression libraries
 
 - [Boost.Regex](boost.md)
+- [ICU4C](icu4c.md)
+- [ICU4J](icu4j.md)
 - [McIlroy `regex`](mcilroy.md)
 - [Oniguruma](oniguruma.md)
 - [PCRE](pcre.md)

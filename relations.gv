@@ -141,11 +141,17 @@ digraph regexp_relations {
   subgraph cluster_java {
     label="Java";
     java [label="Java java.util.regex"];
+    icu4j [label="ICU4J"];
+    icu4c [label="ICU4C"];
     clojure [label="Clojure re"];
     scala [label="Scala scala.util.matching.Regex"];
     scala_js [label="Scala.js"];
 
     java; // TODO: Influences?
+    java -> icu4j; // TODO: Did ICU4J actually influence java.util.regex?
+    icu4j -> icu4c;
+    icu4c -> java [label="ports and extends"];
+    icu4c -> icu4j;
     clojure -> java [label="wraps"];
     scala -> java [label="wraps"];
     scala_js -> java [label="compiles from", style=dotted];

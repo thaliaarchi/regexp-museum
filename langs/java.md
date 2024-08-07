@@ -1,6 +1,10 @@
 # Java `java.util.regex`
 
-Docs: [1.4.2](https://web.archive.org/web/20111126092902/http://docs.oracle.com/javase/1.4.2/docs/api/java/util/regex/package-summary.html),
+`java.util.regex` was added in Java 1.4.0[^1.4-features].
+
+Docs: [1.4](https://web.archive.org/web/20010609183413/http://java.sun.com/j2se/1.4/docs/api/java/util/regex/package-summary.html),
+[1.4.1](https://web.archive.org/web/20021216125232/http://java.sun.com/j2se/1.4.1/docs/api/java/util/regex/package-summary.html),
+[1.4.2](https://web.archive.org/web/20111126092902/http://docs.oracle.com/javase/1.4.2/docs/api/java/util/regex/package-summary.html),
 [5.0](https://docs.oracle.com/javase/1.5.0/docs/api/java/util/regex/package-summary.html),
 [6](https://docs.oracle.com/javase/6/docs/api/java/util/regex/package-summary.html),
 [7](https://docs.oracle.com/javase/7/docs/api/java/util/regex/package-summary.html),
@@ -18,6 +22,11 @@ Docs: [1.4.2](https://web.archive.org/web/20111126092902/http://docs.oracle.com/
 [19](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/regex/package-summary.html),
 [20](https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/util/regex/package-summary.html),
 [21](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/regex/package-summary.html)
+
+[ICU4J](../libs/icu4j.md) influenced the JDK; however it needs to be established
+whether this includes anything related to regular expressions.
+
+[^1.4-features]: https://web.archive.org/web/20030405095255/http://java.sun.com/j2se/1.4.2/docs/relnotes/features.html
 
 ## Clojure re
 

@@ -26,6 +26,8 @@
 - [Go `regexp`](langs/go.md)
 - [Gosling Emacs](editors/gosling_emacs.md)
 - [Ian Ashdown's fgrep](greps/ashdown_fgrep.md)
+- [ICU4C](libs/icu4c.md)
+- [ICU4J](libs/icu4j.md)
 - [Java `java.util.regex`](langs/java.md)
 - [JavaScript `RegExp`](langs/javascript.md)
 - [Jerry Coffin's JGREP](greps/jgrep.md)

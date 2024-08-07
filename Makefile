@@ -5,7 +5,7 @@ SVG := $(patsubst %.gv,%.svg,$(GV))
 all: $(SVG)
 
 %.svg: %.gv
-	dot -Tsvg $< > $@
+	dot -Tsvg -o $@ $<
 
 .PHONY: clean
 clean:
