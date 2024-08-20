@@ -206,6 +206,11 @@
 
   - rurban/tiny-regex-c [[src](https://github.com/rurban/tiny-regex-c)]
 
+- Kleenex [[site](https://kleenexlang.org/)] [[src](https://github.com/diku-kmc/kleenexlang)]
+  [[paper](https://utr.dk/pubs/files/grathwohl2016-0-paper.pdf)]: Programming
+  language is compiled from grammars with actions to fast deterministic
+  streaming transducers.
+
 ## Benchmarks
 
 - Mario Juárez's [Languages Regex Benchmark](https://github.com/mariomka/regex-benchmark)

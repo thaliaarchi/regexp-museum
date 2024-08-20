@@ -11,6 +11,9 @@
 - Databases
   - PostgreSQL
   - MongoDB
+- Standards category: I-Regexp, UTS #18, ECMAScript
+- Parsers category: yacc, lex, Flex, Bison, Kleenex
+- For `libfa`, an automata category or to libraries?
 
 ## Research
 
