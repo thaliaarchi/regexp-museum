@@ -1,5 +1,7 @@
 # Unix sed
 
+[[TextEditors.org](https://texteditors.org/cgi-bin/wiki.pl?Sed)]
+
 First appeared in Seventh Edition Unix[^wikipedia].
 
 ## Versions

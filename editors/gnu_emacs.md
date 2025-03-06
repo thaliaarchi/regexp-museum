@@ -1,5 +1,7 @@
 # GNU Emacs
 
+[[TextEditors.org](https://texteditors.org/cgi-bin/wiki.pl?GnuEmacs)]
+
 [src [modern](https://savannah.gnu.org/projects/emacs/), [historical](https://github.com/larsbrinkhoff/emacs-history)]
 [[docs](https://www.gnu.org/software/emacs/manual/html_node/emacs/Regexps.html)]
 

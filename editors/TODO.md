@@ -17,7 +17,8 @@ Investigate whether these editors contained regular expression engines.
 
 ## Lists
 
-- [texteditors.org family tree](https://texteditors.org/cgi-bin/wiki.pl?FamilyTree)
+- [TextEditors.org family tree](https://texteditors.org/cgi-bin/wiki.pl?FamilyTree)
+  - [Bell Labs family](https://texteditors.org/cgi-bin/wiki.pl?BellLabsFamily)
 - [Popular MS-DOS text editors in the 1980s](https://retrocomputing.stackexchange.com/questions/26873/what-were-the-most-popular-text-editors-for-ms-dos-in-the-1980s)
   - Eldin
   - Microsoft `edit.com`

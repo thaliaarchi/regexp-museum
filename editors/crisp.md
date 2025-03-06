@@ -1,5 +1,7 @@
 # CRiSP
 
+[[TextEditors.org](https://texteditors.org/cgi-bin/wiki.pl?Crisp)]
+
 CRiSP is a clone of Brief. It [supports](https://crisp.com/core-features/) both
 Unix and Brief regular expressions. It is closed-source.
 

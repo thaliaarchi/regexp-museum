@@ -1,6 +1,7 @@
 # EVE
 
 [[Wikipedia](https://en.wikipedia.org/wiki/EVE_(text_editor))]
+[[TextEditors.org](https://texteditors.org/cgi-bin/wiki.pl?EVE)]
 
 From the [Extensible Versatile Editor Reference Manual](https://web.archive.org/web/20191110205706/http://h30266.www3.hpe.com/odl/vax/opsys/vmsos73/vmsos73/6021/6021pro_014.html)
 (with a nested table combined):

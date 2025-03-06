@@ -1,6 +1,7 @@
 # QED
 
 [[Wikipedia](https://en.wikipedia.org/wiki/QED_(text_editor))]
+[[TextEditors.org](https://texteditors.org/cgi-bin/wiki.pl?Qed)]
 [[algorithm](https://swtch.com/~rsc/regexp/regexp2.html#thompsonvm)]
 
 Author: Ken Thompson

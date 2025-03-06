@@ -1,5 +1,7 @@
 # Gosling Emacs
 
+[[TextEditors.org](https://texteditors.org/cgi-bin/wiki.pl?GoslingEmacs)]
+
 Author: [James Gosling](https://en.wikipedia.org/wiki/James_Gosling)
 
 [`search.c`](https://github.com/bobbae/gosling-emacs/blob/master/search.c) in

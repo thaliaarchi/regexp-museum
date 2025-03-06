@@ -1,5 +1,7 @@
 # Tech-Edit
 
+[[TextEditors.org](https://texteditors.org/cgi-bin/wiki.pl?Tech-Edit)]
+
 Tech-Edit is a shareware programmer's editor for DOS and OS/2 that features
 “Regular expression search and replace”; however the dialect is not documented.
 The source code is sent on registration and not available in the shareware

@@ -2,6 +2,7 @@
 
 [[src](https://github.com/plan9foundation/plan9/tree/main/sys/src/cmd/sam/regexp.c)]
 [[Wikipedia](https://en.wikipedia.org/wiki/Sam_(text_editor))]
+[[TextEditors.org](https://texteditors.org/cgi-bin/wiki.pl?Sam)]
 
 Author: Rob Pike
 

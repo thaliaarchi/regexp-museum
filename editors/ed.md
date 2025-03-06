@@ -1,6 +1,7 @@
 # ed
 
 [[Wikipedia](https://en.wikipedia.org/wiki/Ed_(software))]
+[[TextEditors.org](https://texteditors.org/cgi-bin/wiki.pl?Ed)]
 
 Author: Ken Thompson[^rsc-regexp1] [^computerphile-bwk]
 

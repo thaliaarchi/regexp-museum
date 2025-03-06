@@ -1,11 +1,12 @@
 # Blackbeard
 
+[[TextEditors.org](https://texteditors.org/cgi-bin/wiki.pl?BlackBeard)]
+
 Author: James K. Powers (1985–1987)
 
 Blackbeard is a programmer's editor with regular expression search and “normal”
 search. Blackbeard is the original shareware version, Captain Blackbeard is the
-enhanced version, and Blackbeard/2 is the OS/2 version. It is reviewed on
-[texteditors.org](https://texteditors.org/cgi-bin/wiki.pl?BlackBeard).
+enhanced version, and Blackbeard/2 is the OS/2 version.
 
 The Blackbeard regular expression documentation in `RE.HLP` and `BB.DOC` matches
 that of [DECUS grep](../greps/decus.md), word for word (after the intro

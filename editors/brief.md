@@ -1,10 +1,12 @@
 # Brief
 
-[[site](https://briefeditor.com/)] [[Wikipedia](https://en.wikipedia.org/wiki/Brief_(text_editor))]
+[[site](https://briefeditor.com/)]
+[[Wikipedia](https://en.wikipedia.org/wiki/Brief_(text_editor))]
+[[TextEditors.org (Brief)](https://texteditors.org/cgi-bin/wiki.pl?Brief)]
+[[TextEditors.org (Brief family)](https://texteditors.org/cgi-bin/wiki.pl?BriefFamily)]
 
-Brief was first released in 1985. [texteditors.org](https://texteditors.org/cgi-bin/wiki.pl?BriefFamily)
-has useful info on Brief and clones and emulators of it. [Wikipedia](https://en.wikipedia.org/wiki/Brief_(text_editor))
-has similar lists. It is closed-source.
+Brief was first released in 1985. TextEditors.org has useful info on Brief and
+clones and emulators of it. Wikipedia has similar lists. It is closed-source.
 
 The changelog for [version 4.50](https://briefeditor.com/releases.htm)
 states that it “Supports regular expression search and replace, both Brief and

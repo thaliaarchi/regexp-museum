@@ -1,6 +1,8 @@
 # Zeus
 
 [[site](https://www.zeusedit.com/index.html)]
+[[TextEditors.org (Zeus)](https://texteditors.org/cgi-bin/wiki.pl?Zeus)]
+[[TextEditors.org (Zeus Lite)](https://texteditors.org/cgi-bin/wiki.pl?ZeusLite)]
 
 Zeus has regexp search and replace, but [uses Unix-style](https://www.zeusedit.com/faq.html),
 which is different from the original Brief. [Zeus Lite](https://www.zeusedit.com/lite/index.html)

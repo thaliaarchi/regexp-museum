@@ -1,11 +1,12 @@
 # Bingo
 
+[[TextEditors.org](https://texteditors.org/cgi-bin/wiki.pl?Bingo_Text_Editor)]
+
 Author: Chris Schanck
 
 Bingo is a text editor for DOS. Bingo 2.01 added regular expression search. The
 Bingo 2.10a Reference Manual (`BINGO.DOC`) states that “the regular expression
-subsystem is going to be completely rewritten for the next release”. It has an
-entry on [texteditors.org](https://texteditors.org/cgi-bin/wiki.pl?Bingo_Text_Editor).
+subsystem is going to be completely rewritten for the next release”.
 
 Versions:
 - Bingo 2.01 in [NightOwl 004 - 1991](http://annex.retroarchive.org/cdrom/nightowl-004/004A/BINGO201.ZIP)

@@ -1,5 +1,7 @@
 # ex
 
+[[TextEditors.org](https://texteditors.org/cgi-bin/wiki.pl?Ex)]
+
 Author: Bill Joy[^wikipedia]
 
 First appeared in 1BSD[^wikipedia].
