@@ -16,6 +16,7 @@
 - [Montgomery Emacs](montgomery_emacs.md)
 - [NED](ned.md)
 - [QED](qed.md)
+- [Rand NED editor](rand_ned.md)
 - [sam](sam.md)
 - [Tech-Edit](tech-edit.md)
 - [Unix sed](unix_sed.md)
