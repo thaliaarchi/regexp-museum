@@ -40,3 +40,8 @@ RE2 adapts code from the PCRE C++ wrapper[^init-re2.cc].
   https://github.com/google/re2/blob/0a38cba1d9dcfbd713141095582597af700f22e9/re2/re2.cc#L7-L8
     > Originally the PCRE C++ wrapper, but adapted to use
     > the new automata-based regular expression engines.
+
+## Descendants
+
+- [`re2` crate](https://github.com/cosmicexplorer/spack-rs/tree/main/re2) [[docs](https://docs.rs/re2/latest/re2/)]:
+  Rust interface for RE2.
