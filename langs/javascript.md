@@ -46,6 +46,9 @@ Test262 has tests for `RegExp` in [built-ins/RegExp](https://github.com/tc39/tes
   - QuickJS NG [src [c](https://github.com/quickjs-ng/quickjs/blob/master/libregexp.c),
     [h](https://github.com/quickjs-ng/quickjs/blob/master/libregexp.h),
     [opcodes](https://github.com/quickjs-ng/quickjs/blob/master/libregexp-opcode.h)]
+  - PrimJS [src [cc](https://github.com/lynx-family/primjs/blob/develop/src/interpreter/quickjs/source/libregexp.cc),
+    [h](https://github.com/lynx-family/primjs/blob/develop/src/interpreter/quickjs/include/libregexp.h),
+    [opcodes](https://github.com/lynx-family/primjs/blob/develop/src/interpreter/quickjs/include/libregexp-opcode.h)]
 
 - XS [[src](https://github.com/Moddable-OpenSource/moddable/blob/public/xs/sources/xsRegExp.c)]
 - Rhino [[src](https://github.com/mozilla/rhino/tree/master/src/org/mozilla/javascript/regexp)]
