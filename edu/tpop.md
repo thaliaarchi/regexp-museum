@@ -15,3 +15,5 @@ Author: Rob Pike and Brian Kernighan
 - [“Collapsing Towers of Interpreters”](https://www.cs.purdue.edu/homes/rompf/papers/amin-popl18.pdf)
   by Nada Amin and Tiark Rompf (2018) implements this matcher with binding-time
   polymorphism
+- xv6, a Unix V6 reimplementation for RISC-V, has a [grep](https://github.com/mit-pdos/xv6-riscv/blob/riscv/user/grep.c)
+  by Russ Cox based on it
