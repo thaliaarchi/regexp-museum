@@ -27,3 +27,8 @@ Uses PCRE.
 Deprecated in Python 2.0, removed in [Python 2.5](https://docs.python.org/3/whatsnew/2.5.html#new-improved-and-removed-modules)
 
 [Migrating to `re`](https://web.archive.org/web/19980526014452/http://www.python.org/doc/howto/regex-to-re/)
+
+## Others
+
+- MicroPython `re`: An embedded Python implementation which implements `re` with
+  [re1.5](../edu/re1.md) (see there)
