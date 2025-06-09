@@ -100,3 +100,5 @@ which includes several not evaluated here:
 
 - [XRegExp](../convert/xregexp.md) extends ECMAScript 5 `RegExp` with
   additional features.
+- [RegExp+](../convert/regexplus.md) extends ECMAScript 2025 `RegExp` with
+  additional features.

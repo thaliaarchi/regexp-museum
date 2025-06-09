@@ -1,3 +1,6 @@
 # TODO for libraries
 
 - [TRE](https://en.wikipedia.org/wiki/TRE_(computing))
+- [Regex Colorizer](https://github.com/slevithan/regex-colorizer):
+  syntax highlighting in JavaScript for ECMAScript 2023 regular expressions by
+  Steven Levithan
