@@ -62,3 +62,37 @@ Test262 has tests for `RegExp` in [built-ins/RegExp](https://github.com/tc39/tes
   [prototype](https://github.com/engine262/engine262/tree/main/src/intrinsics/RegExpPrototype.mts)]
 - DMDScript [[src](https://github.com/DigitalMars/DMDScript/blob/master/engine/source/dmdscript/dregexp.d)]:
   implemented with `undead.regexp`
+
+Wikipedia has a [list of JavaScript engines](https://en.wikipedia.org/wiki/List_of_JavaScript_engines#List),
+which includes several not evaluated here:
+- JKS
+- JScript
+- Linear B
+- Futhark
+- Carakan
+- Graal.js
+- JScript .NET
+- Tamarin
+- GNU Guile
+- iv
+- CL-JavaScript
+- BESEN
+- Continuum
+- InScript
+- Jint
+- Narcissus
+- JS-Interpreter
+- QtScript
+- V4 (QJSEngine)
+- YAJI
+- Microvium
+- Duktape
+- XS JavaScript Engine
+- Jsish
+- Espruino
+- MuJS
+- mJS
+- Tiny-JS
+- JerryScript
+- njs
+- ScriptEase
