@@ -83,18 +83,31 @@ Which version of PCRE is this and why was it selected?
 
 ### Shumway
 
-Mozilla Shumway parses and sanitizes AS3 patterns and flags to equivalent
-JavaScript semantics in [RegExp.as] and [`ASRegExp`]. The current design was
-[written](https://github.com/mozilla/shumway/blob/2bbdb5ce0db7796bfd832dc26c6ec25737eb15d7/src/avm2/nat.ts#L1659-L1926)
-just before ECMAScript 2015 was published, so it probably targets ECMAScript 5.1
-`RegExp` semantics. The prior design delegated in [`ASRegExp`](https://github.com/mozilla/shumway/blob/84cafb5801e83ee12e8b3889b25a352d05befa1d/src/avm2/native.ts#L1668-L1814)
-to the [XRegExp](https://github.com/mozilla/shumway/blob/84cafb5801e83ee12e8b3889b25a352d05befa1d/src/avm2/xregexp.ts)
-library, which converts its own extended syntax to JavaScript syntax. The
-current design indicates, that it fixes more tests than XRegExp, which implies
-that XRegExp syntax was not a design inspiration for the AS3 language authors.
+Mozilla Shumway parses and converts AS3 patterns and flags to equivalent
+JavaScript semantics, implemented in [RegExp.as] and [`ASRegExp`]. It probably
+targets ECMAScript 5.1 `RegExp` semantics, as it was [written](https://github.com/mozilla/shumway/blob/2bbdb5ce0db7796bfd832dc26c6ec25737eb15d7/src/avm2/nat.ts#L1659-L1926)
+just before ECMAScript 2015 was published.
 
-The approach in Shumway (and AwayFL) reminds me of how [Scala.js](java.md#scalajs)
-compiles Java regex patterns to semantically equivalent JavaScript patterns.
+Shumway converts the following syntax:
+- Removes `s` dot-all flag and, when set, replaces `.` with `[\s\S]`
+- Removes `x` extended flag and, when set, removes ASCII space ` `
+- Removes unrecognized flags (flags other than `s` `x` `g` `i` `x`)
+- Translates `(?P<name>…)` named capture groups to `(…)` capture groups and a
+  lookup table
+- Restricts patterns to at most 406 capture groups to match tested behavior
+  (of SpiderMonkey or AS3?)
+- Replaces detected invalid syntax with an unmatchable pattern
+
+See [Scala.js](java.md#scalajs) for a similar approach in compiling Java regex
+patterns to semantically equivalent JavaScript patterns.
+
+The [first implementation](https://github.com/mozilla/shumway/blob/84cafb5801e83ee12e8b3889b25a352d05befa1d/src/avm2/native.ts#L1668-L1814)
+of `ASRegExp` in Shumway delegated to a [vendored version](https://github.com/mozilla/shumway/blob/84cafb5801e83ee12e8b3889b25a352d05befa1d/src/avm2/xregexp.ts)
+of the [XRegExp](../libs/xregexp.md) library, which converts its own extended
+syntax to JavaScript syntax. The [commit log](https://github.com/mozilla/shumway/commit/2bbdb5ce0db7796bfd832dc26c6ec25737eb15d7)
+for the current implementation indicates that more tests pass than when XRegExp
+was used, suggesting that XRegExp syntax was not a design inspiration for the
+AS3 language authors.
 
 Shumway has a few [`RegExp`-specific tests](https://github.com/mozilla/shumway/tree/master/test/avm2/acceptance/as3/RegExp).
 
