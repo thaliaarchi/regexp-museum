@@ -24,26 +24,37 @@ also has a good list.
 
 ### Ruffle
 
-Ruffle uses [`regress`](https://github.com/ridiculousfish/regress) as its
-`RegExp` engine in [regexp.rs](https://github.com/ruffle-rs/ruffle/blob/master/core/src/avm2/regexp.rs)
+Ruffle uses a [fork of regress](../libs/regress.md#evilpie-regress) as its
+`RegExp` engine, implemented in [regexp.rs](https://github.com/ruffle-rs/ruffle/blob/master/core/src/avm2/regexp.rs)
 and [RegExp.as](https://github.com/ruffle-rs/ruffle/blob/master/core/src/avm2/globals/RegExp.as).
-`regress` [implements](https://docs.rs/regress/latest/regress/#supported-syntax)
-the `RegExp` syntax of ECMAScript 2018, which has more features than ECMAScript
-3 and is missing the AS3 additions.
+regress implements the `RegExp` syntax of ECMAScript 2018, has more features
+than ECMAScript 3 and is missing the AS3 additions.
 
-I've surveyed the Ruffle issues and PRs for anything with “regex” or “regexp”.
-All issues are from differences between ECMAScript 3 and AS3 syntaxes:
+From a survey of Ruffle issues and PRs relating to regular expressions, the
+following are the incompatibilities that have been observed. All issues are from
+differences between ECMAScript 3 and AS3 syntaxes.
 
-- `(?P<` `>)` named captures exist in AS3 ([#13278](https://github.com/ruffle-rs/ruffle/issues/13278),
-  [#10395](https://github.com/ruffle-rs/ruffle/issues/10395), [#10511](https://github.com/ruffle-rs/ruffle/issues/10511)).
-  [ECMAScript 3](https://ecma-international.org/wp-content/uploads/ECMA-262_3rd_edition_december_1999.pdf)
-  has no named captures (see 15.10.1). ECMAScript 2018 has `(?<` `>)` named
-  captures (see [21.2.1](https://262.ecma-international.org/9.0/#prod-GroupSpecifier)).
-- `x` extended flag exists in AS3 ([#13965](https://github.com/ruffle-rs/ruffle/issues/13965)),
-  but not ECMAScript 3 (see 15.10.4.1) or ECMAScript 2018 (see [12.2.8.1](https://262.ecma-international.org/9.0/#sec-primary-expression-regular-expression-literals-static-semantics-early-errors)).
+- `(?P<name>…)` named captures are used by AS3 programs
+  but [ECMAScript 3] has no named captures (see 15.10.1) and ECMAScript 2018 has
+  named captures with `(?<name>…)` syntax (see [21.2.1](https://262.ecma-international.org/9.0/#prod-GroupSpecifier)).
+  Issues:
+  [#13278](https://github.com/ruffle-rs/ruffle/issues/13278),
+  [#10395](https://github.com/ruffle-rs/ruffle/issues/10395),
+  [#10511](https://github.com/ruffle-rs/ruffle/issues/10511),
+  [#14938](https://github.com/ruffle-rs/ruffle/issues/14938),
+  [#16719](https://github.com/ruffle-rs/ruffle/issues/16719),
+  [#20019](https://github.com/ruffle-rs/ruffle/issues/20019)
+- `x` extended flag are used by AS3 programs
+  but not [ECMAScript 3] (see 15.10.4.1) or ECMAScript 2018 (see [12.2.8.1](https://262.ecma-international.org/9.0/#sec-primary-expression-regular-expression-literals-static-semantics-early-errors)).
+  Issues:
+  [#13965](https://github.com/ruffle-rs/ruffle/issues/13965),
+  [#20389](https://github.com/ruffle-rs/ruffle/issues/20389)
+- PCRE-style `(#comment)` comments were implemented in evilpie regress, but it
+  is unclear whether this was supported by AS3. Neither ECMASCript 3 nor 2018
+  include it.
+  Issues: none
 
-Differences between ECMAScript 3 and 2018 should not break already working
-regexps, but would allow newer features.
+[ECMAScript 3]: https://ecma-international.org/wp-content/uploads/ECMA-262_3rd_edition_december_1999.pdf
 
 ### avmplus
 

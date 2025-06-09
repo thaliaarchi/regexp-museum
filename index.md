@@ -47,6 +47,7 @@
 - [re1](edu/re1.md)
 - [RE2](libs/re2.md)
 - [REC](langs/rec.md)
+- [regress](libs/regress.md)
 - [ripgrep](greps/ripgrep.md)
 - [rn](viewers/rn.md)
 - [Ruby](langs/ruby.md)

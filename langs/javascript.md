@@ -53,9 +53,8 @@ Test262 has tests for `RegExp` in [built-ins/RegExp](https://github.com/tc39/tes
 - XS [[src](https://github.com/Moddable-OpenSource/moddable/blob/public/xs/sources/xsRegExp.c)]
 - Rhino [[src](https://github.com/mozilla/rhino/tree/master/src/org/mozilla/javascript/regexp)]
 - Nashorn JDK and [Joni](../libs/oniguruma.md) engines [[src](https://github.com/openjdk/nashorn/tree/main/src/org.openjdk.nashorn/share/classes/org/openjdk/nashorn/internal/runtime/regexp)]:
-- `reress` [[src](https://github.com/ridiculousfish/regress)]
-  - Boa [[src](https://github.com/boa-dev/boa/blob/main/core/engine/src/builtins/regexp/mod.rs)]:
-    implemented with `reress`
+- [regress](../libs/regress.md)
+  - Boa: implemented with regress
 - Kiesel [[src](https://codeberg.org/kiesel-js/kiesel/src/branch/main/src/builtins/reg_exp.zig)]
 - Porffor Rhemyn [[src](https://github.com/CanadaHonk/porffor/tree/main/rhemyn)]
 - engine262 [src [parser](https://github.com/engine262/engine262/tree/main/src/parser/RegExpParser.mts),
