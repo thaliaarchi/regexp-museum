@@ -95,3 +95,8 @@ which includes several not evaluated here:
 - JerryScript
 - njs
 - ScriptEase
+
+## Extensions
+
+- [XRegExp](../convert/xregexp.md) extends ECMAScript 5 `RegExp` with
+  additional features.

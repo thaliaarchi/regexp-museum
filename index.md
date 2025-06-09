@@ -68,6 +68,7 @@
 - [Unix grep](greps/unix_grep.md)
 - [Unix `regexp`](libs/unix_regexp.md)
 - [Unix sed](editors/unix_sed.md)
+- [XRegExp](convert/xregexp.md)
 - [Zeus Programmers Editor](editors/zeus.md)
 
 ## Uncategorized
@@ -76,11 +77,6 @@
 
   Background in [“Regular Expression Matching with a Trigram Index—or—How Google
   Code Search Worked”](https://swtch.com/~rsc/regexp/regexp4.html) by Russ Cox (2012)
-
-- ECMAScript `RegExp`
-
-  - XRegExp [[src](https://github.com/slevithan/xregexp)]: extended parsing for
-    JavaScript `RegExp`
 
 - exrex [[src](https://github.com/asciimoo/exrex)]
 
