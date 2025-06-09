@@ -7,5 +7,5 @@ features.
 
 ## Users
 
-- [Shumway](../langs/actionscript.md#shumway) used XRegExp in its first
-  implementation of ActionScript 3 `RegExp`.
+- [Shumway](shumway.md) used XRegExp in its first implementation of ActionScript
+  3 `RegExp`.

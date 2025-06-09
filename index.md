@@ -56,6 +56,7 @@
 - [sam](editors/sam.md)
 - [Scala `scala.util.matching.Regex`](langs/java.md#scala-scalautilmatchingregex)
 - [Scala.js](langs/java.md#scalajs)
+- [Shumway](convert/shumway.md)
 - [Sortle](langs/esolangs/sortle.md)
 - [Spencer `regexp`](libs/spencer.md)
 - [SQL](langs/sql.md)
