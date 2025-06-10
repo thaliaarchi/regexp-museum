@@ -57,7 +57,7 @@
 - [S-Lang SLregexp and SLsearch](langs/slang.md)
 - [sam](editors/sam.md)
 - [Scala `scala.util.matching.Regex`](langs/java.md#scala-scalautilmatchingregex)
-- [Scala.js](langs/java.md#scalajs)
+- [Scala.js](convert/scalajs.md)
 - [Shumway](convert/shumway.md)
 - [Sortle](langs/esolangs/sortle.md)
 - [Spencer `regexp`](libs/spencer.md)

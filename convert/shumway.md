@@ -15,9 +15,6 @@ Shumway converts the following syntax:
   (of SpiderMonkey or AS3?)
 - Replaces detected invalid syntax with an unmatchable pattern
 
-See [Scala.js](java.md#scalajs) for a similar approach in compiling Java regex
-patterns to semantically equivalent JavaScript patterns.
-
 The [first implementation](https://github.com/mozilla/shumway/blob/84cafb5801e83ee12e8b3889b25a352d05befa1d/src/avm2/native.ts#L1668-L1814)
 of `ASRegExp` in Shumway delegated to a [vendored version](https://github.com/mozilla/shumway/blob/84cafb5801e83ee12e8b3889b25a352d05befa1d/src/avm2/xregexp.ts)
 of the [XRegExp](../libs/xregexp.md) library, which converts its own extended

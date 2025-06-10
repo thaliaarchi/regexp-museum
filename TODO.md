@@ -8,6 +8,7 @@
 - [TODO for text editors](editors/TODO.md)
 - Engines included in and [wanted](https://github.com/BurntSushi/rebar/blob/master/WANTED.md)
   for rebar
+- Engines listed in Steven Levithan's [Awesome Regex](https://github.com/slevithan/awesome-regex).
 - Databases
   - PostgreSQL
   - MongoDB

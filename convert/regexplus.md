@@ -13,4 +13,4 @@ library. When used via the Babel plugin, it can optimize patterns with the
 [regexp-tree](https://github.com/DmitrySoshnikov/regexp-tree) library.
 
 [Inspired](https://github.com/slevithan/regex#%EF%B8%8F-about) by [PCRE](../libs/pcre.md),
-[XRegExp](xregexp.md) (by the same author), and regexp-make-js.
+[XRegExp](xregexp.md) (by the same author), and [regexp-make-js](regexp_make_js.md).
