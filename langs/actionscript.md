@@ -50,9 +50,11 @@ differences between ECMAScript 3 and AS3 syntaxes.
   [#13965](https://github.com/ruffle-rs/ruffle/issues/13965),
   [#20389](https://github.com/ruffle-rs/ruffle/issues/20389)
 - PCRE-style `(#comment)` comments were implemented in evilpie regress, but it
-  is unclear whether this was supported by AS3. Neither ECMASCript 3 nor 2018
-  include it.
-  Issues: none
+  is unclear whether this was intended to be supported by AS3. Neither
+  ECMASCript 3 nor 2018 include it, it is not mentioned in the Developer's
+  Guide, and not handled by Shumway.
+  Issues:
+  [#13965](https://github.com/ruffle-rs/ruffle/pull/20426#issuecomment-2960556418)
 
 [ECMAScript 3]: https://ecma-international.org/wp-content/uploads/ECMA-262_3rd_edition_december_1999.pdf
 
