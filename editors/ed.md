@@ -61,8 +61,8 @@ Additionally, on its performance:
 - Unix V6 [/usr/source/s1/ed.c](https://www.tuhs.org/cgi-bin/utree.pl?file=V6/usr/source/s1/ed.c)
 - Unix V7 [/usr/src/cmd/ed.c](https://www.tuhs.org/cgi-bin/utree.pl?file=V7/usr/src/cmd/ed.c)
 - Unix V8 [/usr/src/cmd/ed/](https://www.tuhs.org/cgi-bin/utree.pl?file=V8/usr/src/cmd/ed)
-- Unix V9 [cmd/ed.c](https://www.tuhs.org/cgi-bin/utree.pl?file=V9/cmd/ed.c)
-- Unix V10 [cmd/ed.c](https://www.tuhs.org/cgi-bin/utree.pl?file=V10/cmd/ed.c),
+- Unix V9 [/usr/src/cmd/ed.c](https://www.tuhs.org/cgi-bin/utree.pl?file=V9/cmd/ed.c)
+- Unix V10 [/usr/src/cmd/ed.c](https://www.tuhs.org/cgi-bin/utree.pl?file=V10/cmd/ed.c),
   [cmd/ed/](https://www.tuhs.org/cgi-bin/utree.pl?file=V10/cmd/ed)
 
 [pdp7-ed1.s]: https://www.tuhs.org/cgi-bin/utree.pl?file=PDP7-Unix/cmd/ed1.s

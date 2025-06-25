@@ -8,8 +8,8 @@ First appeared in Seventh Edition Unix[^wikipedia].
 
 - Unix V7 [/usr/src/cmd/sed/](https://www.tuhs.org/cgi-bin/utree.pl?file=V7/usr/src/cmd/sed)
 - Unix V8 [/usr/src/cmd/sed/](https://www.tuhs.org/cgi-bin/utree.pl?file=V8/usr/src/cmd/sed)
-- Unix V9 [cmd/sed/](https://www.tuhs.org/cgi-bin/utree.pl?file=V9/cmd/sed)
-- Unix V10 [cmd/sed/](https://www.tuhs.org/cgi-bin/utree.pl?file=V10/cmd/sed)
+- Unix V9 [/usr/src/cmd/sed/](https://www.tuhs.org/cgi-bin/utree.pl?file=V9/cmd/sed)
+- Unix V10 [/usr/src/cmd/sed/](https://www.tuhs.org/cgi-bin/utree.pl?file=V10/cmd/sed)
 
 ## Descendants
 

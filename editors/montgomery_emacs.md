@@ -5,4 +5,4 @@ was adapted in Gosling Emacs.
 
 ## Versions
 
-- Unix V9 [cmd/emacs/](https://www.tuhs.org/cgi-bin/utree.pl?file=V9/cmd/emacs)
+- Unix V9 [/usr/src/cmd/emacs/](https://www.tuhs.org/cgi-bin/utree.pl?file=V9/cmd/emacs)
