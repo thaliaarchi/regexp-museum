@@ -4,6 +4,10 @@ Author: Al Aho[^rsc-regexp1]
 
 First appeared in Seventh Edition Unix[^rsc-regexp1].
 
+Discussed along with [grep](unix_grep.md) in “A Tale of Two Greps” by Andrew
+Hume (1988) [[Wiley](https://onlinelibrary.wiley.com/doi/abs/10.1002/spe.4380181105),
+[IA](https://archive.org/details/tale-of-two-greps)]
+
 ## Versions
 
 - Unix V7 [/usr/src/cmd/egrep.y](https://www.tuhs.org/cgi-bin/utree.pl?file=V7/usr/src/cmd/egrep.y)
