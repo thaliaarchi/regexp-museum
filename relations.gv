@@ -36,32 +36,34 @@ digraph regexp_relations {
     subgraph cluster_javascript {
       label="JavaScript";
       ecmascript3 [label="ECMAScript 3 RegExp", color=blue];
-      ecmascript5 [label="ECMAScript 5 RegExp", color=blue];
-      ecmascript51 [label="ECMAScript 5.1 RegExp", color=blue];
-      ecmascript2015 [label="ECMAScript 2015 RegExp", color=blue];
-      ecmascript2016 [label="ECMAScript 2016 RegExp", color=blue];
-      ecmascript2017 [label="ECMAScript 2017 RegExp", color=blue];
-      ecmascript2018 [label="ECMAScript 2018 RegExp", color=blue];
-      ecmascript2019 [label="ECMAScript 2019 RegExp", color=blue];
-      ecmascript2020 [label="ECMAScript 2020 RegExp", color=blue];
-      ecmascript2021 [label="ECMAScript 2021 RegExp", color=blue];
-      ecmascript2022 [label="ECMAScript 2022 RegExp", color=blue];
-      ecmascript2023 [label="ECMAScript 2023 RegExp", color=blue];
-      ecmascript2024 [label="ECMAScript 2024 RegExp", color=blue];
+      ecmascript [label="ECMAScript 5 to 2024 RegExp", color=blue];
+      // ecmascript5 [label="ECMAScript 5 RegExp", color=blue];
+      // ecmascript51 [label="ECMAScript 5.1 RegExp", color=blue];
+      // ecmascript2015 [label="ECMAScript 2015 RegExp", color=blue];
+      // ecmascript2016 [label="ECMAScript 2016 RegExp", color=blue];
+      // ecmascript2017 [label="ECMAScript 2017 RegExp", color=blue];
+      // ecmascript2018 [label="ECMAScript 2018 RegExp", color=blue];
+      // ecmascript2019 [label="ECMAScript 2019 RegExp", color=blue];
+      // ecmascript2020 [label="ECMAScript 2020 RegExp", color=blue];
+      // ecmascript2021 [label="ECMAScript 2021 RegExp", color=blue];
+      // ecmascript2022 [label="ECMAScript 2022 RegExp", color=blue];
+      // ecmascript2023 [label="ECMAScript 2023 RegExp", color=blue];
+      // ecmascript2024 [label="ECMAScript 2024 RegExp", color=blue];
 
       ecmascript3;
-      ecmascript5 -> ecmascript3;
-      ecmascript51 -> ecmascript5;
-      ecmascript2015 -> ecmascript51;
-      ecmascript2016 -> ecmascript2015;
-      ecmascript2017 -> ecmascript2016;
-      ecmascript2018 -> ecmascript2017;
-      ecmascript2019 -> ecmascript2018;
-      ecmascript2020 -> ecmascript2019;
-      ecmascript2021 -> ecmascript2020;
-      ecmascript2022 -> ecmascript2021;
-      ecmascript2023 -> ecmascript2022;
-      ecmascript2024 -> ecmascript2023;
+      ecmascript -> ecmascript3;
+      // ecmascript5 -> ecmascript3;
+      // ecmascript51 -> ecmascript5;
+      // ecmascript2015 -> ecmascript51;
+      // ecmascript2016 -> ecmascript2015;
+      // ecmascript2017 -> ecmascript2016;
+      // ecmascript2018 -> ecmascript2017;
+      // ecmascript2019 -> ecmascript2018;
+      // ecmascript2020 -> ecmascript2019;
+      // ecmascript2021 -> ecmascript2020;
+      // ecmascript2022 -> ecmascript2021;
+      // ecmascript2023 -> ecmascript2022;
+      // ecmascript2024 -> ecmascript2023;
 
       subgraph cluster_irregexp {
         label="Irregexp";
@@ -157,7 +159,7 @@ digraph regexp_relations {
     clojure -> java [label="wraps"];
     scala -> java [label="wraps"];
     scala_js -> java [label="compiles from", style=dotted];
-    scala_js -> ecmascript2024 [label="compiles to", style=dotted]; // TODO: Specific versions
+    scala_js -> ecmascript [label="compiles to", style=dotted]; // TODO: Specific versions
     scala_js -> scala;
   }
 
@@ -188,15 +190,13 @@ digraph regexp_relations {
       miniperl; // TODO: Unclear relation
       microperl; // TODO: Unclear relation
 
-      subgraph cluster_montgomery_emacs {
-        label="Montgomery Emacs";
-        montgomery_emacs [label="Montgomery Emacs"];
+      subgraph cluster_perl1 {
+        label="Perl 1.0";
         gosling_emacs [label="Gosling Emacs"];
         rn [label="rn"];
         perl1 [label="Perl 1.0"];
 
-        montgomery_emacs; // TODO: Influences?
-        gosling_emacs -> montgomery_emacs;
+        // gosling_emacs -> montgomery_emacs; (in cluster_unix)
         rn -> gosling_emacs;
         perl1 -> rn;
       }
@@ -215,13 +215,6 @@ digraph regexp_relations {
     }
   }
 
-  subgraph cluster_plan9 {
-    label="Plan 9";
-    plan9_grep [label="Plan 9 grep"];
-
-    plan9_grep; // TODO
-  }
-
   subgraph cluster_posix {
     label="POSIX"
     posix [label="POSIX regex.h"];
@@ -237,6 +230,82 @@ digraph regexp_relations {
     python_regex; // TODO: Unclear relations
     python_15_re -> python_regex; // TODO: Unclear relations
     python_sre -> python_15_re; // TODO: Unclear relations
+  }
+
+  subgraph cluster_qed {
+    label="QED";
+    ctss_qed [label="CTSS QED"];
+    multics_qed [label="Multics QED"];
+    getss_qed [label="GE-TSS QED"];
+    multics_qedx [label="Multics qedx"];
+    toronto_qed [label="Toronto QED"];
+    fred [label="Fred"];
+    bole [label="bole"];
+
+    ctss_qed; // [dmr-qed]
+    multics_qed -> ctss_qed [style=dotted]; // [dmr-qed]
+    getss_qed -> ctss_qed [style=dotted]; // [dmr-qed]
+    multics_qedx -> multics_qed; // [dmr-qed]
+    toronto_qed; // [dmr-qed] TODO: Unclear relations
+    fred; // [dmr-qed] TODO: Unclear relations
+    bole; // [dmr-qed] TODO: Unclear relations
+  }
+
+  subgraph cluster_unix {
+    label="Unix";
+    unix_ed [label="Unix ed"];
+    unix_grep [label="Unix grep"];
+    unix_egrep [label="Unix egrep"];
+    unix_fgrep [label="Unix fgrep"];
+    unix_sed [label="Unix sed"];
+    unix_qed [label="Unix qed"];
+    montgomery_emacs [label="Montgomery Emacs"];
+    unix_gre [label="Unix gre"];
+
+    unix_ed -> multics_qed [style=dotted]; // [dmr-qed]
+    unix_grep -> unix_ed;
+    unix_egrep -> unix_grep;
+    unix_fgrep -> unix_grep;
+    unix_sed -> unix_ed;
+    unix_qed -> unix_ed;
+    montgomery_emacs -> unix_ed; // TODO: Is this accurate?
+    gosling_emacs -> montgomery_emacs; // TODO: Is this accurate?
+    unix_gre -> unix_grep;
+
+    subgraph cluster_vim {
+      label="vim";
+      em [label="em"];
+      ex [label="ex"];
+      vi [label="vi"];
+      vim [label="vim"];
+
+      em -> unix_ed; // [dmr-qed]
+      ex -> em; // [dmr-qed]
+      vi -> ex; // [dmr-qed]
+      vim -> vi;
+    }
+
+    subgraph cluster_plan9 {
+      label="Plan 9";
+      plan9_grep [label="Plan 9 grep"];
+      sam [label="sam"];
+
+      plan9_grep; // TODO
+      sam -> unix_qed; // [dmr-qed]
+    }
+
+    subgraph cluster_gnu {
+      label="GNU";
+      gnu_ed [label="GNU ed"];
+      gnu_grep [label="GNU grep"];
+      gnu_sed [label="GNU sed"];
+    }
+
+    gnu_ed -> unix_ed [style=dotted];
+    gnu_grep -> unix_grep [style=dotted];
+    gnu_grep -> unix_egrep [style=dotted];
+    gnu_grep -> unix_fgrep [style=dotted];
+    gnu_sed -> unix_sed [style=dotted];
   }
 
   subgraph cluster_re2 {
@@ -272,7 +341,7 @@ digraph regexp_relations {
     ladybird_libjs [label="Ladybird LibJS RegExp"];
 
     serenity_libregex -> posix;
-    serenity_libregex -> ecmascript2024;
+    serenity_libregex -> ecmascript;
     serenity_libjs -> ladybird_libjs;
     serenity_libjs -> serenity_libregex;
     ladybird_libjs -> serenity_libjs;
@@ -314,3 +383,6 @@ digraph regexp_relations {
     jim -> tcl [style=dotted]; // TODO: Kind of influence
   }
 }
+
+// Sources:
+// [dmr-qed]: https://web.archive.org/web/20250102124744/https://www.bell-labs.com/usr/dmr/www/qed.html

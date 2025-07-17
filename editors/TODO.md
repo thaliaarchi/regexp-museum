@@ -7,6 +7,9 @@ Investigate whether these editors contained regular expression engines.
 - GNU ed
 - QEdit
 - vim
+- em, Toronto QED, Fred, and bole from [Dennis Ritchie's history of QED](https://web.archive.org/web/20250102124744/https://www.bell-labs.com/usr/dmr/www/qed.html)
+  - em from [George Coulouris's history of em](https://www.eecs.qmul.ac.uk/~gc/history/)
+- QED for GE-TSS from rsc regexp1
 
 ## OpenVMS editors
 

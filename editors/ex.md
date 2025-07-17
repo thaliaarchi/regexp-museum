@@ -6,7 +6,9 @@ Author: Bill Joy[^wikipedia]
 
 First appeared in 1BSD[^wikipedia].
 
-Code derived from ed.
+Code descended from ed and derived from em[^coulouris-history].
+
+[^coulouris-history]: https://www.eecs.qmul.ac.uk/~gc/history/
 
 ## Versions
 

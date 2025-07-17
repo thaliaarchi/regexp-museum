@@ -29,11 +29,17 @@ edge and two output edges (rsc's `split`). For the remaining two operators
 defined by rsc, in Thompson's graphs, there are no ε transitions (so no `jmp`)
 and `match` is implicitly represented by an edge to the abstract expression.
 
+## Derivatives
+
+- Transliterations to C by Jan Burgy using a [bytecode machine](https://swtch.com/~rsc/regexp/regexp-bytecode.c.txt)
+  and [x86 codegen](https://swtch.com/~rsc/regexp/regexp-x86.c.txt)
+  - Bug: bytes 128–132 in the pattern are misinterpreted
+
 ## TODO
 
 - Read cited paper on IBM 7094, insofar as to learn the necessary opcodes
 - Read other cited papers
-- Port algorithm as implemented to Rust and maybe to Lean
+- Port algorithm as implemented to Rust
   - Does it differ from the prose description?
   - How were `jmp` and `match` implemented?
 - Trace direct usage to public code
