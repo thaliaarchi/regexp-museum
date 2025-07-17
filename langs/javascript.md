@@ -16,6 +16,7 @@ Test262 has tests for `RegExp` in [built-ins/RegExp](https://github.com/tc39/tes
 
     TODO: Is Node's V8 sufficiently different?
 
+- V8 Experimental (non-backtracking RegExp engine) [[blog](https://v8.dev/blog/non-backtracking-regexp)]
 - JavaScriptCore YARR [src [engine](https://github.com/WebKit/WebKit/tree/main/Source/JavaScriptCore/yarr),
   [object](https://github.com/WebKit/WebKit/blob/main/Source/JavaScriptCore/runtime/RegExp.h)]
 

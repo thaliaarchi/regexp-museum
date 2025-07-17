@@ -73,6 +73,12 @@ digraph regexp_relations {
         nodejs_irregexp -> v8_irregexp; // TODO: Is this sufficiently different from V8 to include?
       }
 
+      v8_exp [label="V8 Experimental"];
+      v8_exp -> v8_irregexp [style=dotted]; // Shared project
+      // v8_exp -> re2; (in cluster_re2)
+      // v8_exp -> rust; (in cluster_re2)
+      // v8_exp -> regelk; (in cluster_re2)
+
       subgraph cluster_yarr {
         label="YARR";
         javascriptcore_yarr [label="JavaScript Core YARR"];
@@ -109,7 +115,7 @@ digraph regexp_relations {
       rhino [label="Rhino"];
 
       nashorn [label="Nashorn JDK"];
-      // nashorn -> joni in cluster_oniguruma
+      // nashorn -> joni; (in cluster_oniguruma)
 
       kiesel [label="Kiesel"];
 
@@ -130,7 +136,7 @@ digraph regexp_relations {
       ecmascript4 -> ecmascript3;
       actionscript -> ecmascript4;
       tamarin -> actionscript [style=dotted];
-      // tamarin -> pcre1 in cluster_pcre
+      // tamarin -> pcre1; (in cluster_pcre)
     }
   }
 
@@ -241,16 +247,22 @@ digraph regexp_relations {
     go [label="Go regexp"];
     go_binary [label="rsc.io/binaryregexp"];
     rust [label="Rust regex"];
+    regelk [label="RegElk"];
 
     code_search -> re2;
     code_search -> plan9_grep; // Early versions
     code_search -> plan9_grep [style=dotted];
     re2 -> plan9_grep [style=dotted];
     re2 -> pcre1; // Minor(?) code reuse
+    re2 -> regelk [style=dotted]; // Linear lookaround
     re1 -> re2 [style=dotted]; // TODO: Mark other relations
     go -> re2 [style=dotted];
     go_binary -> go;
     rust -> re2 [style=dotted]; // TODO: Mark other relations
+    regelk -> re2 [style=dotted];
+    v8_exp -> re2 [style=dotted]; // Linear design
+    v8_exp -> rust [style=dotted]; // Linear design
+    v8_exp -> regelk [style=dotted]; // Linear lookaround
   }
 
   subgraph cluster_serenity {
