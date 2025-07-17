@@ -86,3 +86,5 @@ Reimplementations:
 - GNU ed
 - [hired](https://github.com/sidju/hired): An ed clone by David Olofsson in
   Rust. It has syntax highlighting, adds more features, and uses [Rust `regex`](../langs/rust.md)
+- [Ed60](https://www.0de5.net/stimuli/the-little-editor-that-could): An ed clone
+  in an emulated teletype by Kay Lack

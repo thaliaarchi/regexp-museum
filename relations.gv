@@ -306,6 +306,12 @@ digraph regexp_relations {
     gnu_grep -> unix_egrep [style=dotted];
     gnu_grep -> unix_fgrep [style=dotted];
     gnu_sed -> unix_sed [style=dotted];
+
+    hired [label="hired"];
+    ed60 [label="Ed60"];
+
+    hired -> unix_ed [style=dotted];
+    ed60 -> unix_ed [style=dotted];
   }
 
   subgraph cluster_re2 {
