@@ -4,7 +4,7 @@ Investigate whether these editors contained regular expression engines.
 
 ## Known editors with regexp engines
 
-- ed
+- GNU ed
 - QEdit
 - vim
 

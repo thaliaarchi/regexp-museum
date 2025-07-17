@@ -75,3 +75,14 @@ Additionally, on its performance:
 
 [^rsc-regexp1]: https://swtch.com/~rsc/regexp/regexp1.html#History
 [^computerphile-bwk]: https://www.youtube.com/watch?v=NTfOnGZUZDk
+
+## Descendants
+
+- [grep](../greps/unix_grep.md)
+- [sed](unix_sed.md)
+- [ex](ex.md)
+
+Reimplementations:
+- GNU ed
+- [hired](https://github.com/sidju/hired): An ed clone by David Olofsson in
+  Rust. It has syntax highlighting, adds more features, and uses [Rust `regex`](../langs/rust.md)
