@@ -1,5 +1,8 @@
 # JavaScript `RegExp`
 
+Regular expression literals and `RegExp` were first introduced in JavaScript
+1.2, which corresponds to ECMAScript 3.
+
 [List of engines](https://test262.fyi/)
 
 Test262 has tests for `RegExp` in [built-ins/RegExp](https://github.com/tc39/test262/tree/main/test/built-ins/RegExp).

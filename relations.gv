@@ -35,8 +35,6 @@ digraph regexp_relations {
 
     subgraph cluster_javascript {
       label="JavaScript";
-      ecmascript1 [label="ECMAScript 1 RegExp", color=blue];
-      ecmascript2 [label="ECMAScript 2 RegExp", color=blue];
       ecmascript3 [label="ECMAScript 3 RegExp", color=blue];
       ecmascript5 [label="ECMAScript 5 RegExp", color=blue];
       ecmascript51 [label="ECMAScript 5.1 RegExp", color=blue];
@@ -51,9 +49,7 @@ digraph regexp_relations {
       ecmascript2023 [label="ECMAScript 2023 RegExp", color=blue];
       ecmascript2024 [label="ECMAScript 2024 RegExp", color=blue];
 
-      ecmascript1;
-      ecmascript2 -> ecmascript1;
-      ecmascript3 -> ecmascript2;
+      ecmascript3;
       ecmascript5 -> ecmascript3;
       ecmascript51 -> ecmascript5;
       ecmascript2015 -> ecmascript51;
