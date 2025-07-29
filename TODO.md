@@ -16,6 +16,38 @@
 - Parsers category: yacc, lex, Flex, Bison, Kleenex
 - For `libfa`, an automata category or to libraries?
 
+## Sources
+
+- [RegElk](https://github.com/epfl-systemf/RegElk)
+  - [“Linear Matching of JavaScript Regular Expressions”](https://dl.acm.org/doi/10.1145/3656431)
+    by Aurèle Barrière and Clément Pit-Claudel (2024)
+  - V8 patch [“Reland "[regexp] Adding Captureless Lookbehinds in
+    Experimental"”](https://chromium-review.googlesource.com/c/v8/v8/+/5093860)
+  - [“Adding linear-time lookbehinds to RE2”](https://systemf.epfl.ch/blog/re2-lookbehinds/)
+    by Erik Giorgis (2024-08-23)
+  - Rust `regex` PR#1266 [“Add support for unbounded look-behind expressions”](https://github.com/rust-lang/regex/pull/1266)
+    (2025-05-15)
+  - Referenced:
+    - V8 [“An additional non-backtracking RegExp engine”](https://v8.dev/blog/non-backtracking-regexp)
+      (2021-01-11)
+    - .NET [“Regular Expression Improvements in .NET 7”](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7/)
+      (2022-05-12). Where was this referenced?
+- [“RE#: High Performance Derivative-Based Regex Matching with Intersection,
+  Complement and Lookarounds”](https://arxiv.org/abs/2407.20479)
+  - [Discussion](https://news.ycombinator.com/item?id=44633024)
+    - Source repo <https://github.com/ieviev/resharp> dead link
+    - Merged into .NET in PR#102655 [“NonBacktracking Regex optimizations”](https://github.com/dotnet/runtime/pull/102655)
+      (2024-05-24)
+    - [TXR](https://www.nongnu.org/txr/) language has innovative regular
+      expressions
+- [“The many, many, many JavaScript runtimes of the last decade”](https://buttondown.com/whatever_jamie/archive/the-many-many-many-javascript-runtimes-of-the-last-decade/)
+  (2025-07-27)
+  - [Discussion](https://news.ycombinator.com/item?id=44701574)
+- CTSS QED
+  - Regular expression engine appears to be in
+    [ctss-1.0.11.source.tar.gz/com5/qed.fap](https://www.cozx.com/dpitts/tarballs/ibm709x/ctss-1.0.11.source.tar.gz),
+    judging by `COMPIL` and `ADVANC` symbols
+
 ## Research
 
 - Wikipedia [Regular expression](https://en.wikipedia.org/wiki/Regular_expression)
