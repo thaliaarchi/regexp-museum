@@ -47,6 +47,7 @@
   - Regular expression engine appears to be in
     [ctss-1.0.11.source.tar.gz/com5/qed.fap](https://www.cozx.com/dpitts/tarballs/ibm709x/ctss-1.0.11.source.tar.gz),
     judging by `COMPIL` and `ADVANC` symbols
+- Rob Pike's regexp in Forth [[TUHS](https://www.tuhs.org/pipermail/tuhs/2025-September/032533.html)]
 
 ## Research
 
