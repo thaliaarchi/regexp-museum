@@ -271,6 +271,8 @@ digraph regexp_relations {
     montgomery_emacs -> unix_ed; // TODO: Is this accurate?
     gosling_emacs -> montgomery_emacs; // TODO: Is this accurate?
     unix_gre -> unix_grep;
+    unix_gre -> unix_egrep;
+    unix_gre -> unix_fgrep;
 
     subgraph cluster_vim {
       label="vim";
