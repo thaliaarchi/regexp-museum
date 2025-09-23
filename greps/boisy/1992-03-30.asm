@@ -1,0 +1,254 @@
+************************************************************
+* FGrep - Fast string search utility
+*
+*
+* Usage:  FGrep [-l -i -v] "pattern" [file] [...]
+*
+*        FGrep will read from StdIn unless one or more files are specified
+* on the command line.
+*
+*        The search pattern MUST be enclosed in quotes.  Meta characters
+* are NOT used in FGrep.
+*
+*
+* Options:
+*        -l = list the current filename to StdOut before processing
+*        -i = ignores case (FGrep defaults to case sensitivity)
+*        -v = print lines that DON'T match the pattern criteria
+*
+*
+* By: Boisy G. Pitre
+*     Southern Station, Box 8455
+*     Hattiesburg, MS  39406-8455
+*     Internet:  bgpitre@seabass.st.usm.edu
+*
+
+         nam     FGrep
+         ttl     Fast string search utility
+
+         ifp1
+         use     /dd/defs/os9defs
+         endc
+
+         mod     Size, Name, Prgrm+Objct, Reent+1, Start, DataSize
+
+Name     fcs     "FGrep"
+Ed       fcb     $1
+
+PrnNoMat rmb     1
+CaseMask rmb     1
+FileFlag rmb     1
+FilePath rmb     1
+Counter  rmb     1
+TmpCount rmb     1
+CharBuff rmb     1
+BuffSize rmb     2
+FileBuff rmb     60
+StrBuff  rmb     80
+LineBuff rmb     250
+Stack    rmb     200
+Parms    rmb     200
+DataSize equ     .
+
+HelpMsg  fcc     /Usage:  FGrep [-l -i -v] "pattern" [file] [...]/
+         fcb     $0d
+
+FileHead fdb     $0a0d
+         fcc     "**** File:  "
+FileHLen equ     *-FileHead
+
+****************************************
+* Subroutines
+
+*******************************************
+* Str2Byte - Converts an ASCII string to a single byte
+*
+* Entry: X - Address of first char in string
+*
+* Exit:  B - Converted byte
+*        X - Last number in string + 1
+*
+
+*Str2Byte  clrb
+*cnvloop   lda    ,x+
+*          cmpa   #'9
+*          bhi    cnvdone
+*          suba   #'0
+*          blo    cnvdone
+*          pshs   a
+*          lda    #10
+*          mul
+*          addb   ,s+
+*          bra    cnvloop
+*cnvdone   leax    -1,x
+*          rts
+
+* Saves filename in buffer
+SaveFile pshs    x
+         leay    FileBuff,u
+SaveF2   lda     ,x+
+         cmpa    #$20
+         bne     SaveF3
+         lda     #$0d
+SaveF3   sta     ,y+
+         cmpa    #$0d
+         bne     SaveF2
+         puls    x
+         rts
+
+* Set Anchor
+*AncLine  tst     Anchor                Anchor to a column other than 1 or 0?
+*         beq     Return                Nope, process at first column
+*AncLoop  ldb     Anchor                else move X to anchor point
+*Anc2     lda     ,x+
+*         cmpa    #$0d
+*         beq     BackUp
+*         decb
+*         bne     Anc2
+*BackUp   leax    -1,x
+*Return   rts
+
+* Prints filename to StdOut
+PrnFile  pshs    x,y
+         leax    FileHead,pcr
+         lda     #1
+         ldy     #FileHLen
+         os9     I$Write
+         lbcs    Error
+         leax    FileBuff,u
+         lda     #1
+         ldy     #60
+         os9     I$WritLn
+         bcs     Error
+         puls    x,y
+         rts
+
+* Strips leading spaces
+EatSpace lda     ,x+
+         cmpa    #$20
+         beq     EatSpace
+         leax    -1,x
+         rts
+
+Start    clr     FilePath              assume StdIn
+         clr     CaseMask              clear mask (assume case sensitive)
+         clr     FileFlag              clear flag print flag
+         clr     PrnNoMat              clear exclude flag
+
+Parse    bsr     EatSpace
+         lda     ,x+                   grab char
+         cmpa    #$0D                  is it a CR?
+         beq     ShowHelp              ...yep, show help
+         cmpa    #'-                   is it a dash?
+         beq     GetOpt                ...yep, get option
+         cmpa    #'"                   is it a quote?
+         beq     Prepare               ...yep, get string
+         bra     ShowHelp              else show help
+
+GetOpt   lda     ,x+                   get option
+         anda    #$df                  make uppercase
+         cmpa    #'I                   is it the I option?
+         bne     IsItL                 if not, check for -l option
+         lda     #32                   else load A with case mask byte
+         sta     CaseMask              ...save it in the location
+         bra     Parse                 and get the next char
+IsItL    cmpa    #'L                   Is it L?
+         bne     IsItV                 if not, check for -v
+         lda     #$ff                  else set file flag
+         sta     FileFlag
+         bra     Parse                 and resume parsing
+IsItV    cmpa    #'V                   Is it V?
+         bne     ShowHelp              nope, show help
+         lda     #$ff                  else set exclude flag
+         sta     PrnNoMat
+         bra     Parse                 and resume parsing
+
+
+Prepare  leay    StrBuff,u             point to string buffer
+         clr     Counter
+
+CopyStr  lda     ,x+                   get string char
+         cmpa    #'"                   is it the second quote?
+         beq     ChckFile              ...yep,
+         cmpa    #$0d                  is it a CR?
+         beq     ShowHelp              ...yep, bad syntax... show help
+         ora     CaseMask              else mask case
+         sta     ,y+                   store char in buffer
+         inc     Counter               increment the count
+         bra     CopyStr               and get the next char
+
+CheckEOF cmpb    #E$EOF                is it an eof error
+         bne     Error                 if not, print error
+         tst     FilePath              Was it StdIn?
+         beq     Done                  yeah, we're through
+         puls    x                     else grab X
+         os9     I$Close               close path
+         bsr     EatSpace              eat spaces
+         lda     ,x                    load A with char
+         cmpa    #$0d                  is it eol?
+         bne     OpenFile              no, another file
+
+Done     clrb                          clear error register
+Error    os9     F$Exit                exit program
+
+ShowHelp leax    HelpMsg,pcr           point to help message
+         ldy     #60                   max. 60 chars
+         lda     #2                    to StdErr
+         os9     I$WritLn              and write it out
+         bcs     Error
+         bra     Done                  then exit
+
+ChckFile lbsr    EatSpace
+         lda     ,x                    get char after string
+         cmpa    #$0d                  is it a CR?
+         beq     ReadIn
+
+OpenFile lbsr    SaveFile              save filename in buffer
+         lda     #read.                set read mode
+         os9     I$Open                open the file
+         bcs     Error
+         pshs    x                     save X
+         sta     FilePath              and store the path no.
+         tst     FileFlag              is file flag set?
+         beq     ReadIn                no, go ahead and read
+         lbsr    PrnFile               else print file first
+
+ReadIn   ldy     #250                  max. buffer size in chars.
+         leax    LineBuff,u            point to buffer
+         lda     FilePath              get file path no.
+         os9     I$ReadLn              and read in a line
+         bcs     CheckEOF              if error, check for eof
+         sty     BuffSize              save the size of the line
+
+StartCmp ldb     Counter               load B with counter value
+         leay    StrBuff,u             and point Y to the string buffer
+
+Compare  dec     BuffSize+1            decrement LSB of buffer size
+         bne     CompNext
+         tst     PrnNoMat              is exclude flag set?
+         beq     ReadIn                no, read next line
+         bra     Writeout              else write out non-match line
+
+CompNext lda     ,x+                   load A with char in line buffer
+         ora     CaseMask              mask the case
+         sta     CharBuff              store the char
+         lda     ,y+                   load A with char in string buffer
+         cmpa    CharBuff              compare the two chars
+         beq     TstMatch              if equal, check for complete match
+         bra     StartCmp              else start over
+
+TstMatch decb                          decrement the counter
+         bne     Compare               get next char if not 0
+         tst     PrnNoMat              is exclusion flag set?
+         bne     ReadIn                yep, don't print out match
+
+WriteOut leax    LineBuff,u            point to line buffer
+         ldy     #250                  max. 250 chars
+         lda     #1                    to StdOut
+         os9     I$WritLn              Write it
+         bcs     Error
+         bra     ReadIn                and read in the next line
+
+         emod
+Size     equ   *
+         end
