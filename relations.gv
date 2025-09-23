@@ -177,6 +177,12 @@ digraph regexp_relations {
     nashorn -> joni;
   }
 
+  subgraph cluster_os9 {
+    label="OS-9"
+    os9_grep [label="OS-9 grep"];
+    boisy_grep [label="Boisy grep"];
+  }
+
   subgraph cluster_perl_pcre {
     label="Perl and PCRE";
 

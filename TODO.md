@@ -6,6 +6,8 @@
 - [TODO for papers](papers/TODO.md)
 - [TODO for programming languages](langs/TODO.md)
 - [TODO for text editors](editors/TODO.md)
+- [agrep](https://en.wikipedia.org/wiki/Agrep) (approximate grep)
+- [ngrep](https://en.wikipedia.org/wiki/Ngrep) (network grep)
 - Engines included in and [wanted](https://github.com/BurntSushi/rebar/blob/master/WANTED.md)
   for rebar
 - Engines listed in Steven Levithan's [Awesome Regex](https://github.com/slevithan/awesome-regex).

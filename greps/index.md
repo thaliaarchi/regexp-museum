@@ -1,10 +1,13 @@
 # grep utilities
 
+- [Boisy grep](boisy.md)
 - [DECUS grep](decus.md)
 - [GNU fgrep](gnu.md#gnu-fgrep)
 - [GNU grep](gnu.md#gnu-grep)
 - [Ian Ashdown's fgrep](ashdown_fgrep.md)
 - [Jerry Coffin's JGREP](jgrep.md)
+- [MSX-DOS GREP](msx_dos.md)
+- [OS-9 grep](os9.md)
 - [Plan 9 grep](plan9.md)
 - [ripgrep](ripgrep.md)
 - [Unix egrep](unix_egrep.md)
