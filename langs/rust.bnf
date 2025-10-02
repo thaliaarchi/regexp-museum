@@ -17,10 +17,10 @@ repetition ::=
     | space counted_repetition
 # BUG?: No space before ungreedy "?".
 uncounted_repetition ::= ("?" | "*" | "+") "?"?
-counted_repetition ::= "{" repetition_range "}" space "?"?
+counted_repetition ::= "{" space repetition_range space "}" space "?"?
 repetition_range ::=
-    | decimal space ("," decimal? space)?
-    | "," decimal space
+    | decimal (space "," decimal?)?
+    | "," decimal
 decimal ::= (space digit)+
 digit ::= [0-9]
 
