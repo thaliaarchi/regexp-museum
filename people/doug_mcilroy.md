@@ -6,8 +6,13 @@ Engines:
 Papers:
 - [“Enumerating the strings of regular languages”](https://www.cs.dartmouth.edu/~doug/nfa.pdf).
   Doug McIlroy. Journal of Functional Programming 14 (2004) [[Haskell code](https://www.cs.dartmouth.edu/~doug/nfa.hs)]
+  - [Referenced](https://swtch.com/~rsc/regexp/) by Russ Cox
 
-On Mon, 22 Sep 2025 13:09:04 -0400, Doug McIlroy wrote (private correspondence):
+## Emails
+
+**From**: Douglas McIlroy \
+**Subject**: Regular expression implementations \
+**Date**: Mon, 22 Sep 2025 13:09:04 -0400
 
 > Thalia,
 >

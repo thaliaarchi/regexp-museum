@@ -18,3 +18,7 @@ on 1989-09-06:
 
 Does this refer to his version of QED for CTSS or suggest earlier work on
 regular expressions?
+
+## Emails
+
+See [Plan 9 grep](../greps/plan9.md#emails).

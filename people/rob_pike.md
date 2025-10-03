@@ -5,11 +5,12 @@ Engines:
 - [Go](../langs/go.md)
 - [*The Practice of Programming*](../edu/tpop.md)
 
-On [Mon, 22 Sep 2025 03:23:55 +0000](https://www.tuhs.org/pipermail/tuhs/2025-September/032533.html),
-Rob Pike wrote:
+## Emails
 
-> **Subject:** [TUHS] forth on early unix
->
+**From**: Rob Pike \
+**Subject**: [TUHS] Re: forth on early unix \
+**Date**: [Mon, 22 Sep 2025 03:23:55 +0000](https://www.tuhs.org/pipermail/tuhs/2025-September/032533.html)
+
 > I wrote a lot of forth as a student programming radio telescopes, often
 > inside the telescope base itself. That was a thing back then, much to my
 > surprise. The regexp implementation BWK has celebrated was likely rooted in
@@ -22,8 +23,10 @@ Rob Pike wrote:
 >
 > -rob
 
-<a name="thalia-tuhs">On [Mon, 22 Sep 2025 08:05:39 +0000](https://www.tuhs.org/pipermail/tuhs/2025-September/032540.html),
-Thalia Archibald wrote</a>:
+<a name="thalia-tuhs"></a>
+**From**: Thalia Archibald \
+**Subject**: [TUHS] Re: forth on early unix \
+**Date**: [Mon, 22 Sep 2025 08:05:39 +0000](https://www.tuhs.org/pipermail/tuhs/2025-September/032540.html)
 
 > Rob,
 >
@@ -37,8 +40,9 @@ Thalia Archibald wrote</a>:
 > Thanks, \
 > Thalia
 
-On [Mon, 22 Sep 2025 10:00:37 +0000](https://www.tuhs.org/pipermail/tuhs/2025-September/032541.html),
-Rob Pike wrote:
+**From**: Rob Pike \
+**Subject**: [TUHS] Re: forth on early unix \
+**Date**: [Mon, 22 Sep 2025 10:00:37 +0000](https://www.tuhs.org/pipermail/tuhs/2025-September/032541.html)
 
 > That's the one, yes. Brian Kernighan wrote an exegesis of it that became
 > the first chapter of the book Beautiful Code. He didn't say enough about
@@ -54,3 +58,5 @@ Rob Pike wrote:
 > the ed code when working on qed, some of which landed unattributed in vi.
 >
 > -rob
+
+TODO: Which qed and vi were these? Find the patches.

@@ -39,7 +39,8 @@ by Russ Cox (2009):
   ported to Go by Russ Cox
 - Plan 9 `libregexp` [[src](https://github.com/plan9foundation/plan9/tree/main/sys/src/libregexp)]
   [docs [regexp(2)](https://github.com/plan9foundation/plan9/blob/main/sys/man/2/regexp),
-  [regexp(6)](https://github.com/plan9foundation/plan9/blob/main/sys/man/6/regexp)]
+  [regexp(6)](https://github.com/plan9foundation/plan9/blob/main/sys/man/6/regexp)]:
+  extracted by Dave Presotto[^pike-emails]
   - Plan 9 from User Space `libregexp` [[src](https://github.com/9fans/plan9port/tree/master/src/libregexp)]
     [docs [regexp(3)](https://9fans.github.io/plan9port/man/man3/regexp.html),
     [regexp(7)](https://9fans.github.io/plan9port/man/man7/regexp.html)]:
@@ -54,9 +55,11 @@ by Russ Cox (2009):
     copied to Inferno
 - A library in Eighth Edition Unix: extracted by Dave Presotto[^rsc-history]
 
-[^rsc-history]: [“History and References”](https://swtch.com/~rsc/regexp/regexp1.html#History),
-  “Regular Expression Matching Can Be Simple And Fast (but is slow in Java,
-  Perl, PHP, Python, Ruby, ...)”, Russ Cox, 2007
+[^rsc-history]: “Regular Expression Matching Can Be Simple And Fast (but is slow
+  in Java, Perl, PHP, Python, Ruby, ...)”, [History and References](https://swtch.com/~rsc/regexp/regexp1.html#History),
+  Russ Cox, 2007
 [^mcilroy-history]: [“A Research UNIX Reader: Annotated Excerpts from the
   Programmer’s Manual, 1971-1986”](https://www.cs.dartmouth.edu/~doug/reader.pdf),
   M. Douglas McIlroy, 1987
+[^pike-emails]: [“Re: forth on early unix”](../people/rob_pike.md#emails),
+  Rob Pike, 2025-09-22 email

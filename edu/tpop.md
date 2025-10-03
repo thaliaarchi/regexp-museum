@@ -3,7 +3,7 @@
 [[book](https://archive.org/details/practiceofprogra0000kern)]
 [[exegesis](https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html)]
 
-Author: Rob Pike and Brian Kernighan
+Authors: Rob Pike (code) and Brian Kernighan (exegesis)
 
 - Ben Hoyt ported it to Go in [“Rob Pike’s simple C regex matcher in Go”](https://benhoyt.com/writings/rob-pike-regex/)
   (2022) [[code](https://github.com/benhoyt/repike/tree/master)] [[HN](https://news.ycombinator.com/item?id=32434412)]
