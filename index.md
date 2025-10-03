@@ -53,6 +53,7 @@
 - [REC](langs/rec.md)
 - [Regex+](convert/regexplus.md)
 - [regress](libs/regress.md)
+- [“Regular Expression Matching Can Be Simple And Fast”](edu/rsc-regexp1.md)
 - [ripgrep](greps/ripgrep.md)
 - [rn](viewers/rn.md)
 - [Ruby](langs/ruby.md)
@@ -174,8 +175,8 @@
   [[docs](https://docs.rs/fancy-regex/latest/fancy_regex/)]: hybrid NFA and
   backtracking engine, that delegates to Rust `regex` when possible
 
-- Sri Panyam's [tlex](https://github.com/panyam/tlex): used Russ Cox's “Regular
-  Expression Matching Can Be Simple And Fast” article as a reference [[HN](https://news.ycombinator.com/item?id=32435472)]
+- Sri Panyam's [tlex](https://github.com/panyam/tlex): used Russ Cox's article
+  “Regular Expression Matching Can Be Simple And Fast” as a reference [[HN](https://news.ycombinator.com/item?id=32435472)]
 
 - Reini Urban's matcher for Asterisk [[src archive](https://github.com/rurban/asterisk-matcher)]
   [[HN](https://news.ycombinator.com/item?id=32435404)]
