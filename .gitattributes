@@ -1,2 +1,5 @@
+# Include Markdown and GraphViz in GitHub language stats
+*.md linguist-detectable
+*.gv linguist-detectable
 # Disable diffs for generated files
 *.svg -diff
