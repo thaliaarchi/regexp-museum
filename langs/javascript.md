@@ -88,7 +88,6 @@ which includes several not evaluated here:
 - QtScript
 - V4 (QJSEngine)
 - YAJI
-- Microvium
 - Duktape
 - XS JavaScript Engine
 - Jsish
@@ -99,6 +98,10 @@ which includes several not evaluated here:
 - JerryScript
 - njs
 - ScriptEase
+
+Others:
+- Microvium [has no](https://github.com/coder-mike/microvium/blob/c9fecfc6f5aafa6400c0004a91001995b175cb1e/todo#L42)
+  `RegExp`
 
 ## Extensions
 
