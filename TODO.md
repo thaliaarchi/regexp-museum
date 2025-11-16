@@ -91,6 +91,9 @@ Make nicely-rendered grammars like the regexp grammar in [The Racket Reference](
 
 Organize engines into a tree like eylenburg's [operating system](https://eylenburg.github.io/os_familytree.htm)
 timeline and family tree, which is generated from [CSVs](https://github.com/eylenburg/os-family-tree)
-with [gnuclad](https://github.com/FabioLolix/gnuclad). Solid lines would denote
-code forks, dotted would denote algorithm or syntax borrowing, and colors would
-group families (e.g., Spencer, RE2).
+with [gnuclad](https://github.com/FabioLolix/gnuclad), and Éric Lévénez's
+[UNIX History](https://www.levenez.com/unix/) diagram (which was infamously
+altered by SCO to emphasize their version of history [[1](https://web.archive.org/web/20230325163831/http://www.groklaw.net/article.php?story=20040726085048643),
+[2](https://web.archive.org/web/20170704165820/http://www.groklaw.net/article.php?story=20031128151001514)]).
+Solid lines would denote code forks, dotted would denote algorithm or syntax
+borrowing, and colors would group families (e.g., Spencer, RE2).
