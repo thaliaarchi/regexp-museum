@@ -49,6 +49,10 @@
   - Regular expression engine appears to be in
     [ctss-1.0.11.source.tar.gz/com5/qed.fap](https://www.cozx.com/dpitts/tarballs/ibm709x/ctss-1.0.11.source.tar.gz),
     judging by `COMPIL` and `ADVANC` symbols
+- [unixtools](https://unixtools.sourceforge.net/): regular expression library,
+  grep, and awk from Open UNIX 8 released under GPL
+  [[press release](https://web.archive.org/web/20060515022847/http://ir.sco.com/releasedetail.cfm?ReleaseID=57417)]
+  [[Groklaw](https://web.archive.org/web/20230325125400/http://www.groklaw.net/article.php?story=20090302180710908)]
 - [ICU4X](https://github.com/search?q=repo%3Aunicode-org%2Ficu4x%20regular%20expressions&type=code)
   - [#168](https://github.com/unicode-org/icu4x/issues/168) UnicodeSet Pattern
     Parsing (L3b) of Unicode Properties
