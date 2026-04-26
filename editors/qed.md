@@ -79,6 +79,7 @@ Documentation:
 - Caltech qed from USENIX tape 80.1 [[TUHS Archive](https://www.tuhs.org/Archive/Applications/Shoppa_Tapes/usenix_80_delaware.tar.gz)]
   [[mrynet.com](https://www.mrynet.com/FTP/USENIX/80.1/boulder/caltech/)]
   - Patches for Linux by [Leah Neukirchen](https://github.com/leahneukirchen/qed-caltech)
+- Norman Wilson's fork of Caltech qed [[TUHS](https://www.tuhs.org/pipermail/tuhs/2018-October/016633.html)]
 - QED for Unix, 1985 via [Arnold Robbins](https://github.com/arnoldrobbins/qed-archive/tree/master/unix-1985)
 - QED for Unix, 1992 from Rob Pike via [Arnold Robbins](https://github.com/arnoldrobbins/qed-archive/tree/master/unix-1992),
   with
